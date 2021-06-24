@@ -15,7 +15,7 @@ def _load_colidict():
 
 def standardize_genes(genes, strain='MG1655', progress=True):
     """
-    Given a list of genes, standardizee their names, assign their COG designation,
+    Given a list of genes, standardize their names, assign their COG designation,
     and define their sector identity
 
     Parameters
