@@ -43,7 +43,7 @@ for g, d in colicogs.groupby(['strain']):
     colidict[g.lower()] = strain_dict
 
 # Save the dictionary to disk 
-with open('../../../diaux/package_data/coli_gene_dict.pkl', 'wb') as file:
+with open('../../../futileprot/package_data/coli_gene_dict.pkl', 'wb') as file:
     pickle.dump(colidict, file)
 print('Finished! Dictionary saved to `package_data`!')
 

@@ -4,7 +4,7 @@ from os import path
 __version__ = "0.0.001"
 
 setup(
-    name="idle",
+    name="futileprot",
     version=__version__,
     description="",
     license="MIT",
