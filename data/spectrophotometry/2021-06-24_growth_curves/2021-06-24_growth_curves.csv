@@ -198,6 +198,6 @@ clock_time,strain,growth_medium,od_600nm
 16:05,delta_his,acetate,0.369
 16:06,delta_dpp,acetate,0.416
 16:06,delta_opp,acetate,0.419
-16:07,delta_opp,glucosee,0.374
+16:07,delta_opp,glucose,0.374
 16:18,delta_his,acetate,0.395
 16:18,delta_opp,glucose,0.446

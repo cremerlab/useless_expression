@@ -2,6 +2,8 @@
 Module for handy python functions used foe measuring bacterial growth rates from 
 temporal measurements.
 """
+
+import pandas as pd
 from .bayes import *
 import tqdm
 import statsmodels.tools.numdiff as smnd
@@ -185,8 +187,9 @@ homoscedastic error, σ = {sigma_MAP:0.2f} ± {sigma_CI:0.3f} [a.u.]
 
         # Add grouping identifier if provided
         if groupby is not None:
-            if type(g) is not list:
-                _g = [g]
+            # if type(g) is not list:
+                # _g = [g]
+            _g = g
             for title, value in zip(groupby, _g):
                 _data_df[title] = value 
                 _param_df[title] = value
