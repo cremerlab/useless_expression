@@ -21,17 +21,17 @@ buffer system. These are the final concentrations per batch of growth medium. A
 
 ## Micronutrients
 Below is the final growth supporting concentrations of trace elements in all 
-growth conditions. This is typically stored as a 1000X stock and kept at -20 C
+growth conditions. This is typically stored as a 1000X stock and kept at 4° C
 and diluted as necessary. 
 
 |**Chemical Species** | **Concentration µM** |
 | :--: | :--: |
-| (NH<sub>4</sub>)<sub>6</sub>Mo<sub>7</sub>O<sub>24</sub> • 4H<sub>2</sub> | 3 |
-|H<sub>3</sub>BO<sub>3</sub> | 400 | 
-|CoCl<sub>2</sub> • 6H<sub>2</sub>O  | 30 |
-|CuSO<sub>4</sub> | 10 |
-|MnCl<sub>2</sub> | 80 | 
-|ZnSO<sub>4</sub> • 7H<sub>2</sub>O | 10 |
+| (NH<sub>4</sub>)<sub>6</sub>Mo<sub>7</sub>O<sub>24</sub> • 4H<sub>2</sub> | 0.15 |
+|H<sub>3</sub>BO<sub>3</sub> | 20 | 
+|CoCl<sub>2</sub> | 1.5 |
+|CuSO<sub>4</sub> | 0.5 |
+|MnCl<sub>2</sub> | 4  | 
+|ZnSO<sub>4</sub> • 7H<sub>2</sub>O | 0.5 |
 
 
 

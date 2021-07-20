@@ -146,3 +146,4 @@ for g, d in growth_rates.groupby(['growth_medium']):
         print(f"{_g}: λ = {_d['map_val'].values[0]:0.3f} ± {_d['cred_int'].values[0]:0.3f} per hr.")
 
 # %%
+
