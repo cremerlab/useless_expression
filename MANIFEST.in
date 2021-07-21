@@ -1,1 +1,1 @@
-include diaux/data/*.pkl
+include futileprot/package_data/*.pkl
