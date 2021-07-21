@@ -3,7 +3,7 @@ status: >
     Accepted 
 description : >
     Experiment appears to have been successful. It looks like the wild-type 
-    strain is growing slightly faster than usual, though w
+    strain is growing slightly faster than usual, though. 
 ---
 
 # 2021-07-20 Single KO Glucose Growth Rate Determination
