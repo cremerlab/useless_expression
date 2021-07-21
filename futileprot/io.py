@@ -7,11 +7,51 @@ import pickle
 import tqdm
 
 __GENES__ = None
+__STRAINS__ = None
 def _load_colidict():
     global __GENES__
-    f = pkg_resources.resource_filename('diaux', 'package_data/coli_gene_dict.pkl')
+    f = pkg_resources.resource_filename('futileprot', 'package_data/coli_gene_dict.pkl')
     with open(f, 'rb') as file:
         __GENES__ = pickle.load(file)
+
+
+def _load_strains():
+    global __STRAINS__
+    f = pkg_resources.resource_filename('futileprot','package_data/strain_database.pkl')
+    with open(f, 'rb') as file:
+        __STRAINS__ = pickle.load(file)
+
+def standardize_strains(strains):
+    """
+    Standardizes strain names across different mutants given GC database 
+    strain identifiers.
+
+    Parameters
+    ----------
+    strains: str, list, or 1d numpy.ndarray
+        List of GC Database strain identifiers (e.g. GC001, GC002) you wish to 
+        standardize.
+
+    Returns
+    --------
+    [shorthand, [genotype, lab_annotation], class] : list of lists
+        A standardized list of lists with the standardized shorthand notations,
+        the strain genotype, the annotation of the lab stock, and the strain
+        class, which is either WT, Single KO, or Double KO.
+    """
+    global __STRAINS__ 
+    if __STRAINS__ is None:
+        _load_strains()
+    
+    # Peform the standardization
+    out = [[], [[], []], []]
+    for s in strains:
+        sel = __STRAINS__[s]
+        out[0].append(sel['shorthand'])
+        out[1][0].append(sel['genotype'])
+        out[1][1].append(sel['lab_annotation'])
+        out[2].append(sel['class'])
+    return out
 
 def standardize_genes(genes, strain='MG1655', progress=True):
     """

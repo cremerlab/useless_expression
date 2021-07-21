@@ -139,7 +139,7 @@ def matplotlib_style(return_colors=True, return_palette=True, **kwargs):
 
         # General Font styling
         "font.family": "sans-serif",
-        "font.family": "Nunito",
+        "font.family": "Arial",
         "font.weight": 400, # Weight of all fonts unless overriden.
         "font.style": "normal",
         "text.color": "#5b5b5b",
@@ -229,8 +229,8 @@ def altair_style(return_colors=True, return_palette=True, **kwargs):
                     'domainWidth': 0.5,
                     'labelColor': '#5b5b5b',
                     'labelFontSize': 10,
-                    'labelFont': 'Nunito',
-                    'titleFont': 'Nunito',
+                    'labelFont': 'Arial',
+                    'titleFont': 'Arial',
                     'titleFontWeight': 700,
                     'titleFontSize':14,
                     'titleColor': '#4b4b4b',
@@ -245,15 +245,15 @@ def altair_style(return_colors=True, return_palette=True, **kwargs):
                 },
                 'legend': {
                     'labelFontSize': 14,
-                    'labelFont': 'Nunito',
-                    'titleFont': 'Nunito',
+                    'labelFont': 'Arial',
+                    'titleFont': 'Arial',
                     'titleFontSize': 14,
                     'titleFontWeight': 700,
                     'titleFontColor': '#44b4b4b',
                     'symbolSize': 75,
                 },
                 'title' : { 
-                    'font': 'Nunito',
+                    'font': 'Arial',
                     'fontWeight': 700,
                     'fontSize': 14,
                     'fontColor': '#4b4b4b',
