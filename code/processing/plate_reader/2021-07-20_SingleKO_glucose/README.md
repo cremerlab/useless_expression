@@ -35,13 +35,16 @@ This is an experiment measuring the rate of growth of single knockouts of
 | ∆his | NCM3722 | hisJQMP::attL-FRT-attR | `GC047` |
 
 ### Instrument Settings
-**Instrument**: BioTek Epoch2 Microplate Reader
-**Temperature**: 37° C
-**Shaking Speed**: 1096 cpm (1mm) 
-**Shaking Mode**: Linear 
-**Shaking Duration**: 7m00s
-**Read Speed**: Normal
-**Read Time**: 0m32s
+|:--:| :--:|
+| Instrument| BioTek Epoch2 Microplate Reader|
+| Temperature| 37° C|
+| Shaking Speed| 1096 cpm (1mm) |
+| Shaking Mode | Linear |
+| Shaking Duration| 7m00s|
+|Read Speed| Normal|
+| Read Time | 0m32s|
+| Total Interval | 7m32s |
+| Number of Measurements | 96 | 
 
 ### Plate Layout
 | **Wells** | **Label** | **Identifier** |
