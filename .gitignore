@@ -1,0 +1,14 @@
+*.aux
+*.swp
+*.log
+*.bbl
+*.swp
+*.tmp
+*checkpoints*
+*.DS_*tore
+*.jpg
+*.ai
+*.gz
+*.pyc
+*.egg-info*
+
