@@ -1,8 +1,0 @@
-MANIFEST.in
-README.md
-setup.py
-idle.egg-info/PKG-INFO
-idle.egg-info/SOURCES.txt
-idle.egg-info/dependency_links.txt
-idle.egg-info/not-zip-safe
-idle.egg-info/top_level.txt

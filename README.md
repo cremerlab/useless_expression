@@ -1,5 +1,3 @@
-# Git + GitHub As A Platform For Reproducible Research 
-
 # `useless_expression`
 
 This repository contains all research materials for our work on understanding 
