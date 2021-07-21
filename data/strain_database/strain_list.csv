@@ -1,0 +1,52 @@
+annotation,lab_annotation,shorthand,organism,parent_strain,genotype,class
+GC001,GE046,WT,Escherichia coli,NCM3722,WT NCM3722,WT
+GC029,GE357,∆flh,Eschericha coli,NCM3722,flhDC::attL-FRT-attR,Single KO
+GC030,GE358,∆glt,Eschericha coli,NCM3722,gltIJKL::attL-FRT-attR,Single KO
+GC032,GE360,∆mal,Eschericha coli,NCM3722,malGEFKM+lamB::attL-FRT-attR,Single KO
+GC047,GE375,∆his,Eschericha coli,NCM3722,hisJQMP::attL-FRT-attR,Single KO
+GC048,GE376,∆dpp,Eschericha coli,NCM3722,dppABCDF::attL-FRT-attR,Single KO
+GC049,GE377,∆pot,Eschericha coli,NCM3722,potFGHI::attL-FRT-attR,Single KO
+GC050,GE378,∆rbs,Eschericha coli,NCM3722,rbsDACB::attL-FRT-attR,Single KO
+GC052,GE380,∆nmp,Eschericha coli,NCM3722,nmpC::attL-FRT-attR,Single KO
+GC053,GE381,∆opp,Eschericha coli,NCM3722,oppABCDF::attL-FRT-attR,Single KO
+GC055,GE383,∆mgl,Eschericha coli,NCM3722,mglBAC::attL-FRT-attR,Single KO
+GC064,GE392,∆opp ∆rbs,Eschericha coli,NCM3722,oppABCDF::attL-FRT-attR rbsDACB::attL-FRT-attR,Double KO
+GC065,GE393,∆mgl ∆glt,Eschericha coli,NCM3722,mglBAC::attL-FRT-attR ∆gltIJKL::attL-FRT-attR,Double KO
+GC066,GE394,∆his ∆rbs,Eschericha coli,NCM3722,hisJQMP::attL-FRT-attR ∆rbsDACB::attL-FRT-attR,Double KO
+GC067,GE395,∆opp ∆flh,Eschericha coli,NCM3722,oppABCDF::attL-FRT-attR flhDC::attL-FRT-attR,Double KO
+GC068,GE396,∆his ∆flh,Eschericha coli,NCM3722,hisJQMP::attL-FRT-attR flhDC::attL-FRT-attR,Double KO
+GC069,GE397,∆flh ∆glt,Eschericha coli,NCM3722,flhDC::attL-FRT-attR gltIJKL::attL-FRT-attR,Double KO
+GC070,GE398,∆opp ∆glt,Eschericha coli,NCM3722,oppABCDF::attL-FRT-attR gltIJKL::attL-FRT-attR,Double KO
+GC071,GE399,∆dpp ∆flh,Eschericha coli,NCM3722,dppABCDF::attL-FRT-attR flhDC::attL-FRT-attR,Double KO
+GC072,GE400,∆nmp ∆rbs,Eschericha coli,NCM3722,nmpC::attL-FRT-attR rbsDACB::attL-FR-attR,Double KO
+GC073,GE401,∆rbs ∆glt,Eschericha coli,NCM3722,rbsDACB::attL-FRT-attR gltIJKL::attL-FRT-attR,Double KO
+GC074,GE402,∆his ∆glt,Eschericha coli,NCM3722,hisJQMP::attL-FRT-attR gltIJKL::attL-FRT-attR,Double KO
+GC075,GE403,∆dpp ∆glt,Eschericha coli,NCM3722,dppABCDF::attL-FRT-attR gltIJKL::attL-FRT-attR,Double KO
+GC076,GE404,∆mgl ∆opp,Escherichia coli,NCM3722,mglBAC::attL-FRT-attR oppABCDF::attL-FRT-attR,Double KO
+GC077,GE405,∆nmp ∆dpp,Escherichia coli,NCM3722,nmpC::attL-FRT-attR dppABCDF::attL-FRT-attR,Double KO
+GC078,GE406,∆his ∆mgl,Escherichia coli,NCM3722,hisJQMP::attL-FRT-attR mglBAC::attL-FRT-attR,Double KO
+GC079,GE407,∆mgl ∆rbs,Escherichia coli,NCM3722,mglBAC::attL-FRT-attR rbsDACB::attL-FRT-attR,Double KO
+GC080,GE408,∆mgl ∆dpp,Escherichia coli,NCM3722,mglBAC::attL-FRT-attR dppABCDF::attL-FRT-attR,Double KO
+GC081,GE409,∆his ∆dpp,Escherichia coli,NCM3722,hisJQMP::attL-FRT-attR dppABCDF::attL-FRT-attR,Double KO
+GC082,GE410,∆mgl ∆flh,Escherichia coli,NCM3722,mglBAC::attL-FRT-attR flhDC::attL-FRT-attR,Double KO
+GC083,GE411,∆opp ∆dpp,Escherichia coli,NCM3722,oppABCDF::attL-FRT-attR dppABCDF::attL-FRT-attR,Double KO
+GC084,GE412,∆mal ∆glt,Escherichia coli,NCM3722,malGEFKM + lamB::attL-FRT-attR gltIJKL::attL-FRT-attR,Double KO
+GC085,GE413,∆mal ∆rbs,Escherichia coli,NCM3722,malGEFKM + lamB::attL-FRT-attR rbsDACB::attL-FRT-attR,Double KO
+GC086,GE414,∆mal ∆flh,Escherichia coli,NCM3722,malGEFKM + lamB::attL-FRT-attR flhDC::attL-FRT-attR,Double KO
+GC087,GE415,∆mal ∆opp,Escherichia coli,NCM3722,malGEFKM + lamB::attL-FRT-attR oppABCDF::attL-FRT-attR,Double KO
+GC088,GE416,∆mal ∆mgl,Escherichia coli,NCM3722,malGEFKM + lamB::attL-FRT-attR mglBAC::attL-FRT-attR,Double KO
+GC089,GE417,∆mal ∆nmp,Escherichia coli,NCM3722,malGEFKM + lamB::attL-FRT-attR nmpC::attL-FRT-attR,Double KO
+GC090,GE418,∆pot ∆rbs,Escherichia coli,NCM3722,potFGHI::attL-FRT-attR rbsDACB::attL-FRT-attR,Double KO
+GC091,GE419,∆nmp ∆mgl,Escherichia coli,NCM3722,nmpC::attL-FRT-attR mglBAC::attL-FRT-attR,Double KO
+GC092,GE420,∆his ∆nmp,Escherichia coli,NCM3722,hisJQMP::attL-FRT-attR nmpC::attL-FRT-attR,Double KO
+GC093,GE421,∆pot ∆flh,Escherichia coli,NCM3722,potFGHI::attL-FRT-attR flhDC::attL-FRT-attR,Double KO
+GC094,GE422,∆pot ∆his,Escherichia coli,NCM3722,potFGHI::attL-FRT-attR hisJQMP::attL-FRT-attR,Double KO
+GC095,GE423,∆pot ∆dpp,Escherichia coli,NCM3722,potFGHI::attL-FRT-attR dppABCDF::attL-FRT-attR,Double KO
+GC096,GE424,∆pot ∆opp,Escherichia coli,NCM3722,potFGHI::attL-FRT-attR oppABCDF::attL-FRT-attR,Double KO
+GC097,GE425,∆pot ∆glt,Escherichia coli,NCM3722,potFGHI::attL-FRT-attR gltIJKL::attL-FRT-attR,Double KO
+GC098,GE426,∆nmp ∆glt,Escherichia coli,NCM3722,nmpC::attL-FRT-attR gltIJKL::attL-FRT-attR,Double KO
+GC099,GE427,∆nmp ∆flh,Escherichia coli,NCM3722,nmpC::attL-FRT-attR flhDC::attL-FRT-attR,Double KO
+GC100,GE428,∆dpp ∆rbs,Escherichia coli,NCM3722,dppABCDF::attL-FRT-attR rbsDACB::attL-FRT-attR,Double KO
+GC101,GE429,∆pot ∆nmp,Escherichia coli,NCM3722,potFGHI::attL-FRT-attR nmpC::attL-FRT-attR,Double KO
+GC102,GE430,∆nmp ∆opp,Escherichia coli,NCM3722,nmpC::attL-FRT-attR oppABCDF::attL-FRT-attR,Double KO
+GC103,GE431,∆pot ∆mgl,Escherichia coli,NCM3722,potFGHI::attL-FRT-attR mglBAC::attL-FRT-attR,Double KO
