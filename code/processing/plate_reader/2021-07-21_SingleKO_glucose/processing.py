@@ -8,7 +8,7 @@ import altair_saver
 colors, palette = futileprot.viz.altair_style()
 
 # Define experiment parameters
-DATE = '2021-07-20'
+DATE = '2021-07-21'
 STRAINS = 'SingleKO'
 MEDIUM = 'glucose'
 ROOT = '../../../..'

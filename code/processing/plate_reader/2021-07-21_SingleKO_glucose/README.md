@@ -6,7 +6,7 @@ description : >
     strain is growing slightly faster than usual, though. 
 ---
 
-# 2021-07-20 Single KO Glucose Growth Rate Determination
+# 2021-07-21 Single KO Glucose Growth Rate Determination
 
 ## Purpose
 This is an experiment measuring the rate of growth of single knockouts of 
@@ -72,35 +72,38 @@ than a formal Bayesian analysis), we find the following growth rates:
 
 | **strain** | **growth rate, µ [per hr]** |
 |:--: |:--:|
-|WT | 1.05 ± 0.01 |
-|∆dpp | 1.07 ± 0.02 |
-|∆flh | 0.99 ± 0.01 | 
-|∆glt | 1.00 ± 0.01 |
-|∆his | 1.05 ± 0.01 |
-|∆mal |1.00 ± 0.02 |
-|∆mgl | 0.98 ± 0.02 |
-|∆nmp | 1.00 ± 0.01 |
-|∆opp | 0.92 ± 0.01 |
-|∆pot | 1.06 ± 0.01 |
-|∆rbs | 1.04 ± 0.02 |
+|WT | 1.02 ± 0.01 |
+|∆dpp | 1.01 ± 0.01 |
+|∆flh | 1.04 ± 0.01 | 
+|∆glt | 0.987 ± 0.007 |
+|∆his | 1.02 ± 0.02 |
+|∆mal | 0.91 ± 0.01 |
+|∆mgl | 1.00 ± 0.01 |
+|∆nmp | 0.994 ± 0.004 |
+|∆opp | 0.937 ± 0.006 |
+|∆pot | 1.019 ± 0.005 |
+|∆rbs | 0.963 ± 0.009 |
 
-As I saw when doing an exploratory experiment growing the mutants in tubes, the 
-mutant ∆opp appears to have  growth rate defect in glucose that is beyond 
-statistical error of all others. 
+Again, ∆opp appears to have a slight growth rate defect compared to the 
+wildtype. Interestingly, compared to the experiment on 2021-07-20, the ∆mal
+KO has also grew considerably slower than in glucose.
 
-### Growth Curves
-The full growth curves look interesting. You can see a diauxic shift (I think)
-between gluose and excreted acetate. Three of the mutants (∆rbs, ∆flh, and ∆opp)
-appear to have a really wild and massive drop in OD once they reach saturation. 
-They also appear to rapidly grow (increasing OD) after the drop with no real 
-lag. 
+
+### Shape of profiles
+As in the experiment on 2021-07-20, the full curves of the growth cycle are very
+interesting. For most of the strains, one can see the diauxic shift to the cells 
+eating their own secreted acetate. Perhaps more interestingly, one can see that 
+for ∆flh, ∆rbs, and ∆opp, there is a **massive** drop in the OD once they reach 
+saturation, with what appears to be no lag time at all. In future experiments, 
+it will be good to look at the cells during this point on the microscope
+
 
 ### Plots
 **Fits**
-![](output/2021-07-20_SingleKO_glucose_fits.png)
+![](output/2021-07-21_SingleKO_glucose_fits.png)
 
-**Traces**
-![](output/2021-07-20_SingleKO_glucose_raw_traces.png)
+**Growth Curves**
+![](output/2021-07-21_SingleKO_glucose_raw_traces.png)
 
 ## Protocol 
 1.  Precultures were prepared by inoculating 3 mL of glucose minimal medium spiked 
