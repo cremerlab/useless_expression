@@ -8,12 +8,13 @@ import scipy.stats
 colors, palette = futileprot.viz.altair_style()
 
 # Add metadata
-DATE = '2021-07-21'
+DATE = '2021-07-20'
+RUN_NO = 1
 STRAINS = 'SingleKO'
 MEDIUM = 'glucose'
 
 # Load the measurement data
-data = pd.read_csv(f'./output/{DATE}_{STRAINS}_{MEDIUM}_exponential_phase.csv')
+data = pd.read_csv(f'./output/{DATE}_r{RUN_NO}_{STRAINS}_{MEDIUM}_exponential_phase.csv')
 
 # Perform a simplistic inference of the growth rate to get a sense of what
 # the result is.
@@ -28,7 +29,7 @@ for g, d in data.groupby(['strain']):
     # Perform the regression
     popt = scipy.stats.linregress(d['elapsed_time_hr'], np.log(d['od_600nm']))
     slope, intercept, err = popt[0], popt[1], popt[-1]
-    print(f'{g}, {MEDIUM}: µ = {slope:0.3f} ± {err:0.3f} per hr.')
+
     # Compute the fit
     fit = np.exp(intercept + slope * time_range)
     fit_df = pd.DataFrame([])
@@ -62,6 +63,6 @@ for g, d in data.groupby(['strain']):
     else: 
         layout &= merge
 
-altair_saver.save(layout, f'output/{DATE}_{STRAINS}_{MEDIUM}_fits.png',
+altair_saver.save(layout, f'output/{DATE}_r{RUN_NO}_{STRAINS}_{MEDIUM}_fits.png',
                 scale_factor=2)
 # %%

@@ -97,10 +97,10 @@ lag.
 
 ### Plots
 **Fits**
-![](output/2021-07-20_SingleKO_glucose_fits.png)
+![](output/2021-07-20_r1_SingleKO_glucose_fits.png)
 
 **Traces**
-![](output/2021-07-20_SingleKO_glucose_raw_traces.png)
+![](output/2021-07-20_r1_SingleKO_glucose_raw_traces.png)
 
 ## Protocol 
 1.  Precultures were prepared by inoculating 3 mL of glucose minimal medium spiked 

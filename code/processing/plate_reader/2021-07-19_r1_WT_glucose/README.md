@@ -31,4 +31,3 @@ a scrape from the freezer stock of NCM3722 + 2 µL of LB medium. The culture was
 grown at 37° C for several hours until the OD_600nm_ was ≈ 0.2. The cells were
 then diluted 10 fold into prewarmed medium and partitioned into a 96 well plate 
 
-## Results

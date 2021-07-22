@@ -2,8 +2,7 @@
 status: >
     Accepted 
 description : >
-    Experiment appears to have been successful. It looks like the wild-type 
-    strain is growing slightly faster than usual, though. 
+    Experiment appears to have been successful with no aberrant results. 
 ---
 
 # 2021-07-21 Single KO Glucose Growth Rate Determination
@@ -100,10 +99,10 @@ it will be good to look at the cells during this point on the microscope
 
 ### Plots
 **Fits**
-![](output/2021-07-21_SingleKO_glucose_fits.png)
+![](output/2021-07-21_r1_SingleKO_glucose_fits.png)
 
 **Growth Curves**
-![](output/2021-07-21_SingleKO_glucose_raw_traces.png)
+![](output/2021-07-21_r1_SingleKO_glucose_raw_traces.png)
 
 ## Protocol 
 1.  Precultures were prepared by inoculating 3 mL of glucose minimal medium spiked 

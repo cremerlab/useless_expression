@@ -1,6 +1,7 @@
 import numpy as np 
 import pkg_resources 
 import pandas as pd
+import frontmatter
 import warnings
 from io import StringIO
 import pickle
@@ -114,7 +115,55 @@ def standardize_genes(genes, strain='MG1655', progress=True):
             'cog_classes':std[1][1],
             'cog_descs':std[1][2],
             'sectors':std[2]}
-        
+
+def scrape_frontmatter(dirname, file='README.md'):
+    """
+    Reads the status of a given experimental dataset. This status is embedded
+    in the README.md file as a YAML metadata block.
+
+    Parameters
+    ----------
+    dirname : str
+        Directory from which to parse.
+    file: str
+        Name of file containing YAML frontmatter. Default is 'README.md'
+
+    Returns
+    -------
+    info : dict or pandas DataFrame
+        A dictionary with all frontmatter keys and values.
+
+    Raises
+    ------
+    UserWarning
+        A UserWarning is raised if the scraped yaml frontmatter does not have
+        a 'status' key or the value is not in `['accepted', 'rejected',
+        'questionable']`.
+    """
+    # Grab file from directory.
+    if dirname[-1] == '/':
+        filename = '{}{}'.format(dirname, file)
+    else:
+        filename = '{}/{}'.format(dirname, file)
+
+    # Scrape and return as desired.
+    with open(filename) as f:
+        info, _ = frontmatter.parse(f.read())
+    if 'status' not in info.keys():
+        print(
+            'Key `status` not found in metadata keys. Skipping {}'.format(dirname))
+        info = {}
+    elif info['status'] is None:
+        print('Key `status` is missing. Skipping {}'.format(dirname))
+        info = {}
+    elif info['status'].lower() not in ['accepted', 'questionable', 'rejected']:
+        print('Waring: Value `status: {}` not an acceptable flag. Skipping {}'.format(
+            info['status'].lower(), dirname))
+        info = {}
+    return info
+
+
+
 def numeric_formatter(values, digits=3, sci=True, unit=''):
     """
     Formats numbers to human-readable formats using single-letter abbreviations

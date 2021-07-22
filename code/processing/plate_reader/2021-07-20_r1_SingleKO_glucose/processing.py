@@ -8,9 +8,10 @@ import altair_saver
 colors, palette = futileprot.viz.altair_style()
 
 # Define experiment parameters
-DATE = '2021-07-21'
+DATE = '2021-07-20'
 STRAINS = 'SingleKO'
 MEDIUM = 'glucose'
+RUN_NO = 1
 ROOT = '../../../..'
 SKIPROWS = 28
 OD_BOUNDS = [0.03, 0.35]
@@ -32,7 +33,7 @@ MAP = {'GC030': ['C3', 'D3', 'E3'],
 wells = [f'{letter}{number}' for letter in ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H'] for number in np.arange(1,13)]
 
 # Load the data
-data = pd.read_csv(f'{ROOT}/data/plate_reader/{DATE}_{STRAINS}_{MEDIUM}/{DATE}.csv', 
+data = pd.read_csv(f'{ROOT}/data/plate_reader/{DATE}_r{RUN_NO}_{STRAINS}_{MEDIUM}/{DATE}_r{RUN_NO}.csv', 
                 skiprows=SKIPROWS)
 
 # Melt and drop unnecessary stuff
@@ -78,7 +79,7 @@ measurement['strain'] = strain_shorthand
 measurement['class'] = strain_class
 
 # Save to disk
-measurement.to_csv(f'./output/{DATE}_{STRAINS}_{MEDIUM}_measurements.csv', index=False)
+measurement.to_csv(f'./output/{DATE}_r{RUN_NO}_{STRAINS}_{MEDIUM}_measurements.csv', index=False)
 
 #%%
 # Perform the blank subtraction
@@ -98,7 +99,7 @@ trunc = trunc[['strain', 'elapsed_time_hr',
              'date', 'identifier', 'class']]
 trunc.rename(columns={'od_600nm_subtracted':'od_600nm',
                       'replicate':'technical_replicate'}, inplace=True)
-trunc.to_csv(f'./output/{DATE}_{STRAINS}_{MEDIUM}_exponential_phase.csv', index=False)
+trunc.to_csv(f'./output/{DATE}_r{RUN_NO}_{STRAINS}_{MEDIUM}_exponential_phase.csv', index=False)
 
 # %%
 # Generate a figure of all of the raw traces
@@ -116,7 +117,7 @@ raw_traces = alt.Chart(
                 ).facet(
                     row='strain'
                 )
-altair_saver.save(raw_traces, f'output/{DATE}_{STRAINS}_{MEDIUM}_raw_traces.png',
+altair_saver.save(raw_traces, f'output/{DATE}_r{RUN_NO}_{STRAINS}_{MEDIUM}_raw_traces.png',
                  scale_factor=2)
 
 # %%
