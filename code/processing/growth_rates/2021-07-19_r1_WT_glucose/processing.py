@@ -19,7 +19,7 @@ MAP = {'WT':['C3', 'C4', 'C5', 'C6', 'C7', 'C8', 'C9', 'C10',
 # Generate a list of all valid wells
 wells = [f'{letter}{number}' for letter in ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H'] for number in np.arange(1,13)]
 # Load the data
-data = pd.read_csv(f'{ROOT}/data/plate_reader/{DATE}_{STRAINS}_{MEDIUM}/{DATE}.csv', 
+data = pd.read_csv(f'{ROOT}/data/growth_rates/{DATE}_{STRAINS}_{MEDIUM}/{DATE}.csv', 
                 skiprows=SKIPROWS)
 
 # Melt and drop unnecessary stuff

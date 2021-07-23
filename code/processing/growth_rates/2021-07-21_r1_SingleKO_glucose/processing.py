@@ -33,7 +33,7 @@ MAP = {'GC030': ['C3', 'D3', 'E3'],
 wells = [f'{letter}{number}' for letter in ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H'] for number in np.arange(1,13)]
 
 # Load the data
-data = pd.read_csv(f'{ROOT}/data/plate_reader/{DATE}_r{RUN_NO}_{STRAINS}_{MEDIUM}/{DATE}_r{RUN_NO}.csv', 
+data = pd.read_csv(f'{ROOT}/data/growth_rates/{DATE}_r{RUN_NO}_{STRAINS}_{MEDIUM}/{DATE}_r{RUN_NO}.csv', 
                 skiprows=SKIPROWS)
 
 # Melt and drop unnecessary stuff
