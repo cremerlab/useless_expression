@@ -2,12 +2,12 @@
 status: >
     Accepted
 description : >
-    Experiment looks good, save for the growth rate of ∆flh, which is notably
-    slower than in other experimental runs in the same conditions. The saturating 
-    optical density is also lower for this mutant than in all other runs.
+    All data looks good. One replicate (r1 of ∆glt) was dropped and 
+    due to contamination and another few points of ∆mgl r3 were dropped as
+    obvious instrument error. 
 ---
 
-# 2021-07-22 Single KO Glucose Growth Rate Determination
+# 2021-07-23 Single KO Glucose Growth Rate Determination
 
 ## Purpose
 This is an experiment measuring the rate of growth of single knockouts of 
@@ -64,6 +64,19 @@ This is an experiment measuring the rate of growth of single knockouts of
 
 
 ## Notes & Results
+### Dropped Measurements
+There were two issues in this run of the plate reader, one that's my fault 
+and another was an instrument glitch, I think. 
+
+1. While setting up the plate, I accidentally added some ∆flh sample to the 
+∆glt replicate 1 well (C3). This replicate was dropped from the dataset and 
+was not further analyzed. 
+
+2. For replicate 3 of ∆mgl (well F5), there was an obvious and aberrant spike 
+in the optical density within the first 6 time points. I'm not sure what it is, but
+these points were dropped from the analysis, with the remainder of replicate 3
+being kept. 
+
 
 ### Growth Rate Inference
 The experiment appears to be successful in that we were able to measure steady-state
@@ -73,46 +86,40 @@ than a formal Bayesian analysis), we find the following growth rates:
 
 | **strain** | **growth rate, µ [per hr]** |
 |:--: |:--:|
-|WT | 1.053 ± 0.006 |
-|∆dpp | 1.12 ± 0.02 |
-|∆flh | 0.849 ± 0.008 | 
-|∆glt | 1.02 ± 0.01|
-|∆his | 1.12 ± 0.02|
-|∆mal | 1.092 ± 0.004|
-|∆mgl | 1.04 ± 0.01|
-|∆nmp | 1.05 ± 0.01 |
-|∆opp | 0.954 ± 0.008 |
-|∆pot | 1.098 ± 0.04 |
-|∆rbs | 1.09 ± 0.02 |
-
-The ∆flh KO is notably slower than in all other runs of this KO in the same 
-conditions, indictating something may be awry with this run. Similarly, the growth 
-rate of ∆his is also very fast compared to previous runs. 
+|WT | 1.080 ± 0.003 |
+|∆dpp | 1.143 ± 0.007 |
+|∆flh | 1.12 ± 0.02 | 
+|∆glt | 1.09 ± 0.02 |
+|∆his | 1.091 ± 0.004|
+|∆mal | 1.09 ± 0.02 |
+|∆mgl | 1.01 ± 0.03 |
+|∆nmp | 1.02 ± 0.01 |
+|∆opp | 0.962 ± 0.009 |
+|∆pot | 1.08 ± 0.01 |
+|∆rbs | 1.05 ± 0.01|
 
 
 ### Shape of profiles
 The profiles look normal, reasonable saturating optical densities and an evident 
-diauxic shift to eating secreted acetate. The saturating optical density for the 
-∆flh knockout is much lower than in other runs, which is suspect. Furthermore, 
-this run of ∆flh does not have the characteristic sudden drop in OD, as we see in 
-the ∆rbs and ∆opp runs.
+diauxic shift to eating secreted acetate. Again, there is 
+a drastic drop in the optical density for ∆flh and ∆rbs, with a smaller and les-obvious 
+drop for ∆opp.  
 
 ### Plots
 
 **Fits**
-![](output/2021-07-22_r1_SingleKO_glucose_fits.png)
+![](output/2021-07-23_r1_SingleKO_glucose_fits.png)
 
 *Growth Curves**
-![](output/2021-07-22_r1_SingleKO_glucose_raw_traces.png)
+![](output/2021-07-23_r1_SingleKO_glucose_raw_traces.png)
 
 ## Protocol 
 1.  Precultures were prepared by inoculating 3 mL of glucose minimal medium spiked 
 with 3 µL of LB with a single colony from a fresh (< 2 week old) plate.
 2. Preculture was allowed to grow at 37° C with aeration for 3 to 4 hours to an OD_600nm_ 
 of approximately 0.2 - 0.3. 
-3. Precultues were diluted either 1:20 (∆flh, ∆rbs, ∆opp, ∆mal, ∆pot, ∆mgl, WT) 
-or 1:100 (∆glt, ∆dpp, ∆nmp, ∆his) into fresh glucose minimal medium prewarmed to 37° C
-growth medium. 
+3. Precultues were diluted  1:20 into fresh glucose minimal medium. Note that 
+for this experimental run, the dilution medium was **not** prewarmed.  
 4. A fresh 96 well plate was filled with water in blank wells. The remaining wells 
 were filled with 200 µL of diluted and mixed cultures as appropriate and described in 
 the section "Plate Layout".

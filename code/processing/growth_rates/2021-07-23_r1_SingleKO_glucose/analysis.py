@@ -8,7 +8,7 @@ import scipy.stats
 colors, palette = futileprot.viz.altair_style()
 
 # Add metadata
-DATE = '2021-07-21'
+DATE = '2021-07-23'
 RUN_NO = 1
 STRAINS = 'SingleKO'
 MEDIUM = 'glucose'

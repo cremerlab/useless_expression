@@ -1,11 +1,14 @@
 ---
 status: >
-    Accepted 
+    Accepted
 description : >
-    Experiment appears to have been successful with no aberrant results. 
+    Data looks good. There's more variation in the technical replicability 
+    of the ∆rbs strain. Some points for other replicates in the exponential 
+    phase appear to have some "wiggle", but I think they should be sufficient 
+    for growth rate estimation in a hierarchical model. 
 ---
 
-# 2021-07-21 Single KO Glucose Growth Rate Determination
+# 2021-07-25 Single KO Glucose Growth Rate Determination
 
 ## Purpose
 This is an experiment measuring the rate of growth of single knockouts of 
@@ -71,45 +74,38 @@ than a formal Bayesian analysis), we find the following growth rates:
 
 | **strain** | **growth rate, µ [per hr]** |
 |:--: |:--:|
-|WT | 1.02 ± 0.01 |
-|∆dpp | 1.01 ± 0.01 |
-|∆flh | 1.04 ± 0.01 | 
-|∆glt | 0.987 ± 0.007 |
-|∆his | 1.02 ± 0.02 |
-|∆mal | 0.91 ± 0.01 |
-|∆mgl | 1.00 ± 0.01 |
-|∆nmp | 0.994 ± 0.004 |
-|∆opp | 0.937 ± 0.006 |
-|∆pot | 1.019 ± 0.005 |
-|∆rbs | 0.963 ± 0.009 |
-
-Again, ∆opp appears to have a slight growth rate defect compared to the 
-wildtype. Interestingly, compared to the experiment on 2021-07-20, the ∆mal
-KO has also grew considerably slower than in glucose.
-
+|WT | 1.036 ± 0.009 |
+|∆dpp | 1.1 ± 0.02|
+|∆flh | 1.08 ± 0.01| 
+|∆glt | 1.09 ± 0.01|
+|∆his | 1.042 ± 0.005|
+|∆mal | 1.057 ± 0.005|
+|∆mgl | 1.06 ± 0.01|
+|∆nmp | 1.070 ± 0.009 |
+|∆opp | 0.900 ± 0.008|
+|∆pot | 1.022 ± 0.006|
+|∆rbs | 1.09 ± 0.02|
 
 ### Shape of profiles
-As in the experiment on 2021-07-20, the full curves of the growth cycle are very
-interesting. For most of the strains, one can see the diauxic shift to the cells 
-eating their own secreted acetate. Perhaps more interestingly, one can see that 
-for ∆flh, ∆rbs, and ∆opp, there is a **massive** drop in the OD once they reach 
-saturation, with what appears to be no lag time at all. In future experiments, 
-it will be good to look at the cells during this point on the microscope
-
+The profiles look normal, reasonable saturating optical densities and an evident 
+diauxic shift to eating secreted acetate. There is more variability in the 
+drop in OD for the ∆flh mutant betweeen the technical replicates. For steady-state
+growth rate estimation, I don't think this is a problem. 
 
 ### Plots
-**Fits**
-![](output/2021-07-21_r1_SingleKO_glucose_fits.png)
 
-**Growth Curves**
-![](output/2021-07-21_r1_SingleKO_glucose_raw_traces.png)
+**Fits**
+![](output/2021-07-25_r1_SingleKO_glucose_fits.png)
+
+*Growth Curves**
+![](output/2021-07-25_r1_SingleKO_glucose_raw_traces.png)
 
 ## Protocol 
 1.  Precultures were prepared by inoculating 3 mL of glucose minimal medium spiked 
 with 3 µL of LB with a single colony from a fresh (< 2 week old) plate.
 2. Preculture was allowed to grow at 37° C with aeration for 3 to 4 hours to an OD_600nm_ 
 of approximately 0.2 - 0.3. 
-3. Precultues were diluted 1:20 into fresh glucose minimal medium prewarmed to 37° C
+3. Precultues were diluted  1:20 into fresh glucose minimal medium prewarmed to 37° C
 growth medium. 
 4. A fresh 96 well plate was filled with water in blank wells. The remaining wells 
 were filled with 200 µL of diluted and mixed cultures as appropriate and described in 
