@@ -65,6 +65,7 @@ for strain, wells in MAP.items():
 # Add information regarding date and growth medium
 melted['growth_medium'] = MEDIUM
 melted['date'] = DATE
+melted['run_number'] = RUN_NO
 
 # Convert time to elapsed time
 melted['time_sec'] = pd.to_timedelta(melted['Time'].values)
@@ -121,7 +122,7 @@ for g, d in measurement.groupby(['strain', 'replicate']):
 trunc = pd.concat(trunc, sort=False)
 trunc = trunc[['strain', 'elapsed_time_hr', 
              'od_600nm_subtracted', 'replicate', 'growth_medium', 
-             'date', 'identifier', 'class']]
+             'date', 'run_number', 'identifier', 'class']]
 trunc.rename(columns={'od_600nm_subtracted':'od_600nm',
                       'replicate':'technical_replicate'}, inplace=True)
 trunc.to_csv(f'./output/{DATE}_r{RUN_NO}_{STRAINS}_{MEDIUM}_exponential_phase.csv', index=False)

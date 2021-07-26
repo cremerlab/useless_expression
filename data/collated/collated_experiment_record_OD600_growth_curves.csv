@@ -1,0 +1,13 @@
+experiment,status,description
+2021-07-19_r1_WT_glucose,Rejected,"Experiment was an instrument test and not a formal experiment. 
+"
+2021-07-20_r1_SingleKO_glucose,Accepted,"Experiment appears to have been successful. It looks like the wild-type  strain is growing slightly faster than usual, though. 
+"
+2021-07-21_r1_SingleKO_glucose,Accepted,"Experiment appears to have been successful with no aberrant results. 
+"
+2021-07-22_r1_SingleKO_glucose,Accepted,"Experiment looks good, save for the growth rate of ∆flh, which is notably slower than in other experimental runs in the same conditions. The saturating  optical density is also lower for this mutant than in all other runs.
+"
+2021-07-23_r1_SingleKO_glucose,Accepted,"All data looks good. One replicate (r1 of ∆glt) was dropped and  due to contamination and another few points of ∆mgl r3 were dropped as obvious instrument error. 
+"
+2021-07-25_r1_SingleKO_glucose,Accepted,"Data looks good. There's more variation in the technical replicability  of the ∆rbs strain. Some points for other replicates in the exponential  phase appear to have some ""wiggle"", but I think they should be sufficient  for growth rate estimation in a hierarchical model. 
+"

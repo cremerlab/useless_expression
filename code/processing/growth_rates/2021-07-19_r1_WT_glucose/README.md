@@ -1,7 +1,7 @@
 ---
 status: >
     Rejected 
-reason: >
+description: >
     Experiment was an instrument test and not a formal experiment. 
 ---
 

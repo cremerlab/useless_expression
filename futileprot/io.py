@@ -148,7 +148,8 @@ def scrape_frontmatter(dirname, file='README.md'):
 
     # Scrape and return as desired.
     with open(filename) as f:
-        info, _ = frontmatter.parse(f.read())
+        info = frontmatter.load(f).metadata
+        info['status'] = info['status'].replace('\n', '').replace(' ', '')
     if 'status' not in info.keys():
         print(
             'Key `status` not found in metadata keys. Skipping {}'.format(dirname))
