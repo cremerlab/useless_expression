@@ -58,6 +58,6 @@ exp_phase = pd.concat(_exp_phase, sort=False)
 curves.to_csv('../../../data/collated/collated_OD600_growth_curves.csv', index=False)
 exp_phase.to_csv('../../../data/collated/collated_OD600_growth_curves_exponential_phase.csv', index=False)
 
-
+print('Collation of growth curve measuremenets is complete.')
 
 # %%

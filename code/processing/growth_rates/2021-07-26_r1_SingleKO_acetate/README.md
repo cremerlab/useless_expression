@@ -2,21 +2,24 @@
 status: >
     Accepted
 description : >
-    All data looks good with no reason to reject
+    Data looks okay with no obvious pathology. The steady-state phase seems 
+    to be "wiggly", albeit to a small degree. I will accept this with 
+    some consideration. REplicate 3 of the ∆dpp sample had to be dropped 
+    due to instrument error.
 ---
 
-# 2021-07-25 Single KO Glucose Growth Rate Determination
+# 2021-07-26 (Run 1) Single KO Acetate Growth Rate Determination
 
 ## Purpose
 This is an experiment measuring the rate of growth of single knockouts of 
-"useless" proteins in minimal medium supplemented with glucose.
+"useless" proteins in minimal medium supplemented with acetate.
 
 ## Materials
 
 ### Growth Media
 | **Label** | **Buffer Base** | **Carbon Source & Concentration** |
 |:--:|:--:|:--:|
-| glucose | N-C- + micronutrients | 10 mM glucose |
+| glucose | N-C- + micronutrients | 30 mM acetate |
 
 ### Strains 
 | **Label** | **Parent Strain**|  **Genotype** | **Location(s)**|
@@ -43,7 +46,7 @@ This is an experiment measuring the rate of growth of single knockouts of
 |Read Speed| Normal|
 | Read Time | 0m32s|
 | Total Interval | 7m32s |
-| Number of Measurements | 96 | 
+| Number of Measurements | 87 | 
 
 ### Plate Layout
 | **Wells** | **Label** | **Identifier** |
@@ -62,19 +65,6 @@ This is an experiment measuring the rate of growth of single knockouts of
 
 
 ## Notes & Results
-### Dropped Measurements
-There were two issues in this run of the plate reader, one that's my fault 
-and another was an instrument glitch, I think. 
-
-1. While setting up the plate, I accidentally added some ∆flh sample to the 
-∆glt replicate 1 well (C3). This replicate was dropped from the dataset and 
-was not further analyzed. 
-
-2. For replicate 3 of ∆mgl (well F5), there was an obvious and aberrant spike 
-in the optical density within the first 6 time points. I'm not sure what it is, but
-these points were dropped from the analysis, with the remainder of replicate 3
-being kept. 
-
 
 ### Growth Rate Inference
 The experiment appears to be successful in that we were able to measure steady-state
@@ -84,40 +74,37 @@ than a formal Bayesian analysis), we find the following growth rates:
 
 | **strain** | **growth rate, µ [per hr]** |
 |:--: |:--:|
-|WT | 1.036 ± 0.009|
-|∆dpp | 1.097 ± 0.020|
-|∆flh | 1.08 ± 0.01| 
-|∆glt | 1.09 ± 0.01|
-|∆his | 1.042 ± 0.005|
-|∆mal | 1.057 ± 0.005|
-|∆mgl | 1.06 ± 0.01|
-|∆nmp | 1.070 ± 0.009|
-|∆opp | 0.900 ± 0.008|
-|∆pot | 1.022 ± 0.006|
-|∆rbs | 1.09 ± 0.02|
-
+|WT | 0.525 ± 0.007 |
+|∆dpp | 0.563 ± 0.004 |
+|∆flh | 0.456 ± 0.004 | 
+|∆glt | 0.527 ± 0.004|
+|∆his | 0.538 ± 0.005 |
+|∆mal | 0.550 ± 0.004 |
+|∆mgl | 0.568 ± 0.005 |
+|∆nmp | 0.535 ± 0.004 |
+|∆opp | 0.550 ± 0.006 |
+|∆pot | 0.516 ± 0.005 |
+|∆rbs | 0.467 ± 0.004|
 
 ### Shape of profiles
-The profiles look normal, reasonable saturating optical densities and an evident 
-diauxic shift to eating secreted acetate. Again, there is 
-a drastic drop in the optical density for ∆flh and ∆rbs, with a smaller and les-obvious 
-drop for ∆opp.  
+The curves look normal and as expected. The growth is slow so I was not 
+able to capture much of the saturation phase. 
 
 ### Plots
 
 **Fits**
-![](output/2021-07-23_r1_SingleKO_glucose_fits.png)
+![](output/2021-07-26_r1_SingleKO_acetate_fits.png)
 
 *Growth Curves**
-![](output/2021-07-23_r1_SingleKO_glucose_raw_traces.png)
+![](output/2021-07-26_r1_SingleKO_acetate_raw_traces.png)
 
 ## Protocol 
-1.  Precultures were prepared by inoculating 3 mL of glucose minimal medium spiked 
-with 3 µL of LB with a single colony from a fresh (< 2 week old) plate.
-2. Preculture was allowed to grow at 37° C with aeration for 3 to 4 hours to an OD_600nm_ 
-of approximately 0.2 - 0.3. 
-3. Precultues were diluted  1:20 into fresh glucose minimal medium. Note that 
-for this experimental run, the dilution medium was **not** prewarmed.  
+1.  Seed cultures were prepared by inoculating 3 mL of LB with a single colony from a fresh (< 2 week old) plate.
+2. The LB culture was allowed to grow for 4.5 hours to saturation. 
+3. A preculture was prepared by diluting the seed culture 1:1000 into 
+prewarmed acetate minimal medium and allowed to grow for 11 hours at 37° C
+to an OD_600nm_ of ≈ 0.4.
+4. Precultues were diluted  1:20 into fresh acetate minimal medium prewarmed to 37° C.
 4. A fresh 96 well plate was filled with water in blank wells. The remaining wells 
 were filled with 200 µL of diluted and mixed cultures as appropriate and described in 
 the section "Plate Layout".

@@ -9,5 +9,9 @@ experiment,status,description
 "
 2021-07-23_r1_SingleKO_glucose,Accepted,"All data looks good. One replicate (r1 of ∆glt) was dropped and  due to contamination and another few points of ∆mgl r3 were dropped as obvious instrument error. 
 "
-2021-07-25_r1_SingleKO_glucose,Accepted,"Data looks good. There's more variation in the technical replicability  of the ∆rbs strain. Some points for other replicates in the exponential  phase appear to have some ""wiggle"", but I think they should be sufficient  for growth rate estimation in a hierarchical model. 
+2021-07-25_r1_SingleKO_glucose,Accepted,"All data looks good with no reason to reject
+"
+2021-07-26_r1_SingleKO_acetate,Accepted,"Data looks okay with no obvious pathology. The steady-state phase seems  to be ""wiggly"", albeit to a small degree. I will accept this with  some consideration. REplicate 3 of the ∆dpp sample had to be dropped  due to instrument error.
+"
+2021-07-26_r2_SingleKO_acetate,Accepted,"Data looks good. The ∆opp strain grew notably shorter than previously, but there is no clear reason not to think that it is legitimate.
 "
