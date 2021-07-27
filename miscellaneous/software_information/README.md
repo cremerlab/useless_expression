@@ -1,6 +1,9 @@
 ##`software_information`
 
-Just as knowing what chemicals, instruments, or samples were used, knowing the computing environment used for the analysis is vital to reproducibility. While there are many ways to enumerate the various versions of the software used, you should list here the exact software used including which particular version and other dependencies that are necessary to reproduce your results. An example can be seen below. 
+This project uses several software utilities as well as custom-written software 
+for theoretical exploration of the model, processing of experiments, and analysis 
+of experimental data. Below lists the major software types as well as the primary 
+computational environment used in this work.
 
 
 ### Computing Environment
@@ -13,9 +16,10 @@ Just as knowing what chemicals, instruments, or samples were used, knowing the c
 * **Cores**: 4
 * **Interpreter**: 64 Bit
 
+## Software
 
-## Required Software
-
-* Python:  v3.7
+* Python:  3.9
 * `numpy`: 1.11.2
 * `scipy`: 0.18.1
+* `bebi103-utils`: 0.17
+

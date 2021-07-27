@@ -18,6 +18,7 @@ buffer system. These are the final concentrations per batch of growth medium. A
 |NaCl | 43.1 mM |
 |Organic Acid or Sugar | Variable |
 |NH<sub>4</sub>Cl |  10 mM |
+| Micronutrients | Variable |
 
 ## Micronutrients
 Below is the final growth supporting concentrations of trace elements in all 
@@ -33,5 +34,16 @@ and diluted as necessary.
 |MnCl<sub>2</sub> | 4  | 
 |ZnSO<sub>4</sub> • 7H<sub>2</sub>O | 0.5 |
 
+## Carbon Concentrations
+For notational simplicity, the various growth media used in this work have 
+shorthand names, usually denoting the species or concentrations of different 
+carbon sources or inducer concentrations. Below lists the make up of each growth 
+medium used in this work. Note that "N-C-" corresponds to the N-C- buffer 
+base as described above.
 
-
+| **Growth Medium Shorthand** | **Growth Medium Composition** |
+|:--:|:--:|
+| glucose | N-C- + 10 mM glucose |
+| acetate | N-C- + 30 mM acetate | 
+| ga_preshift | N-C- + 10 mM glucose + 30 mM acetate |
+| ga_shift | N-C- + 0.6 mM glucosee + 30 mM acetate |
