@@ -2,16 +2,17 @@
 status: >
     Accepted
 description : >
-    Data looks good. The ∆opp strain grew notably slower than previously,
-    but there is no clear reason not to think that it is legitimate.
+    Data looks good. Replicate 3 of the ∆pot strain was dropped due to a higher 
+    initial OD and a long lag phase, making isolation of the exponential phase 
+    more difficult
 ---
 
-# 2021-07-26 (Run 2) Single KO Acetate Growth Rate Determination
+# 2021-07-27 (Run 1) Single KO Acetate Growth Rate Determination
 
 ## Purpose
 This is an experiment measuring the rate of growth of single knockouts of 
 "useless" proteins in minimal medium supplemented with acetate.
-ss
+
 ## Materials
 
 ### Growth Media
@@ -44,7 +45,7 @@ ss
 |Read Speed| Normal|
 | Read Time | 0m32s|
 | Total Interval | 7m32s |
-| Number of Measurements | 87 | 
+| Number of Measurements | 74 | 
 
 ### Plate Layout
 | **Wells** | **Label** | **Identifier** |
@@ -72,36 +73,39 @@ than a formal Bayesian analysis), we find the following growth rates:
 
 | **strain** | **growth rate, µ [per hr]** |
 |:--: |:--:|
-|WT | 0.549 ± 0.004|
-|∆dpp | 0.627 ± 0.006|
-|∆flh | 0.472 ± 0.003| 
-|∆glt | 0.56 ± 0.01|
-|∆his | 0.570 ± 0.002|
-|∆mal | 0.575 ± 0.005 |
-|∆mgl | 0.626 ± 0.008|
-|∆nmp | 0.545 ± 0.002|
-|∆opp | 0.249 ± 0.002|
-|∆pot | 0.538 ± 0.006 |
-|∆rbs | 0.473 ± 0.003|
+|WT | 0.541 ± 0.005|
+|∆dpp | 0.60 ± 0.01|
+|∆flh | 0.446 ± 0.004| 
+|∆glt | 0.657 ± 0.009|
+|∆his | 0.553 ± 0.004|
+|∆mal | 0.571 ± 0.006|
+|∆mgl | 0.627 ± 0.008 |
+|∆nmp | 0.574 ± 0.006 |
+|∆opp | 0.568 ± 0.005|
+|∆pot | 0.531 ± 0.008|
+|∆rbs | 0.466 ± 0.003|
 
 ### Shape of profiles
-The curves look normal and as expected, save for ∆opp which had a 
-remarkably slow growth rate. There is no reason to think that this is an 
-error until there are more replicates performed.
+The curves look normal and as expected. The growth is slow so I was not 
+able to capture much of the saturation phase. 
+
+One exception was replicate 3 of the ∆pot strain, which had a larger initial 
+optical density. This made thresholding by OD bounds to get the exponential phase
+more difficult, so this replicate was dropped.
 
 ### Plots
 
 **Fits**
-![](output/2021-07-26_r2_SingleKO_acetate_fits.png)
+![](output/2021-07-27_r1_SingleKO_acetate_fits.png)
 
 *Growth Curves**
-![](output/2021-07-26_r2_SingleKO_acetate_raw_traces.png)
+![](output/2021-07-27_r1_SingleKO_acetate_raw_traces.png)
 
 ## Protocol 
 1.  Seed cultures were prepared by inoculating 3 mL of LB with a single colony from a fresh (< 2 week old) plate.
 2. The LB culture was allowed to grow for 4.5 hours to saturation. 
-3. A preculture was prepared by diluting the seed culture 1:300 into 
-prewarmed acetate minimal medium and allowed to grow for 8 hours at 37° C
+3. A preculture was prepared by diluting the seed culture 1:1000 into 
+prewarmed acetate minimal medium and allowed to grow for 11 hours at 37° C
 to an OD_600nm_ of ≈ 0.4.
 4. Precultues were diluted  1:20 into fresh acetate minimal medium prewarmed to 37° C.
 4. A fresh 96 well plate was filled with water in blank wells. The remaining wells 

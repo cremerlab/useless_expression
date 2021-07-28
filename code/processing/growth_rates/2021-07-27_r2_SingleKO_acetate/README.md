@@ -2,11 +2,12 @@
 status: >
     Accepted
 description : >
-    Data looks good. The ∆opp strain grew notably slower than previously,
-    but there is no clear reason not to think that it is legitimate.
+    Data looks good. Replicate 1 of ∆rbs was dropped due to an obvious instrument 
+    error where there was a sudden largee drop in the OD, but growth 
+    continued as normal.
 ---
 
-# 2021-07-26 (Run 2) Single KO Acetate Growth Rate Determination
+# 2021-07-27 (Run 2) Single KO Acetate Growth Rate Determination
 
 ## Purpose
 This is an experiment measuring the rate of growth of single knockouts of 
@@ -44,7 +45,7 @@ ss
 |Read Speed| Normal|
 | Read Time | 0m32s|
 | Total Interval | 7m32s |
-| Number of Measurements | 87 | 
+| Number of Measurements | 96 | 
 
 ### Plate Layout
 | **Wells** | **Label** | **Identifier** |
@@ -72,30 +73,29 @@ than a formal Bayesian analysis), we find the following growth rates:
 
 | **strain** | **growth rate, µ [per hr]** |
 |:--: |:--:|
-|WT | 0.549 ± 0.004|
-|∆dpp | 0.627 ± 0.006|
-|∆flh | 0.472 ± 0.003| 
-|∆glt | 0.56 ± 0.01|
-|∆his | 0.570 ± 0.002|
-|∆mal | 0.575 ± 0.005 |
-|∆mgl | 0.626 ± 0.008|
-|∆nmp | 0.545 ± 0.002|
-|∆opp | 0.249 ± 0.002|
-|∆pot | 0.538 ± 0.006 |
-|∆rbs | 0.473 ± 0.003|
+|WT | 0.55 ± 0.01|
+|∆dpp | 0.608 ± 0.007|
+|∆flh | 0.452 ± 0.004| 
+|∆glt | 0.66 ± 0.001|
+|∆his | 0.560 ± 0.006|
+|∆mal | 0.594 ± 0.007|
+|∆mgl | 0.604 ± 0.008|
+|∆nmp | 0.592 ± 0.005|
+|∆opp | 0.535 ± 0.007|
+|∆pot | 0.560 ± 0.006|
+|∆rbs | 0.457 ± 0.005|
 
 ### Shape of profiles
-The curves look normal and as expected, save for ∆opp which had a 
-remarkably slow growth rate. There is no reason to think that this is an 
-error until there are more replicates performed.
+The curves look normal and as expected, save for replicate 1 of ∆rbs which 
+had an instrument error. 
 
 ### Plots
 
 **Fits**
-![](output/2021-07-26_r2_SingleKO_acetate_fits.png)
+![](output/2021-07-27_r2_SingleKO_acetate_fits.png)
 
 *Growth Curves**
-![](output/2021-07-26_r2_SingleKO_acetate_raw_traces.png)
+![](output/2021-07-27_r2_SingleKO_acetate_raw_traces.png)
 
 ## Protocol 
 1.  Seed cultures were prepared by inoculating 3 mL of LB with a single colony from a fresh (< 2 week old) plate.
