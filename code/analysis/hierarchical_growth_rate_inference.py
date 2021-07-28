@@ -2,6 +2,7 @@
 import numpy as np 
 import pandas as pd 
 import cmdstanpy
+import bebi103
 import arviz 
 
 # Load the collated data
@@ -24,9 +25,13 @@ for g, d in data.groupby(['growth_medium', 'strain']):
     data_dict = {'J':d['biol_rep'].max(),
                  'K':d['tech_rep'].max(),
                  'N':len(d),
-                 'biol_rep_idx':_d['biol_rep'].values,
-                 'tech_rep_idx':d['tech_rep'].values.astype(int),
+                 'J_idx':_d['biol_rep'].values,
+                 'K_idx':d['tech_rep'].values.astype(int),
                  'elapsed_time':d['elapsed_time_hr'].values.astype(float),
                  'optical_density':d['od_600nm'].values.astype(float)}
     # Perform the sampling
+# %%
+samples = model.sample(data_dict, iter_sampling=5000, adapt_delta=0.9)
+samples = arviz.from_cmdstanpy(samples)
+bebi103.stan.check_all_diagnostics(samples)
 # %%
