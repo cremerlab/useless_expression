@@ -13,5 +13,11 @@ experiment,status,description
 "
 2021-07-26_r1_SingleKO_acetate,Accepted,"Data looks okay with no obvious pathology. The steady-state phase seems  to be ""wiggly"", albeit to a small degree. I will accept this with  some consideration. REplicate 3 of the ∆dpp sample had to be dropped  due to instrument error.
 "
-2021-07-26_r2_SingleKO_acetate,Accepted,"Data looks good. The ∆opp strain grew notably shorter than previously, but there is no clear reason not to think that it is legitimate.
+2021-07-26_r2_SingleKO_acetate,Accepted,"Data looks good. The growth of ∆opp was very noticeably reduced ocmpared to  all other replicates, so it was dropped from this data set. 
+"
+2021-07-27_r1_SingleKO_acetate,Accepted,"Data looks good. Replicate 3 of the ∆pot strain was dropped due to a higher  initial OD and a long lag phase, making isolation of the exponential phase  more difficult
+"
+2021-07-27_r2_SingleKO_acetate,Accepted,"Data looks good. Replicate 1 of ∆rbs was dropped due to an obvious instrument  error where there was a sudden largee drop in the OD, but growth  continued as normal.
+"
+2021-07-28_r1_SingleKO_acetate,Accepted,"Data looks good and there is nothing of note in this experiment. 
 "
