@@ -2,16 +2,16 @@
 status: >
     Accepted
 description : >
-    Data looks good. The growth of ∆opp was very noticeably reduced ocmpared to 
-    all other replicates, so it was dropped from this data set. 
+    Data looks good and there is nothing of note in this experiment. 
+
 ---
 
-# 2021-07-26 (Run 2) Single KO Acetate Growth Rate Determination
+# 2021-07-28 (Run 1) Single KO Acetate Growth Rate Determination
 
 ## Purpose
 This is an experiment measuring the rate of growth of single knockouts of 
 "useless" proteins in minimal medium supplemented with acetate.
-ss
+
 ## Materials
 
 ### Growth Media
@@ -44,7 +44,7 @@ ss
 |Read Speed| Normal|
 | Read Time | 0m32s|
 | Total Interval | 7m32s |
-| Number of Measurements | 87 | 
+| Number of Measurements | 74 | 
 
 ### Plate Layout
 | **Wells** | **Label** | **Identifier** |
@@ -72,35 +72,34 @@ than a formal Bayesian analysis), we find the following growth rates:
 
 | **strain** | **growth rate, µ [per hr]** |
 |:--: |:--:|
-|WT | 0.549 ± 0.004|
-|∆dpp | 0.627 ± 0.006|
-|∆flh | 0.472 ± 0.003| 
-|∆glt | 0.56 ± 0.01|
-|∆his | 0.570 ± 0.002|
-|∆mal | 0.575 ± 0.005 |
-|∆mgl | 0.626 ± 0.008|
-|∆nmp | 0.545 ± 0.002|
-|∆pot | 0.538 ± 0.006 |
-|∆rbs | 0.473 ± 0.003|
+|WT | 0.519 ± 0.004|
+|∆dpp | 0.577 ± 0.005|
+|∆flh | 0.469 ± 0.007| 
+|∆glt | 0.673 ± 0.009|
+|∆his | 0.537 ± 0.006 |
+|∆mal | 0.543 ± 0.003 |
+|∆mgl | 0.595 ± 0.010|
+|∆nmp | 0.471 ± 0.003 |
+|∆opp | 0.557 ± 0.003|
+|∆pot | 0.508 ± 0.005|
+|∆rbs | 0.468 ± 0.003|
 
 ### Shape of profiles
-The curves look normal and as expected, save for ∆opp which had a 
-remarkably slow growth rate. Due to its drastic difference with other replicates,
-it was dropped from this data set entirely. 
+The curves look normal and as expected. There is nothing of note in this experiment
 
 ### Plots
 
 **Fits**
-![](output/2021-07-26_r2_SingleKO_acetate_fits.png)
+![](output/2021-07-28_r1_SingleKO_acetate_fits.png)
 
 *Growth Curves**
-![](output/2021-07-26_r2_SingleKO_acetate_raw_traces.png)
+![](output/2021-07-28_r1_SingleKO_acetate_raw_traces.png)
 
 ## Protocol 
 1.  Seed cultures were prepared by inoculating 3 mL of LB with a single colony from a fresh (< 2 week old) plate.
 2. The LB culture was allowed to grow for 4.5 hours to saturation. 
-3. A preculture was prepared by diluting the seed culture 1:300 into 
-prewarmed acetate minimal medium and allowed to grow for 8 hours at 37° C
+3. A preculture was prepared by diluting the seed culture 1:1000 into 
+prewarmed acetate minimal medium and allowed to grow for 11 hours at 37° C
 to an OD_600nm_ of ≈ 0.4.
 4. Precultues were diluted  1:20 into fresh acetate minimal medium prewarmed to 37° C.
 4. A fresh 96 well plate was filled with water in blank wells. The remaining wells 

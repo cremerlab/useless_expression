@@ -1,9 +1,3 @@
-"""
-Note:
-
-* The entirety of ∆opp was dropped from this data set due to an obvious problem
-in the sample resulting in remarkably slow growth compared to all other replicates.
-"""
 #%%
 import numpy as np 
 import pandas as pd 
@@ -14,10 +8,10 @@ import altair_saver
 colors, palette = futileprot.viz.altair_style()
 
 # Define experiment parameters
-DATE = '2021-07-26'
+DATE = '2021-07-28'
 STRAINS = 'SingleKO'
 MEDIUM = 'acetate'
-RUN_NO = 2
+RUN_NO = 1
 ROOT = '../../../..'
 SKIPROWS = 28
 OD_BOUNDS = [0.03, 0.18]
@@ -85,8 +79,15 @@ strain_shorthand, _, strain_class = futileprot.io.standardize_strains(measuremen
 measurement['strain'] = strain_shorthand
 measurement['class'] = strain_class
 
-# Drop ∆opp
-measurement = measurement[measurement['strain'] != '∆opp']
+# # Drop replicate 1 of the delta pot strain
+# measurements = []
+# for g, d in measurement.groupby(['strain', 'replicate']):
+#     if (g[0] == '∆pot') & (g[1]==3):
+#         continue
+#     else:
+#         measurements.append(d)
+
+# measurement = pd.concat(measurements, sort=False)
 # Save to disk
 measurement.to_csv(f'./output/{DATE}_r{RUN_NO}_{STRAINS}_{MEDIUM}_measurements.csv', index=False)
 
