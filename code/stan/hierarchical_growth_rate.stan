@@ -1,69 +1,46 @@
-// Hierarchical Model for Inference of Steady-State Growth Rate
-// ============================================================
-// Author: Griffin Chure
-// License: MIT
-//
-
-data { 
+data {
     // Dimensional parameters
-    int<lower=1> J; // Number of biological replicates
-    int<lower=1> K; // Number of technical replicates
-    int<lower=1> N; // Number of measurements
+    int<lower=1> J;
+    int<lower=1> N;
+    int<lower=1, upper=J> idx[N];
 
-    // Identification vectors
-    int<lower=1, upper=J> J_idx[K];
-    int<lower=1, upper=K> K_idx[N]; 
-
-    // Measured parameters
+    // Observed parameters
     vector<lower=0>[N] elapsed_time;
     vector<lower=0>[N] optical_density;
 }
-
-transformed data {
-    // Compute the log transform of the optical density to transform this to a 
-    // linear model
+transformed data { 
     vector[N] log_optical_density = log(optical_density);
 }
-
 parameters {
-    // level-0 parameters
-    real growth_rate_mu_l0;
-    real<lower=0> growth_rate_sigma;
+    //Level 0
+    real<lower=0> theta;
+    real<lower=0> tau;
 
-    // Level-1  (biological replicate) parameters
-    vector[J] growth_rate_mu_l1_tilde;
-    vector<lower=0>[K] od_init_mu;
-    vector<lower=0>[K] od_init_sigma;
+    // Level 1
+    // vector[J] theta_1_tilde;
+    vector<lower=0> [J] theta_1;
 
-    // Level-2 (technical replicate) parameters
-    vector[K] growth_rate_tilde;
-    real<lower=0> homosced_sigma;
-    vector<lower=0>[K] od_init;
-
+    // Singular
+    real<lower=0> sigma;
+    vector<lower=0>[J] od_init;
 }
 
-transformed parameters {
-    vector<lower=0>[J] growth_rate_mu_l1 = growth_rate_mu_l0 + growth_rate_sigma * growth_rate_mu_l1_tilde;
-    vector<lower=0>[K] growth_rate = growth_rate_mu_l1[J_idx] + growth_rate_sigma * growth_rate_tilde;
-}
+// transformed parameters { 
+    // vector[J] theta_1 = theta + tau * theta_1_tilde;
+// }
 
-model {
-    vector[N] mu;
+model { 
+    vector[N] mu = theta_1[idx] .* elapsed_time + od_init[idx];
 
-    // Level-0 prior
-    growth_rate_mu_l0 ~ normal(0, 1);
-    growth_rate_sigma ~ normal(0, 0.5);
+    // Priors
+    theta ~ normal(0, 0.5);
+    tau ~ normal(0, 0.1);
+    // theta_1_tilde ~ std_normal();
+    theta_1 ~ normal(theta, tau);
+    sigma ~ normal(0, 10); 
+    od_init ~ normal(0, 0.1);
 
-    // Level-1 priors
-    growth_rate_mu_l1_tilde ~ normal(0, 1);  
-    od_init_mu ~ normal(0, 0.1);
-    od_init_sigma ~ normal(0, 0.1);
+    // Likelihood
+    log_optical_density ~ normal(mu, sigma);
 
-    // Level-2 priors
-    growth_rate ~ normal(growth_rate_mu_l1[J_idx], growth_rate_sigma);
-    od_init ~ normal(od_init_mu, od_init_sigma);
-    homosced_sigma ~ normal(0, 0.01); 
-
-    // Compute the theoretical mean
-    log_optical_density ~ normal(growth_rate[K_idx] .* elapsed_time + od_init[K_idx], homosced_sigma);
 }
