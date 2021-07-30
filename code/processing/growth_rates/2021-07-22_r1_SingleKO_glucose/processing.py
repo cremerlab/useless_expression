@@ -1,3 +1,8 @@
+"""
+Note:
+
+This script drops the replicate for ∆flh
+"""
 #%%
 import numpy as np 
 import pandas as pd 
@@ -78,6 +83,10 @@ measurement.rename(columns={'strain':'identifier'}, inplace=True)
 strain_shorthand, _, strain_class = futileprot.io.standardize_strains(measurement['identifier'].values)
 measurement['strain'] = strain_shorthand
 measurement['class'] = strain_class
+
+
+# Drop ∆flh
+measurement = measurement[measurement['strain'] != '∆flh']
 
 # Save to disk
 measurement.to_csv(f'./output/{DATE}_r{RUN_NO}_{STRAINS}_{MEDIUM}_measurements.csv', index=False)

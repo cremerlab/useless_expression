@@ -109,5 +109,50 @@ def steady_state_growth_rate_log_posterior(params, time, od, neg=True):
     log_post = prefactor * (lp + like)
     return log_post
     
+def compute_percentiles(values, 
+                        percs={95:[2.5, 97.5],
+                               75: [12.5, 87.5],
+                               50: [25, 75],
+                               25: [37.5, 62.5],
+                               5: [45, 55]}):
+    """
+    Computes the percentiles of a given array.
+
+    Parameters 
+    -----------
+    values: 1d numpy array 
+        The values of which the percentiles will be computed.
+    percs: dict, optional
+        The desired percentiles as a dictionary with the percentile name 
+        and the upper and lower bounds. Default computes the 95th, 75th, 50th, 
+        25th, and 5th percentiles of the data
+
+    Returns
+    ------- 
+    perc_dict : dict
+        A dictionary of the percentiles with the lower and upper bounds.
+    """
+    perc_dict = {}
+    for k, v in percs.items():
+        perc_dict[k] = np.percentile(values, v)
+    return perc_dict
         
-        
+# def compute_growth_curve_fit(samples, 
+#                              time_range, 
+#                              params={'mu':'mu', 
+#                                     'od_init':'od_init'},
+#                              percs =                             ):
+#     mu = samples[params['mu']].values
+#     od_init = samples[params['od_init']].values
+#     perc_dfs = []
+#     for k, v in percs.items():     
+#         cred_region = np.zeros((2, len(time_range)))
+#         for i, t in enumerate(time_range):
+#             _fit = od_init * np.exp(mu * t)
+#             cred_region[:, i] = np.percentile(_fit, (v[0], v[1]))
+#         _df = pd.DataFrame(cred_region.T, columns=['low', 'high'])
+#         _df['time'] = time_range
+#         _df['percentile'] = k
+#         perc_dfs.append(_df)
+#     df = pd.concat(perc_dfs, sort=False)
+#     return df
