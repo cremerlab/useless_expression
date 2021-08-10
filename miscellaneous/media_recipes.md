@@ -9,15 +9,22 @@ Below is the growth-supporting concentrations of the components of the basic N-C
 buffer system. These are the final concentrations per batch of growth medium. A 
 4X stock is typically prepared and stored at room temperature and diluted as needed. 
 
-| **Chemical Species** | **Concentration** | 
+| **Chemical Species** | **Final Concentration** | 
 |:--:|:--:|
 |K<sub>2</sub>SO<sub>4</sub> | 5.7 mM | 
 |K<sub>2</sub>HPO<sub>4</sub> | 77.5 mM |
 |KH<sub>2</sub>PO<sub>4</sub> | 34.5 mM |
 |MgSO<sub>4</sub> | 400 µM |
 |NaCl | 43.1 mM |
-|Organic Acid or Sugar | Variable |
+
+
+To make a functional N-C- growth medium, the following components are added to 
+the noted concentration:
+
+|**Chemical Species** | **Final Concentration**|
+|:--:|:--:|
 |NH<sub>4</sub>Cl |  10 mM |
+|Organic Acid or Sugar | Variable |
 | Micronutrients | Variable |
 
 ## Micronutrients
