@@ -34,12 +34,12 @@ and diluted as necessary.
 
 |**Chemical Species** | **Concentration µM** |
 | :--: | :--: |
-| (NH<sub>4</sub>)<sub>6</sub>Mo<sub>7</sub>O<sub>24</sub> • 4H<sub>2</sub>O | 0.15 |
+| (NH<sub>4</sub>)<sub>6</sub>Mo<sub>7</sub>O<sub>24</sub>| 0.15 |
 |H<sub>3</sub>BO<sub>3</sub> | 20 | 
 |CoCl<sub>2</sub> | 1.5 |
 |CuSO<sub>4</sub> | 0.5 |
 |MnCl<sub>2</sub> | 4  | 
-|ZnSO<sub>4</sub> • 7H<sub>2</sub>O | 0.5 |
+|ZnSO<sub>4</sub>| 0.5 |
 
 ## Carbon Concentrations
 For notational simplicity, the various growth media used in this work have 
