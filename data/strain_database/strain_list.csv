@@ -50,3 +50,8 @@ GC100,GE428,∆dpp ∆rbs,Escherichia coli,NCM3722,dppABCDF::attL-FRT-attR rbsDA
 GC101,GE429,∆pot ∆nmp,Escherichia coli,NCM3722,potFGHI::attL-FRT-attR nmpC::attL-FRT-attR,Double KO
 GC102,GE430,∆nmp ∆opp,Escherichia coli,NCM3722,nmpC::attL-FRT-attR oppABCDF::attL-FRT-attR,Double KO
 GC103,GE431,∆pot ∆mgl,Escherichia coli,NCM3722,potFGHI::attL-FRT-attR mglBAC::attL-FRT-attR,Double KO
+GC106,GE438,∆flh ∆rbs,Escherichia coli,NCM3722,flhDC::attL-FRT-attR rbsDACB::attL-FRT-atttR,Double KO
+GC107,GE439,∆mal ∆dpp,Escherichia coli,NCM3722,malGEFKM + lamB::attL-FRT-attR dppABCDF::attL-FRT-attR,Double KO
+GC108,GE440,∆mal ∆pot,Escherichia coli,NCM3722,malGEFKM + lamB::attL-FRT-attR potFGHI::attL-FRT-attR,Double KO
+GC109,GE441,∆his ∆opp,Escherichia coli,NCM3722,hisJQMP::attL-FRT-attR oppABCDF::attL-FRT-attR,Double KO
+GC110,GE442,∆mal ∆his,Escherichia coli,NCM3722,malGEFKM + lamB::attL-FRT-attR ∆hisJQMP::attL-FRT-attR,Double KO

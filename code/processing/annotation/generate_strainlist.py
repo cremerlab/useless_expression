@@ -1,6 +1,5 @@
 #%%
 import pickle 
-import numpy 
 import pandas as pd
 
 # Load the strain list
