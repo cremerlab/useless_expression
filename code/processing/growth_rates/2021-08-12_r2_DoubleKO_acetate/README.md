@@ -5,7 +5,7 @@ description : >
     Experiment is ongoing 
 ---
 
-# 2021-08-12 (Run 1) Double KO Acetate Growth Rate Determination
+# 2021-08-12 (Run 2) Double KO Acetate Growth Rate Determination
 
 ## Purpose
 This is an experiment measuring the rate of growth of the first suite of 
@@ -85,16 +85,16 @@ double KOs of  "useless" proteins in minimal medium supplemented with acetate.
 ### Plots
 
 **Fits**
-![](output/2021-08-12_r1_DoubleKO_acetate_fits.png)
+![](output/2021-08-12_r2_DoubleKO_acetate_fits.png)
 
 *Growth Curves**
-![](output/2021-08-12_r1_DoubleKO_acetate_raw_traces.png)
+![](output/2021-08-12_r2_DoubleKO_acetate_raw_traces.png)
 
 ## Protocol 
 1.  Seed cultures were prepared by inoculating 3 mL of LB with a single colony from a fresh (< 2 week old) plate.
 2. The LB culture was allowed to grow for 4.5 hours to saturation. 
-3. A preculture was prepared by diluting the seed culture 1:1000 into 
-prewarmed acetate minimal medium and allowed to grow for 12 hours at 37° C
+3. A preculture was prepared by diluting the seed culture 1:300 into 
+prewarmed acetate minimal medium and allowed to grow for 8 hours at 37° C
 to an OD_600nm_ of ≈ 0.4.
 4. Precultues were diluted  1:20 into fresh acetate minimal medium prewarmed to 37° C.
 4. A fresh 96 well plate was filled with water in blank wells. The remaining wells 

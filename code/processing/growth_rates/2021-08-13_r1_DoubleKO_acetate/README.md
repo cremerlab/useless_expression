@@ -85,10 +85,10 @@ double KOs of  "useless" proteins in minimal medium supplemented with acetate.
 ### Plots
 
 **Fits**
-![](output/2021-08-12_r1_DoubleKO_acetate_fits.png)
+![](output/2021-08-11_r1_DoubleKO_acetate_fits.png)
 
 *Growth Curves**
-![](output/2021-08-12_r1_DoubleKO_acetate_raw_traces.png)
+![](output/2021-08-11_r1_DoubleKO_acetate_raw_traces.png)
 
 ## Protocol 
 1.  Seed cultures were prepared by inoculating 3 mL of LB with a single colony from a fresh (< 2 week old) plate.
