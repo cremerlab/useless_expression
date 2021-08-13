@@ -9,7 +9,7 @@ colors, palette = futileprot.viz.altair_style()
 
 # Add metadata
 DATE = '2021-08-12'
-RUN_NO = 1
+RUN_NO = 2
 STRAINS = 'DoubleKO'
 MEDIUM = 'acetate'
 

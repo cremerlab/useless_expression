@@ -21,3 +21,13 @@ experiment,status,description
 "
 2021-07-28_r1_SingleKO_acetate,Accepted,"Data looks good and there is nothing of note in this experiment. 
 "
+2021-08-06_r1_WT_water_comparison_acetate,Rejected,"Experiment was to identify a potential contamination in the water source and is not a final experimental measurement. 
+"
+2021-08-11_r1_WT_proline,Rejected,"Experiment was exploratory in nature and should not be used for further analysis
+"
+2021-08-12_r1_DoubleKO_acetate,Accepted,"No reason to doubt the data and the experiment proceeded without issue.  
+"
+2021-08-12_r2_DoubleKO_acetate,Accepted,"Data looks good and nothing is suspect 
+"
+2021-08-13_r1_DoubleKO_acetate,Rejected,"Experiment is ongoing 
+"

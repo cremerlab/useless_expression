@@ -13,7 +13,7 @@ STRAINS = 'DoubleKO'
 MEDIUM = 'acetate'
 RUN_NO = 2
 ROOT = '../../../..'
-SKIPROWS = 28
+SKIPROWS = 36 
 OD_BOUNDS = [0.03, 0.18]
 
 # Add the well identifiers

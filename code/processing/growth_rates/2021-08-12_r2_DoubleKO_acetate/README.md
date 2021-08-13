@@ -1,8 +1,8 @@
 ---
 status: >
-    Rejected 
+    Accepted
 description : >
-    Experiment is ongoing 
+    Data looks good and nothing is suspect 
 ---
 
 # 2021-08-12 (Run 2) Double KO Acetate Growth Rate Determination
@@ -62,22 +62,25 @@ double KOs of  "useless" proteins in minimal medium supplemented with acetate.
 
 
 ## Notes & Results
+The experiment was successful with no obvious problems. It's interesting again 
+that the double mutatnts have growth rates in acetate that are pretty comparable
+to the wildtype, though more replicates will be needed. 
 
 ### Growth Rate Inference
 
 | **strain** | **growth rate, µ [per hr]** |
 |:--: |:--:|
-|∆rbs ∆glt | |
-|∆flh ∆glt | |
-|∆dpp ∆glt | | 
-|∆opp ∆glt | |
-|∆mgl ∆glt | |
-|∆nmp ∆glt | |
-|∆his ∆glt | |
-|∆pot ∆glt | |
-|∆mal ∆glt | |
-|∆flh ∆rbs | |
-|∆dpp ∆rbs | |
+|∆rbs ∆glt | 0.483 ± 0.005|
+|∆flh ∆glt | 0.498 ± 0.003 |
+|∆dpp ∆glt | 0.570 ± 0.005| 
+|∆opp ∆glt | 0.565 ± 0.003|
+|∆mgl ∆glt | 0.510 ± 0.005|
+|∆nmp ∆glt | 0.534 ± 0.002|
+|∆his ∆glt | 0.540 ± 0.003|
+|∆pot ∆glt | 0.528 ± 0.003|
+|∆mal ∆glt | 0.567 ± 0.004|
+|∆flh ∆rbs | 0.473 ± 0.004|
+|∆dpp ∆rbs | 0.469 ± 0.004|
 
 ### Shape of profiles
 
