@@ -24,7 +24,7 @@ This is an experiment to compare different water sources and micronutrient conce
 ### Growth Media
 | **Label** | **Buffer Base** | **Carbon Source & Concentration** |
 |:--:|:--:|:--:|
-| glucose | N-C- +/- micronutrients | 30 mM acetate |
+| acetate | N-C- +/- micronutrients | 30 mM acetate |
 
 ### Strains 
 | **Label** | **Parent Strain**|  **Genotype** | **Location(s)**|

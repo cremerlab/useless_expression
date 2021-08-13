@@ -19,7 +19,7 @@ This is an experiment measuring the rate of growth of single knockouts of
 ### Growth Media
 | **Label** | **Buffer Base** | **Carbon Source & Concentration** |
 |:--:|:--:|:--:|
-| glucose | N-C- + micronutrients | 30 mM acetate |
+| acetate | N-C- + micronutrients | 30 mM acetate |
 
 ### Strains 
 | **Label** | **Parent Strain**|  **Genotype** | **Location(s)**|

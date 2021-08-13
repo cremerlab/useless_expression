@@ -16,7 +16,7 @@ double KOs of  "useless" proteins in minimal medium supplemented with acetate.
 ### Growth Media
 | **Label** | **Buffer Base** | **Carbon Source & Concentration** |
 |:--:|:--:|:--:|
-| glucose | N-C- + micronutrients | 30 mM acetate |
+| acetate | N-C- + micronutrients | 30 mM acetate |
 
 ### Strains 
 | **Label** | **Parent Strain**|  **Genotype** | **Location(s)**|
