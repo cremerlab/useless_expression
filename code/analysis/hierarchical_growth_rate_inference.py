@@ -44,7 +44,7 @@ samples = pd.concat(sample_dfs, sort=False)
 # #%%
 # samples.to_csv('../../data/mcmc/growth_rate_inference_samples_total.csv', index=False)
 # %%
-# Downsample and save just the growth rate parameters
+#  Save just the growth rate parameters
 mu_dfs = []
 for g, d in tqdm.tqdm(samples.groupby(['growth_medium', 'strain']), 
                      desc='Saving hyperparameter samples'):

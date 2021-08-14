@@ -1,11 +1,11 @@
 ---
 status: >
-    Accepted
+    Rejected
 description : >
-    Experiment went without any problems and the data looks good. 
+    Experiment is still ongoing 
 ---
 
-# 2021-08-13 (Run 1) Double KO Acetate Growth Rate Determination
+# 2021-08-14 (Run 1) Double KO Acetate Growth Rate Determination
 
 ## Purpose
 This is an experiment measuring the rate of growth of the first suite of 
@@ -62,24 +62,24 @@ double KOs of  "useless" proteins in minimal medium supplemented with acetate.
 
 
 ## Notes & Results
+The precultures were slightly more dense than they have usually been. Thus, 
+when setting up the precultures, I did a 1:100 dilution instead of 1:20.
 
 ### Growth Rate Inference
 
 | **strain** | **growth rate, µ [per hr]** |
 |:--: |:--:|
-|∆rbs ∆glt | 0.447 ± 0.003 |
-|∆flh ∆glt | 0.495 ± 0.004 |
-|∆dpp ∆glt | 0.592 ± 0.005 | 
-|∆opp ∆glt | 0.563 ± 0.007 |
-|∆mgl ∆glt | 0.566 ± 0.004 |
-|∆nmp ∆glt | 0.531 ± 0.005 |
-|∆his ∆glt | 0.529 ± 0.004 |
-|∆pot ∆glt | 0.541 ± 0.003 |
-|∆mal ∆glt | 0.578 ± 0.009 |
-|∆flh ∆rbs | 0.493 ± 0.003 |
-|∆dpp ∆rbs | 0.474 ± 0.002 |
-
-### Shape of profiles
+|∆rbs ∆glt |  |
+|∆flh ∆glt |  |
+|∆dpp ∆glt |  | 
+|∆opp ∆glt |  |
+|∆mgl ∆glt |  |
+|∆nmp ∆glt |  |
+|∆his ∆glt |  |
+|∆pot ∆glt |  |
+|∆mal ∆glt |  |
+|∆flh ∆rbs |  |
+|∆dpp ∆rbs |  |
 
 
 ### Plots
@@ -97,8 +97,8 @@ double KOs of  "useless" proteins in minimal medium supplemented with acetate.
 2. The LB culture was allowed to grow for 4.5 hours to saturation. 
 3. A preculture was prepared by diluting the seed culture 1:1000 into 
 prewarmed acetate minimal medium and allowed to grow for 12 hours at 37° C
-to an OD_600nm_ of ≈ 0.4.
-4. Precultues were diluted  1:20 into fresh acetate minimal medium prewarmed to 37° C.
+to an OD_600nm_ of ≈ 0.7.
+4. Precultues were diluted  1:100 into fresh acetate minimal medium prewarmed to 37° C.
 4. A fresh 96 well plate was filled with water in blank wells. The remaining wells 
 were filled with 200 µL of diluted and mixed cultures as appropriate and described in 
 the section "Plate Layout".

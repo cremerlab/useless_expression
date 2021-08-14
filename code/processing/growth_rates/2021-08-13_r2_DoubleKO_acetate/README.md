@@ -2,10 +2,11 @@
 status: >
     Accepted
 description : >
-    Experiment went without any problems and the data looks good. 
+    Data looks good. There is some jitter in points for ∆flh ∆rbs, but not enough 
+    to do anything about.  
 ---
 
-# 2021-08-13 (Run 1) Double KO Acetate Growth Rate Determination
+# 2021-08-13 (Run 2) Double KO Acetate Growth Rate Determination
 
 ## Purpose
 This is an experiment measuring the rate of growth of the first suite of 
@@ -43,7 +44,7 @@ double KOs of  "useless" proteins in minimal medium supplemented with acetate.
 |Read Speed| Normal|
 | Read Time | 0m32s|
 | Total Interval | 7m32s |
-| Number of Measurements | 91 | 
+| Number of Measurements | 96 | 
 
 ### Plate Layout
 | **Wells** | **Label** | **Identifier** |
@@ -67,19 +68,17 @@ double KOs of  "useless" proteins in minimal medium supplemented with acetate.
 
 | **strain** | **growth rate, µ [per hr]** |
 |:--: |:--:|
-|∆rbs ∆glt | 0.447 ± 0.003 |
-|∆flh ∆glt | 0.495 ± 0.004 |
-|∆dpp ∆glt | 0.592 ± 0.005 | 
-|∆opp ∆glt | 0.563 ± 0.007 |
-|∆mgl ∆glt | 0.566 ± 0.004 |
-|∆nmp ∆glt | 0.531 ± 0.005 |
-|∆his ∆glt | 0.529 ± 0.004 |
-|∆pot ∆glt | 0.541 ± 0.003 |
-|∆mal ∆glt | 0.578 ± 0.009 |
-|∆flh ∆rbs | 0.493 ± 0.003 |
-|∆dpp ∆rbs | 0.474 ± 0.002 |
-
-### Shape of profiles
+|∆rbs ∆glt | 0.483 ± 0.005 |
+|∆flh ∆glt | 0.479 ± 0.005 |
+|∆dpp ∆glt | 0.589 ± 0.002 | 
+|∆opp ∆glt | 0.558 ± 0.008 |
+|∆mgl ∆glt | 0.561 ± 0.006 |
+|∆nmp ∆glt | 0.535 ± 0.005 |
+|∆his ∆glt | 0.534 ± 0.006 |
+|∆pot ∆glt | 0.517 ± 0.008 |
+|∆mal ∆glt | 0.577 ± 0.005 |
+|∆flh ∆rbs | 0.377 ± 0.004 |
+|∆dpp ∆rbs | 0.473 ± º.004 |
 
 
 ### Plots
@@ -95,8 +94,8 @@ double KOs of  "useless" proteins in minimal medium supplemented with acetate.
 ## Protocol 
 1.  Seed cultures were prepared by inoculating 3 mL of LB with a single colony from a fresh (< 2 week old) plate.
 2. The LB culture was allowed to grow for 4.5 hours to saturation. 
-3. A preculture was prepared by diluting the seed culture 1:1000 into 
-prewarmed acetate minimal medium and allowed to grow for 12 hours at 37° C
+3. A preculture was prepared by diluting the seed culture 1:300 into 
+prewarmed acetate minimal medium and allowed to grow for 8 hours at 37° C
 to an OD_600nm_ of ≈ 0.4.
 4. Precultues were diluted  1:20 into fresh acetate minimal medium prewarmed to 37° C.
 4. A fresh 96 well plate was filled with water in blank wells. The remaining wells 
