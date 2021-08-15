@@ -1,8 +1,9 @@
 ---
 status: >
-    Rejected
+    Accepted
 description : >
-    Experiment is still ongoing 
+    The experiment looks fine. There may be a problem with one of the replicates of the ∆his ∆glt run, but it's not severe enough to discount the run altogether as 
+    the growthr ates are mostly comparable with previous runs.   
 ---
 
 # 2021-08-14 (Run 1) Double KO Acetate Growth Rate Determination
@@ -43,7 +44,7 @@ double KOs of  "useless" proteins in minimal medium supplemented with acetate.
 |Read Speed| Normal|
 | Read Time | 0m32s|
 | Total Interval | 7m32s |
-| Number of Measurements | 91 | 
+| Number of Measurements | 96 | 
 
 ### Plate Layout
 | **Wells** | **Label** | **Identifier** |
@@ -69,28 +70,28 @@ when setting up the precultures, I did a 1:100 dilution instead of 1:20.
 
 | **strain** | **growth rate, µ [per hr]** |
 |:--: |:--:|
-|∆rbs ∆glt |  |
-|∆flh ∆glt |  |
-|∆dpp ∆glt |  | 
-|∆opp ∆glt |  |
-|∆mgl ∆glt |  |
-|∆nmp ∆glt |  |
-|∆his ∆glt |  |
-|∆pot ∆glt |  |
-|∆mal ∆glt |  |
-|∆flh ∆rbs |  |
-|∆dpp ∆rbs |  |
+|∆rbs ∆glt | 0.477 ± 0.004 |
+|∆flh ∆glt | 0.449 ± 0.005|
+|∆dpp ∆glt | 0.615 ± 0.005 | 
+|∆opp ∆glt | 0.60 ± 0.01 |
+|∆mgl ∆glt | 0.588 ± 0.006 |
+|∆nmp ∆glt | 0.603 ± 0.008|
+|∆his ∆glt | 0.57 ± 0.02 |
+|∆pot ∆glt | 0.593 ± 0.006 |
+|∆mal ∆glt | 0.588 ± 0.006 |
+|∆flh ∆rbs | 0.445 ± 0.004 |
+|∆dpp ∆rbs | 0.448 ± 0.004 |
 
 
 ### Plots
 
 **Fits**
 
-![](output/2021-08-13_r1_DoubleKO_acetate_fits.png)
+![](output/2021-08-14_r1_DoubleKO_acetate_fits.png)
 
 **Growth Curves**
 
-![](output/2021-08-13_r1_DoubleKO_acetate_raw_traces.png)
+![](output/2021-08-14_r1_DoubleKO_acetate_raw_traces.png)
 
 ## Protocol 
 1.  Seed cultures were prepared by inoculating 3 mL of LB with a single colony from a fresh (< 2 week old) plate.
