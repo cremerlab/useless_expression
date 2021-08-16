@@ -16,7 +16,34 @@ data = data.groupby(['growth_medium', 'date', 'run_number',
 
 #%%
 # Compile the model
-model = cmdstanpy.CmdStanModel(stan_file='../stan/one_layer_hierarchical_growth_rate.stan')
+model = cmdstanpy.CmdStanModel(stan_file='../stan/hierarchical_growth_rate.stan')
+
+
+#%%
+# Assign the various identifiers
+data['unique_idx'] = data.groupby(['strain', 'growth_medium']).ngroup() + 1 
+data['replicate_idx'] = data.groupby(['strain', 'growth_medium', 
+                                      'date', 'run_number']).ngroup() + 1
+unique_idx = data.groupby(['strain', 'growth_medium', 
+                            'date', 'run_number']
+                        ).mean().reset_index()['unique_idx'].values.astype(int)
+replicate_idx = data['replicate_idx'].values.astype(int)
+#%%
+# Set up the data dictionary
+data_dict = {'J':data['unique_idx'].max(),
+             'K': data['replicate_idx'].max(),
+             'N': len(data),
+             'unique_idx': unique_idx,
+             'replicate_idx': replicate_idx,
+             'elapsed_time': data['elapsed_time_hr'].values.astype(float),
+             'optical_density': data['od_600nm'].values.astype(float)}
+
+
+# Sample the model
+samples = model.sample(data=data_dict, iter_sampling=500)
+
+
+
 
 # %%
 # Iterate through each strain and growth medium to perform the inference.

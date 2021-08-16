@@ -33,5 +33,5 @@ experiment,status,description
 "
 2021-08-13_r2_DoubleKO_acetate,Accepted,"Data looks good. There is some jitter in points for ∆flh ∆rbs, but not enough  to do anything about.  
 "
-2021-08-14_r1_DoubleKO_acetate,Rejected,"Experiment is still ongoing 
+2021-08-14_r1_DoubleKO_acetate,Accepted,"The experiment looks fine. There may be a problem with one of the replicates of the ∆his ∆glt run, but it's not severe enough to discount the run altogether as  the growthr ates are mostly comparable with previous runs.   
 "
