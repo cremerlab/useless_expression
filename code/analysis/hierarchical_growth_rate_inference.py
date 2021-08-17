@@ -41,9 +41,10 @@ data_dict = {'J':data['unique_idx'].max(),
              'optical_density': data['od_600nm'].values.astype(float)}
 
 # Sample the model all at once
-samples = model.sample(data=data_dict, iter_sampling=1000, iter_warmup=500, 
-                       threads_per_chain=48, chains=10, parallel_chains=10,
-                       adapt_delta=0.9)
+samples = model.sample(data=data_dict, adapt_delta=0.99) 
+                    #, iter_warmup=500, 
+                    #    threads_per_chain=48, chains=10, parallel_chains=10,
+                    #    adapt_delta=0.9)
 
 #%%
 samples = arviz.from_cmdstanpy(samples)
