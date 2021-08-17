@@ -12,4 +12,5 @@
 *.pyc
 *.egg-info*
 *.hpp
+*.pyc
 data/mcmc/*samples*.csv

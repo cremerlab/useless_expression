@@ -15,11 +15,13 @@ data = data.groupby(['growth_medium', 'date', 'run_number',
                      'strain', 'elapsed_time_hr']).mean().reset_index()
 
 #%%
+
 # Compile the model
 model = cmdstanpy.CmdStanModel(stan_file='../stan/hierarchical_growth_rate.stan')
 
 
 #%%
+
 # Assign the various identifiers
 data['unique_idx'] = data.groupby(['strain', 'growth_medium']).ngroup() + 1 
 data['replicate_idx'] = data.groupby(['strain', 'growth_medium', 
@@ -39,10 +41,14 @@ data_dict = {'J':data['unique_idx'].max(),
              'optical_density': data['od_600nm'].values.astype(float)}
 
 
-# Sample the model
-samples = model.sample(data=data_dict, iter_sampling=500)
+# Sample the model=0, 
+samples = model.sample(data=data_dict, iter_sampling=1000, iter_warmup=500, 
+                       threads_per_chain=48, chains=10, parallel_chains=10,
+                       adapt_delta=0.99)
 
-
+#%%
+samples = arviz.from_cmdstanpy(samples)
+bebi103.stan.check_all_diagnostics(samples) 
 
 
 # %%
