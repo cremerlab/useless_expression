@@ -35,3 +35,5 @@ experiment,status,description
 "
 2021-08-14_r1_DoubleKO_acetate,Accepted,"The experiment looks fine. There may be a problem with one of the replicates of the ∆his ∆glt run, but it's not severe enough to discount the run altogether as  the growthr ates are mostly comparable with previous runs.   
 "
+2021-08-16_r1_DoubleKO_acetate,Accepted,"Data looks good, save for replicate 1 of ∆opp ∆rbs which had an obvious  instrument error. This replicate was dropped from the analysis
+"
