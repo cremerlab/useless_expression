@@ -1,3 +1,7 @@
+"""
+Note:
+* This script drops well G4 from analysis do to errant blank readings
+"""
 #%%
 import numpy as np 
 import pandas as pd 
@@ -62,6 +66,8 @@ melted['elapsed_time_hr'] = (melted['time_sec'] - melted['time_sec'].min())/3600
 # Drop unnecessary Time columns
 melted.drop(columns=['Time', 'time_sec'], inplace=True)
 
+# Remove blank well G4
+melted = melted[melted['well']!='G4']
 
 # Reformat blank value as average eentry per time
 measurement = []

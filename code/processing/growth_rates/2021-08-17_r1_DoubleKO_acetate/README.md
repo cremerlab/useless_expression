@@ -62,7 +62,9 @@ double KOs of  "useless" proteins in minimal medium supplemented with acetate.
 
 
 ## Notes & Results
-
+There was a problem with the blank measurements for well G4, which was dropped 
+from analysis. Some particulate matter was in that well, throwing off the OD 
+readings.  
 
 
 ### Growth Rate Inference
