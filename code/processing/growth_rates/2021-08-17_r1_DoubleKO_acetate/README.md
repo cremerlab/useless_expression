@@ -98,8 +98,8 @@ readings.
 ## Protocol 
 1.  Seed cultures were prepared by inoculating 3 mL of LB with a single colony from a fresh (< 2 week old) plate.
 2. The LB culture was allowed to grow for 4.5 hours to saturation. 
-3. A preculture was prepared by diluting the seed culture 1:300 into 
-prewarmed acetate minimal medium and allowed to grow for 8 hours at 37° C
+3. A preculture was prepared by diluting the seed culture 1:1000 into 
+prewarmed acetate minimal medium and allowed to grow for 12 hours at 37° C
 to an OD_600nm_ of ≈ 0.7.
 4. Precultues were diluted  1:100 into fresh acetate minimal medium prewarmed to 37° C.
 4. A fresh 96 well plate was filled with water in blank wells. The remaining wells 
