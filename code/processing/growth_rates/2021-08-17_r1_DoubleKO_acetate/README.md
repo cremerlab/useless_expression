@@ -1,8 +1,9 @@
 ---
 status: >
-    Rejected 
+    Accepted
 description : >
-    Experiment is ongoing
+    Experiment looks good without any hiccups that matter for the growth rate
+    inference. 
 ---
 
 # 2021-08-17 (Run 1) Double KO Acetate Growth Rate Determination
@@ -71,17 +72,17 @@ readings.
 
 | **strain** | **growth rate, µ [per hr]** |
 |:--: |:--:|
-|∆opp ∆rbs| |
-|∆mgl ∆rbs| |
-|∆nmp ∆flh| | 
-|∆mgl ∆flh| |
-|∆nmp ∆rbs| |
-|∆his ∆rbs| |
-|∆pot ∆rbs| |
-|∆mal ∆rbs| |   
-|∆opp ∆flh| |
-|∆dpp ∆flh| |
-|∆his ∆flh| |
+|∆opp ∆rbs| 0.485 ± 0.005|
+|∆mgl ∆rbs| 0.498 ± 0.005|
+|∆nmp ∆flh| 0.472 ± 0.005| 
+|∆mgl ∆flh| 0.456 ± 0.003 |
+|∆nmp ∆rbs| 0.470 ± 0.005|
+|∆his ∆rbs| 0.445 ± 0.004|
+|∆pot ∆rbs| 0.453 ± 0.004|
+|∆mal ∆rbs| 0.454 ± 0.004|   
+|∆opp ∆flh| 0.445 ± 0.004|
+|∆dpp ∆flh| 0.453 ± 0.003|
+|∆his ∆flh| 0.448 ± 0.002|
 
 
 ### Plots
