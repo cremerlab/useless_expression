@@ -2,12 +2,10 @@
 status: >
     Accepted
 description : >
-    Data looks good, save for replicate 1 of ∆opp ∆rbs which had an obvious 
-    instrument error. This replicate was dropped from the analysis
- 
+    Experiment went as normal and data looks good.
 ---
 
-# 2021-08-16 (Run 1) Double KO Acetate Growth Rate Determination
+# 2021-08-18 (Run 1) Double KO Acetate Growth Rate Determination
 
 ## Purpose
 This is an experiment measuring the rate of growth of the first suite of 
@@ -45,7 +43,7 @@ double KOs of  "useless" proteins in minimal medium supplemented with acetate.
 |Read Speed| Normal|
 | Read Time | 0m32s|
 | Total Interval | 7m32s |
-| Number of Measurements | 84 | 
+| Number of Measurements |  | 
 
 ### Plate Layout
 | **Wells** | **Label** | **Identifier** |
@@ -65,41 +63,38 @@ double KOs of  "useless" proteins in minimal medium supplemented with acetate.
 
 ## Notes & Results
 
-There was an obvious instrumental error for replicate 1 of the ∆opp ∆rbs 
-sample, which was dropped from analysis. 
-
 ### Growth Rate Inference
 
 | **strain** | **growth rate, µ [per hr]** |
 |:--: |:--:|
-|∆opp ∆rbs| 0.476 ± 0.005|
-|∆mgl ∆rbs| 0.488 ± 0.005|
-|∆nmp ∆flh| 0.492 ± 0.003| 
-|∆mgl ∆flh| 0.446 ± 0.004|
-|∆nmp ∆rbs| 0.502 ± 0.004|
-|∆his ∆rbs| 0.469 ± 0.004|
-|∆pot ∆rbs| 0.444 ± 0.005|
-|∆mal ∆rbs| 0.459 ± 0.003|   
-|∆opp ∆flh| 0.463 ± 0.004|
-|∆dpp ∆flh| 0.449 ± 0.005|
-|∆his ∆flh| 0.454 ± 0.004|
+|∆opp ∆rbs| 0.497 ± 0.003 |   
+|∆mgl ∆rbs| 0.430 ± 0.003|
+|∆nmp ∆flh| 0.498 ± 0.004| 
+|∆mgl ∆flh| 0.462 ± 0.005|
+|∆nmp ∆rbs| 0.497 ± 0.005|
+|∆his ∆rbs| 0.482 ± 0.004|
+|∆pot ∆rbs| 0.467 ± 0.004|
+|∆mal ∆rbs| 0.469 ± 0.003|   
+|∆opp ∆flh| 0.453 ± 0.004|
+|∆dpp ∆flh| 0.468 ± 0.004|
+|∆his ∆flh| 0.456 ± 0.003|
 
 
 ### Plots
 
 **Fits**
 
-![](output/2021-08-17_r1_DoubleKO_acetate_fits.png)
+![](output/2021-08-18_r1_DoubleKO_acetate_fits.png)
 
 **Growth Curves**
 
-![](output/2021-08-17_r1_DoubleKO_acetate_raw_traces.png)
+![](output/2021-08-18_r1_DoubleKO_acetate_raw_traces.png)
 
 ## Protocol 
 1.  Seed cultures were prepared by inoculating 3 mL of LB with a single colony from a fresh (< 2 week old) plate.
 2. The LB culture was allowed to grow for 4.5 hours to saturation. 
-3. A preculture was prepared by diluting the seed culture 1:300 into 
-prewarmed acetate minimal medium and allowed to grow for 8 hours at 37° C
+3. A preculture was prepared by diluting the seed culture 1:1000 into 
+prewarmed acetate minimal medium and allowed to grow for 12 hours at 37° C
 to an OD_600nm_ of ≈ 0.5.
 4. Precultues were diluted  1:20 into fresh acetate minimal medium prewarmed to 37° C.
 4. A fresh 96 well plate was filled with water in blank wells. The remaining wells 

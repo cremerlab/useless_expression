@@ -1,13 +1,11 @@
 ---
 status: >
-    Accepted
+    Rejected
 description : >
-    Data looks good, save for replicate 1 of ∆opp ∆rbs which had an obvious 
-    instrument error. This replicate was dropped from the analysis
- 
+    Experiment is ongoing. 
 ---
 
-# 2021-08-16 (Run 1) Double KO Acetate Growth Rate Determination
+# 2021-08-18 (Run 2) Double KO Acetate Growth Rate Determination
 
 ## Purpose
 This is an experiment measuring the rate of growth of the first suite of 
@@ -45,7 +43,7 @@ double KOs of  "useless" proteins in minimal medium supplemented with acetate.
 |Read Speed| Normal|
 | Read Time | 0m32s|
 | Total Interval | 7m32s |
-| Number of Measurements | 84 | 
+| Number of Measurements |  | 
 
 ### Plate Layout
 | **Wells** | **Label** | **Identifier** |
@@ -65,35 +63,33 @@ double KOs of  "useless" proteins in minimal medium supplemented with acetate.
 
 ## Notes & Results
 
-There was an obvious instrumental error for replicate 1 of the ∆opp ∆rbs 
-sample, which was dropped from analysis. 
 
 ### Growth Rate Inference
 
 | **strain** | **growth rate, µ [per hr]** |
 |:--: |:--:|
-|∆opp ∆rbs| 0.476 ± 0.005|
-|∆mgl ∆rbs| 0.488 ± 0.005|
-|∆nmp ∆flh| 0.492 ± 0.003| 
-|∆mgl ∆flh| 0.446 ± 0.004|
-|∆nmp ∆rbs| 0.502 ± 0.004|
-|∆his ∆rbs| 0.469 ± 0.004|
-|∆pot ∆rbs| 0.444 ± 0.005|
-|∆mal ∆rbs| 0.459 ± 0.003|   
-|∆opp ∆flh| 0.463 ± 0.004|
-|∆dpp ∆flh| 0.449 ± 0.005|
-|∆his ∆flh| 0.454 ± 0.004|
+|∆opp ∆rbs| |
+|∆mgl ∆rbs| |
+|∆nmp ∆flh| | 
+|∆mgl ∆flh| |
+|∆nmp ∆rbs| |
+|∆his ∆rbs| |
+|∆pot ∆rbs| |
+|∆mal ∆rbs| |   
+|∆opp ∆flh| |
+|∆dpp ∆flh| |
+|∆his ∆flh| |
 
 
 ### Plots
 
 **Fits**
 
-![](output/2021-08-17_r1_DoubleKO_acetate_fits.png)
+![](output/2021-08-17_r2_DoubleKO_acetate_fits.png)
 
 **Growth Curves**
 
-![](output/2021-08-17_r1_DoubleKO_acetate_raw_traces.png)
+![](output/2021-08-17_r2_DoubleKO_acetate_raw_traces.png)
 
 ## Protocol 
 1.  Seed cultures were prepared by inoculating 3 mL of LB with a single colony from a fresh (< 2 week old) plate.

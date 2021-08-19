@@ -97,7 +97,7 @@ There's nothing of note with this experiment and it should be accepted outright.
 3. A preculture was prepared by diluting the seed culture 1:300 into 
 prewarmed acetate minimal medium and allowed to grow for 8 hours at 37° C
 to an OD_600nm_ of ≈ 0.7.
-4. Precultues were diluted  1:100 into fresh acetate minimal medium prewarmed to 37° C.
+4. Precultues were diluted  1:20 into fresh acetate minimal medium prewarmed to 37° C.
 4. A fresh 96 well plate was filled with water in blank wells. The remaining wells 
 were filled with 200 µL of diluted and mixed cultures as appropriate and described in 
 the section "Plate Layout".
