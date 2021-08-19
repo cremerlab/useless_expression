@@ -41,3 +41,9 @@ experiment,status,description
 "
 2021-08-17_r2_DoubleKO_acetate,Accepted,"Data looks good and there's no reason not to accept the data.
 "
+2021-08-18_r1_DoubleKO_acetate,Accepted,"Experiment went as normal and data looks good.
+"
+2021-08-18_r2_DoubleKO_acetate,Rejected,"Experiment is ongoing. 
+"
+2021-08-19_r1_DoubleKO_acetate,Rejected,"Experiment is ongoing. 
+"
