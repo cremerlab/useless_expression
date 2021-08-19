@@ -68,8 +68,8 @@ for g, d in tqdm.tqdm(data.groupby(['growth_medium', 'strain', 'class']),
                  'N':len(d),
                  'idx': d['biol_rep'].values,
                  'elapsed_time':d['elapsed_time_hr'].values.astype(float),
-                 'optical_density':d['od_600nm'].values.astype(float)}  
-    samples = model.sample(data=data_dict, iter_sampling=3000, adapt_delta=0.999)
+                 'optical_density':d['od_600nm'].values.astype(float)} 
+    samples = model.sample(data=data_dict, iter_warmup=800, adapt_delta=0.999)
     samples = arviz.from_cmdstanpy(samples)
     bebi103.stan.check_all_diagnostics(samples) 
     samples = samples.posterior.to_dataframe().reset_index()
@@ -86,7 +86,9 @@ samples = pd.concat(sample_dfs, sort=False)
 mu_dfs = []
 for g, d in tqdm.tqdm(samples.groupby(['growth_medium', 'strain', 'class']), 
                      desc='Saving hyperparameter samples'):
-    melted = d.melt('draw')
+    melted = d.melt(['draw', 'chain'])
+    melted.drop_duplicates(subset=['draw', 'chain', 'variable', 'value'], 
+                           inplace=True)
     mu_df = pd.DataFrame(melted[melted['variable']=='mu']['value'].values.T, 
                          columns=['mu'])
     mu_df['growth_medium'] = g[0]
@@ -96,6 +98,8 @@ for g, d in tqdm.tqdm(samples.groupby(['growth_medium', 'strain', 'class']),
 
 #%%
 mu_df = pd.concat(mu_dfs, sort=False)
+
+#%%
 mu_df.to_csv('../../data/mcmc/growth_rate_inference_hyperparameter_samples.csv')
 
 #%%
