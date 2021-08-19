@@ -11,20 +11,23 @@ colors, palette = futileprot.viz.altair_style()
 DATE = '2021-08-18'
 STRAINS = 'DoubleKO'
 MEDIUM = 'acetate'
-RUN_NO = 1
+RUN_NO = 2
 ROOT = '../../../..'
 SKIPROWS = 36 
 OD_BOUNDS = [0.03, 0.15]
 
 # Add the well identifiers
-MAP = {'GC086': ['C3', 'D3', 'E3'],
-       'GC094': ['C4', 'D4', 'E4'],
-       'GC077': ['C5', 'D5', 'E5'],
-       'GC083': ['C6', 'D6', 'E6'],
-       'GC095': ['C7', 'D7', 'E7'],
-       'GC080': ['C9', 'D9', 'E9'],
-       'GC107': ['C10', 'D10' ,'E10']}
-
+MAP = {'GC064': ['C3', 'D3', 'E3'],
+       'GC079': ['C4', 'D4', 'E4'],
+       'GC099': ['C5', 'D5', 'E5'],
+       'GC082': ['C6', 'D6', 'E6'],
+       'GC072': ['C7', 'D7', 'E7'],
+       'GC066': ['C8', 'D8', 'E8'],
+       'GC090': ['C9', 'D9', 'E9'],
+       'GC085': ['C10', 'D10' ,'E10'],
+       'GC067': ['F3', 'F4', 'F5'],
+       'GC071': ['F6', 'F7', 'F8'],
+       'GC068': ['F9', 'F10', 'F11']} 
 
 # Generate a list of all valid wells
 wells = [f'{letter}{number}' for letter in ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H'] for number in np.arange(1,13)]

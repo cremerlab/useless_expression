@@ -22,9 +22,12 @@ MAP = {'GC086': ['C3', 'D3', 'E3'],
        'GC077': ['C5', 'D5', 'E5'],
        'GC083': ['C6', 'D6', 'E6'],
        'GC095': ['C7', 'D7', 'E7'],
+       'GC081': ['C8', 'D8', 'E8'],
        'GC080': ['C9', 'D9', 'E9'],
-       'GC107': ['C10', 'D10' ,'E10']}
-
+       'GC107': ['C10', 'D10' ,'E10'],
+       'GC102': ['F3', 'F4', 'F5'],
+       'GC076': ['F6', 'F7', 'F8'],
+       'GC109': ['F9', 'F10', 'F11']} 
 
 # Generate a list of all valid wells
 wells = [f'{letter}{number}' for letter in ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H'] for number in np.arange(1,13)]
