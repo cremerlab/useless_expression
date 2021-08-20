@@ -45,7 +45,9 @@ experiment,status,description
 "
 2021-08-18_r2_DoubleKO_acetate,Accepted,"Experiment looks good and proceeded as expected.
 "
-2021-08-19_r1_DoubleKO_acetate,Rejected,"Experiment is ongoing. 
+2021-08-19_r1_DoubleKO_acetate,Accepted,"Data for measured samples looks good. Need to remeasure 4 of cultures.
 "
-2021-08-19_r2_DoubleKO_acetate,Rejected,"Experiment is ongoing. 
+2021-08-19_r2_DoubleKO_acetate,Accepted,"Data looks good. Growth rate for ∆his ∆dpp is very, very slow, indicating some  serious growth deficiency.
+"
+2021-08-20_r1_DoubleKO_acetate,Rejected,"Experiment is ongoing.
 "
