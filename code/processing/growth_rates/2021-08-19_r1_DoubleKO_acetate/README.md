@@ -1,8 +1,8 @@
 ---
 status: >
-    Rejected
+    Accepted
 description : >
-    Experiment is ongoing. 
+    Data for measured samples looks good. Need to remeasure 4 of cultures.
 ---
 
 # 2021-08-19 (Run 1) Double KO Acetate Growth Rate Determination
@@ -43,7 +43,7 @@ double KOs of  "useless" proteins in minimal medium supplemented with acetate.
 |Read Speed| Normal|
 | Read Time | 0m32s|
 | Total Interval | 7m32s |
-| Number of Measurements | | 
+| Number of Measurements | 80 |
 
 ### Plate Layout
 | **Wells** | **Label** | **Identifier** |
@@ -67,14 +67,14 @@ these particular strains.
 
 | **strain** | **growth rate, µ [per hr]** |
 |:--: |:--:|
-|∆mal ∆flh| |
-|∆pot ∆flh| |
-|∆nmp ∆dpp| | 
-|∆opp ∆dpp| |
-|∆pot ∆dpp| |
+|∆mal ∆flh| 0.44 ± 0.02|
+|∆pot ∆flh| 0.442 ± 0.004|
+|∆nmp ∆dpp| 0.530 ± 0.003|
+|∆opp ∆dpp| 0.524 ± 0.005|
+|∆pot ∆dpp| 0.516 ± 0.005|
 |∆his ∆dpp| Not Determined|
-|∆mgl ∆dpp| |
-|∆mal ∆dpp| |   
+|∆mgl ∆dpp| 0.513 ± 0.004|
+|∆mal ∆dpp| 0.463 ± 0.001|   
 |∆nmp ∆opp| Not Determined |
 |∆mgl ∆opp| Not Determined |
 |∆his ∆opp| Not Determined|

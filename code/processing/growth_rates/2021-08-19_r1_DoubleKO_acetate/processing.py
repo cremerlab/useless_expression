@@ -8,7 +8,7 @@ import altair_saver
 colors, palette = futileprot.viz.altair_style()
 
 # Define experiment parameters
-DATE = '2021-08-18'
+DATE = '2021-08-19'
 STRAINS = 'DoubleKO'
 MEDIUM = 'acetate'
 RUN_NO = 1
@@ -18,7 +18,7 @@ OD_BOUNDS = [0.03, 0.15]
 
 # Add the well identifiers
 MAP = {'GC086': ['C3', 'D3', 'E3'],
-       'GC094': ['C4', 'D4', 'E4'],
+       'GC093': ['C4', 'D4', 'E4'],
        'GC077': ['C5', 'D5', 'E5'],
        'GC083': ['C6', 'D6', 'E6'],
        'GC095': ['C7', 'D7', 'E7'],

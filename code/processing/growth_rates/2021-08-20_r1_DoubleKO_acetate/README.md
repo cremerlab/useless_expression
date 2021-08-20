@@ -1,12 +1,11 @@
 ---
 status: >
-   Accepted 
+   Rejected
 description : >
-   Data looks good. Growth rate for ∆his ∆dpp is very, very slow, indicating some 
-   serious growth deficiency.
+   Experiment is ongoing.
 ---
 
-# 2021-08-19 (Run 2) Double KO Acetate Growth Rate Determination
+# 2021-08-20 (Run 1) Double KO Acetate Growth Rate Determination
 
 ## Purpose
 This is an experiment measuring the rate of growth of the first suite of 
@@ -63,46 +62,45 @@ double KOs of  "useless" proteins in minimal medium supplemented with acetate.
 
 
 ## Notes & Results
-The growth of the ∆his ∆opp strain is very, very slow. This was noticeable 
-in the OD of the precultures, leading to me doing a 1:5 dilution of the preculture
-rather than a 1:20 as I normally do. The OD of ∆nmp ∆opp, ∆mgl ∆opp, and ∆his ∆opp 
-was also slightly lower than the other cultures. However, the growth rates seemed 
-comparable for these strains, so perhaps the lag time is different
+The OD of the precultures for ∆his ∆dpp, ∆nmp ∆opp, ∆mgl ∆opp, and ∆his ∆opp
+was very, very low. I directly added the preculture to the plate for growth rate 
+measurement.
 
 ### Growth Rate Inference
 
 | **strain** | **growth rate, µ [per hr]** |
 |:--: |:--:|
-|∆mal ∆flh| 0.485 ± 0.004|
-|∆pot ∆flh| 0.453 ± 0.003|
-|∆nmp ∆dpp| 0.536 ± 0.005| 
-|∆opp ∆dpp| 0.553 ± 0.003|
-|∆pot ∆dpp| 0.519 ± 0.003|
-|∆his ∆dpp| 0.064 ± 0.009|
-|∆mgl ∆dpp| 0.44 ± 0.01|
-|∆mal ∆dpp| 0.466 ± 0.003|   
-|∆nmp ∆opp| 0.476 ± 0.004|
-|∆mgl ∆opp| 0.491 ± 0.005|
-|∆his ∆opp| 0.483 ± 0.005|
+|∆mal ∆flh| |
+|∆pot ∆flh| |
+|∆nmp ∆dpp| | 
+|∆opp ∆dpp| |
+|∆pot ∆dpp| |
+|∆his ∆dpp| |
+|∆mgl ∆dpp| |
+|∆mal ∆dpp| |   
+|∆nmp ∆opp| |  
+|∆mgl ∆opp| |
+|∆his ∆opp| |
 
 
 ### Plots
 
 **Fits**
 
-![](output/2021-08-19_r2_DoubleKO_acetate_fits.png)
+![](output/2021-08-20_r1_DoubleKO_acetate_fits.png)
 
 **Growth Curves**
 
-![](output/2021-08-19_r2_DoubleKO_acetate_raw_traces.png)
+![](output/2021-08-20_r1_DoubleKO_acetate_raw_traces.png)
 
 ## Protocol 
 1.  Seed cultures were prepared by inoculating 3 mL of LB with a single colony from a fresh (< 2 week old) plate.
 2. The LB culture was allowed to grow for 4.5 hours to saturation. 
-3. A preculture was prepared by diluting the seed culture 1:300 into 
+3. A preculture was prepared by diluting the seed culture 1:1000 into 
 prewarmed acetate minimal medium and allowed to grow for 8 hours at 37° C
 to an OD_600nm_ of ≈ 0.5.
-4. Precultues were diluted  1:20 into fresh acetate minimal medium prewarmed to 37° C. The sample of ∆his ∆dpp was diluted 1:5 due to a very low OD.
+4. Precultues were diluted  1:20 into fresh acetate minimal medium prewarmed to 37° C. The samples of ∆his ∆dpp, 
+∆nmp ∆oppp, ∆mgl ∆opp, and ∆his ∆opp were *not* diluted. 
 4. A fresh 96 well plate was filled with water in blank wells. The remaining wells 
 were filled with 200 µL of diluted and mixed cultures as appropriate and described in 
 the section "Plate Layout".

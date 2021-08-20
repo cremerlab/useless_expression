@@ -8,10 +8,10 @@ import altair_saver
 colors, palette = futileprot.viz.altair_style()
 
 # Define experiment parameters
-DATE = '2021-08-19'
+DATE = '2021-08-20'
 STRAINS = 'DoubleKO'
 MEDIUM = 'acetate'
-RUN_NO = 2
+RUN_NO = 1
 ROOT = '../../../..'
 SKIPROWS = 36 
 OD_BOUNDS = [0.03, 0.15]
