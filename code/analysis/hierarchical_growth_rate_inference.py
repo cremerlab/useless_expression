@@ -22,38 +22,6 @@ data['class'] = classes
 # Compile the model
 model = cmdstanpy.CmdStanModel(stan_file='../stan/one_layer_hierarchical_growth_rate.stan')
 
-
-#%%
-
-# # Assign the various identifiers
-# data['unique_idx'] = data.groupby(['strain', 'growth_medium']).ngroup() + 1 
-# data['replicate_idx'] = data.groupby(['strain', 'growth_medium', 
-#                                       'date', 'run_number']).ngroup() + 1
-# unique_idx = data.groupby(['strain', 'growth_medium', 
-#                             'date', 'run_number']
-#                         ).mean().reset_index()['unique_idx'].values.astype(int)
-# replicate_idx = data['replicate_idx'].values.astype(int)
-# #%%
-# # Set up the data dictionary
-# data_dict = {'J':data['unique_idx'].max(),
-#              'K': data['replicate_idx'].max(),
-#              'N': len(data),
-#              'unique_idx': unique_idx,
-#              'replicate_idx': replicate_idx,
-#              'elapsed_time': data['elapsed_time_hr'].values.astype(float),
-#              'optical_density': data['od_600nm'].values.astype(float)}
-
-# # Sample the model all at once
-# samples = model.sample(data=data_dict, adapt_delta=0.99) 
-#                     #, iter_warmup=500, 
-#                     #    threads_per_chain=48, chains=10, parallel_chains=10,
-#                     #    adapt_delta=0.9)
-
-# #%%
-# samples = arviz.from_cmdstanpy(samples)
-# bebi103.stan.check_all_diagnostics(samples) 
-
-
 # %%
 # Iterate through each strain and growth medium to perform the inference.
 sample_dfs = []
@@ -79,8 +47,6 @@ for g, d in tqdm.tqdm(data.groupby(['growth_medium', 'strain', 'class']),
     sample_dfs.append(samples)
 #%%
 samples = pd.concat(sample_dfs, sort=False)    
-# #%%
-# samples.to_csv('../../data/mcmc/growth_rate_inference_samples_total.csv', index=False)
 # %%
 #  Save just the growth rate parameters
 mu_dfs = []
@@ -134,4 +100,6 @@ for g, d in tqdm.tqdm(samples.groupby(['growth_medium', 'strain']),
                                         ignore_index=True)
 summary_df.to_csv('../../data/mcmc/growth_rate_inference_summaries.csv',
                     index=False) 
+
+
 # %%
