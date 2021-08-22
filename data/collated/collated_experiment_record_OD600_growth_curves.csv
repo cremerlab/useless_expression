@@ -49,5 +49,9 @@ experiment,status,description
 "
 2021-08-19_r2_DoubleKO_acetate,Accepted,"Data looks good. Growth rate for ∆his ∆dpp is very, very slow, indicating some  serious growth deficiency.
 "
-2021-08-20_r1_DoubleKO_acetate,Rejected,"Experiment is ongoing.
+2021-08-20_r1_DoubleKO_acetate,Accepted,"Data looks good. I noticed that the ∆his ∆dpp sample has a strange effect  where the saturation OD is different than the rest, meaning I couldn't just filter on OD to restrict to the exponential regime.
+"
+2021-08-20_r2_DoubleKO_acetate,Accepted,"Data looks okay and should be kept. Sample of ∆his ∆dpp has a different  saturation point and again a very slow growth rate. 
+"
+2021-08-21_r1_DoubleKO_acetate,Accepted,"Data looks good and was very similar runs for these mutants (2021-08-20, for example).
 "

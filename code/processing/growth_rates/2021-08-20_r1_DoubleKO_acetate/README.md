@@ -1,8 +1,10 @@
 ---
 status: >
-   Rejected
+   Accepted
 description : >
-   Experiment is ongoing.
+   Data looks good. I noticed that the ∆his ∆dpp sample has a strange effect 
+   where the saturation OD is different than the rest, meaning I couldn't
+   just filter on OD to restrict to the exponential regime.
 ---
 
 # 2021-08-20 (Run 1) Double KO Acetate Growth Rate Determination
@@ -66,21 +68,26 @@ The OD of the precultures for ∆his ∆dpp, ∆nmp ∆opp, ∆mgl ∆opp, and �
 was very, very low. I directly added the preculture to the plate for growth rate 
 measurement.
 
+For the sample of ∆his ∆dpp, there was a slightly different saturation value 
+(which I can't yet make sense of) meaning I couldn't just filter on OD to get 
+the exponential regime. For this sample, I only kept the measurements prior to 
+6 hrs for determination of growth rate.
+
 ### Growth Rate Inference
 
 | **strain** | **growth rate, µ [per hr]** |
 |:--: |:--:|
-|∆mal ∆flh| |
-|∆pot ∆flh| |
-|∆nmp ∆dpp| | 
-|∆opp ∆dpp| |
-|∆pot ∆dpp| |
-|∆his ∆dpp| |
-|∆mgl ∆dpp| |
-|∆mal ∆dpp| |   
-|∆nmp ∆opp| |  
-|∆mgl ∆opp| |
-|∆his ∆opp| |
+|∆mal ∆flh| 0.478 ± 0.005|
+|∆pot ∆flh| 0.480 ± 0.007|
+|∆nmp ∆dpp| 0.525 ± 0.003| 
+|∆opp ∆dpp| 0.520 ± 0.006|
+|∆pot ∆dpp| 0.520 ± 0.004|
+|∆his ∆dpp| 0.123 ± 0.001|
+|∆mgl ∆dpp| 0.518 ± 0.004|
+|∆mal ∆dpp| 0.462 ± 0.003|   
+|∆nmp ∆opp| 0.474 ± 0.002|  
+|∆mgl ∆opp| 0.456 ± 0.002|
+|∆his ∆opp| 0.421 ± 0.002|
 
 
 ### Plots
@@ -97,7 +104,7 @@ measurement.
 1.  Seed cultures were prepared by inoculating 3 mL of LB with a single colony from a fresh (< 2 week old) plate.
 2. The LB culture was allowed to grow for 4.5 hours to saturation. 
 3. A preculture was prepared by diluting the seed culture 1:1000 into 
-prewarmed acetate minimal medium and allowed to grow for 8 hours at 37° C
+prewarmed acetate minimal medium and allowed to grow for 12 hours at 37° C
 to an OD_600nm_ of ≈ 0.5.
 4. Precultues were diluted  1:20 into fresh acetate minimal medium prewarmed to 37° C. The samples of ∆his ∆dpp, 
 ∆nmp ∆oppp, ∆mgl ∆opp, and ∆his ∆opp were *not* diluted. 

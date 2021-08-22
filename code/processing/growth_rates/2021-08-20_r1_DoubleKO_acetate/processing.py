@@ -1,3 +1,9 @@
+"""
+Note:
+
+* This script truncates the time window for the ∆his ∆dpp sample as it has a 
+different linear regime. Points prior to 6 hrs were kept.
+"""
 #%%
 import numpy as np 
 import pandas as pd 
@@ -100,6 +106,16 @@ trunc = trunc[['strain', 'elapsed_time_hr',
              'date', 'run_number', 'identifier', 'class']]
 trunc.rename(columns={'od_600nm_subtracted':'od_600nm',
                       'replicate':'technical_replicate'}, inplace=True)
+
+# Remove ∆his ∆dpp time points prior to 6 hrs
+truncs = []
+for g, d in trunc.groupby(['strain']):
+    if g == '∆his ∆dpp':
+        _df = d[d['elapsed_time_hr'] <= 6]
+    else:
+        _df = d
+    truncs.append(_df)
+trunc = pd.concat(truncs, sort=False)
 trunc.to_csv(f'./output/{DATE}_r{RUN_NO}_{STRAINS}_{MEDIUM}_exponential_phase.csv', index=False)
 
 # %%
