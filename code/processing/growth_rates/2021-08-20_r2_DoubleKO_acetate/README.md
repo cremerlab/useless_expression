@@ -9,7 +9,7 @@ description : >
 # 2021-08-20 (Run 2) Double KO Acetate Growth Rate Determination
 
 ## Purpose
-This is an experiment measuring the rate of growth of the first suite of 
+This is an experiment measuring the rate of growth of the third suite of 
 double KOs of  "useless" proteins in minimal medium supplemented with acetate.
 
 ## Materials
