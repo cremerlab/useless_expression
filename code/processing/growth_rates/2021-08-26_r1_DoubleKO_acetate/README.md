@@ -1,8 +1,8 @@
 ---
 status: >
-   Rejected
+   Accepted
 description : >
-   Experiment is ongoing 
+   Data looks good with no hiccups and should be accepted. 
 ---
 
 # 2021-08-26 (Run 1) Double KO Acetate Growth Rate Determination
@@ -69,18 +69,18 @@ double KOs of  "useless" proteins in minimal medium supplemented with acetate.
 
 | **strain** | **growth rate, µ [per hr]** |
 |:--: |:--:|
-|∆mal ∆his| |
-|∆mal ∆pot| |
-|∆pot ∆his| | 
-|∆mal ∆nmp| |
-|∆his ∆nmp| |
-|∆pot ∆nmp| |
-|∆pot ∆mgl| |
-|∆mal ∆mgl| |   
-|∆nmp ∆mgl| |  
-|∆his ∆mgl| |
-|∆mal ∆opp| |
-|∆pot ∆opp| |
+|∆mal ∆his| 0.529 ± 0.005|
+|∆mal ∆pot| 0.510 ± 0.009|
+|∆pot ∆his| 0.509 ± 0.005| 
+|∆mal ∆nmp| 0.514 ± 0.002|
+|∆his ∆nmp| 0.246 ± 0.001|
+|∆pot ∆nmp| 0.498 ± 0.002|
+|∆pot ∆mgl| 0.476 ± 0.006|
+|∆mal ∆mgl| 0.499 ± 0.003|   
+|∆nmp ∆mgl| 0.482 ± 0.002|  
+|∆his ∆mgl| 0.529 ± 0.005|
+|∆mal ∆opp| 0.475 ± 0.003|
+|∆pot ∆opp| 0.454 ± 0.003|
 
 
 ### Plots
@@ -99,7 +99,8 @@ double KOs of  "useless" proteins in minimal medium supplemented with acetate.
 3. A preculture was prepared by diluting the seed culture 1:300 into 
 prewarmed acetate minimal medium and allowed to grow for 12 hours at 37° C
 to an OD_600nm_ of ≈ 0.5.
-4. Precultues were diluted  1:20 into fresh acetate minimal medium prewarmed to 37° C.
+4. Precultues were diluted  1:20 into fresh acetate minimal medium prewarmed to 37° C. The
+culture of ∆his ∆nmp was diluted 1:5 as it's OD was significantly lower.
 4. A fresh 96 well plate was filled with water in blank wells. The remaining wells 
 were filled with 200 µL of diluted and mixed cultures as appropriate and described in 
 the section "Plate Layout".
