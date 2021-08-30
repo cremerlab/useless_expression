@@ -55,3 +55,13 @@ experiment,status,description
 "
 2021-08-21_r1_DoubleKO_acetate,Accepted,"Data looks good and was very similar runs for these mutants (2021-08-20, for example).
 "
+2021-08-26_r1_DoubleKO_acetate,Accepted,"Data looks good with no hiccups and should be accepted. 
+"
+2021-08-27_r1_DoubleKO_acetate,Accepted,"Experiment went without a hitch. 
+"
+2021-08-27_r2_DoubleKO_acetate,Accepted,"Data looks good and there's no reason to not accept the results. The sample of  ∆mal ∆opp has one suspicious replicate, but not so bad it should be removed from the analysis.
+"
+2021-08-28_r1_DoubleKO_acetate,Accepted,"Data looks okay. Sample of ∆mal ∆his has a suspicious technical replicate, but not enough as to remove it from analysis.
+"
+2021-08-28_r2_DoubleKO_acetate,Accepted,"No problems with experiment or data. 
+"
