@@ -45,10 +45,11 @@ palette = sns.color_palette('mako', n_colors=N_DIST+1)
 ax_ind = {}
 indices = {}
 counter = np.round(N_DIST / 2)
+labels = {0:[], 1:[]} 
 ax_counter = 0
 switch = False
 for g, d in kde_df[kde_df['class']=='Double KO'].groupby(['strain']):
-    if ax_counter <= 11:
+    if ax_counter <= 22:
         ax_ind[g] = 0
     else:
         ax_ind[g] = 1
@@ -58,23 +59,14 @@ for g, d in kde_df[kde_df['class']=='Double KO'].groupby(['strain']):
         counter = int(np.round(N_DIST / 2))
     ax_counter += 1
     indices[g] = counter
+    labels[ax_ind[g]].append(g)
 
-#%%
+
 # Instantiate the figure
-fig, ax = plt.subplots(1, 2, figsize=(8, 4))
-
-# # Add a label of what the height means
-# ax[0].arrow(0.42, 0.5 * N_DIST, 0, 0.8, color='grey', 
-#             width=0.001, head_length=0.05, head_width=0.01)
-# ax[0].text(0.4, 0.51 * N_DIST, '$\propto$ probability', fontsize=5, 
-#           rotation='vertical', fontstyle='italic')
-
-# Add labels
-ax[0].set_title('growth in acetate', loc='right', y=0.82)
-ax[1].set_title('growth in acetate', loc='right', y=0.82)
+fig, ax = plt.subplots(1, 2, figsize=(8, 6))
 
 # Adjust the axis limits
-ax[0].set_xlim([0.3, 0.7])
+ax[0].set_xlim([0.1, 0.7])
 ax[1].set_xlim([0.3, 0.7])
 
 for a in ax:
@@ -82,9 +74,10 @@ for a in ax:
     a.set_facecolor('#FFFFFF') 
 
 # Add ytick labels
-_ = ax[0].set_yticks((np.arange(N_DIST) + 1) * 0.5)
-ax[0].set_yticklabels(reversed(sorted(indices.keys())))
-axes = {'acetate':ax[0], 'glucose':ax[1]}
+_ = ax[0].set_yticks(np.arange(0, 23))
+_ = ax[1].set_yticks(np.arange(0, 22))
+ax[0].set_yticklabels(reversed(sorted(labels[0])))
+ax[1].set_yticklabels(reversed(sorted(labels[1])))
 for g, d in kde_df[kde_df['class']=='Double KO'].groupby(['strain', 'growth_medium']):
     _ax = ax[ax_ind[g[0]]]
     ind = int(indices[g[0]])
@@ -95,9 +88,9 @@ for g, d in kde_df[kde_df['class']=='Double KO'].groupby(['strain', 'growth_medi
 
     # Plot the result from the double
     _ax.plot(d['growth_rate_hr'], d['kde_norm'] + ind,
-            zorder=np.abs(ind - N_DIST) +1, color=_color)
+            zorder=np.abs(ind - N_DIST) +0.8, color=_color)
     _ax.plot(d['growth_rate_hr'], ind * np.ones(len(d)),
-            zorder=np.abs(ind - N_DIST) +1, color=_color)
+            zorder=np.abs(ind - N_DIST) +0.8, color=_color)
     _ax.fill_between(d['growth_rate_hr'], ind, d['kde_norm'] + ind, alpha=0.5,
         zorder=np.abs(ind - N_DIST) + 2, color=_color)
 
@@ -108,9 +101,7 @@ for g, d in kde_df[kde_df['class']=='Double KO'].groupby(['strain', 'growth_medi
         _d = kde_df[(kde_df['strain']==s) & (kde_df['growth_medium']=='acetate')]
         _ax.plot(_d['growth_rate_hr'], _d['kde_norm'] + ind,
             zorder=np.abs(ind - N_DIST) +1, color='grey', linestyle=ls[i])
-        # _ax.plot(d['growth_rate_hr'], 0.5 * ind * np.ones(len(d)),
-            # zorder=np.abs(ind - N_DIST) +1, color=_color, linestyle=ls[i])
 
 
-# plt.savefig('../../figures/growth_rates/singleKO_hyperparameter_ridgeline.pdf', bbox_inches='tight')
+plt.savefig('../../figures/growth_rates/DoubleKO_hyperparameter_ridgeline.pdf', bbox_inches='tight')
 # %%

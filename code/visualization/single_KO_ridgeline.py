@@ -29,11 +29,12 @@ for g, d in tqdm.tqdm(data.groupby(['strain', 'growth_medium'])):
     _df = pd.DataFrame([])
     _df['growth_rate_hr'] = mu_range
     _df['kde'] = np.exp(logprob)
-    _df['kde_norm'] = _df['kde'].values / _df['kde'].max()
+    # _df['kde_norm'] = _df['kde'].values / _df['kde'].sum()
     _df['strain'] = g[0]
     _df['growth_medium'] = g[1]
     kde_dfs.append(_df)
 kde_df = pd.concat(kde_dfs, sort=False)
+kde_df['kde_norm'] = kde_df['kde'].values / kde_df['kde'].max()
 #    
 
 #%%
@@ -44,6 +45,7 @@ palette = sns.color_palette('mako', n_colors=N_DIST+1)
 # Assign the indices
 indices = {'WT':N_DIST}
 counter = N_DIST
+OVERLAP = 0.5
 for g, d in kde_df[kde_df['strain']!='WT'].groupby(['strain']):
     counter -= 1
     indices[g] = counter
@@ -52,9 +54,9 @@ for g, d in kde_df[kde_df['strain']!='WT'].groupby(['strain']):
 fig, ax = plt.subplots(1, 2, figsize=(6, 4), sharey=True)
 
 # Add a label of what the height means
-ax[0].arrow(0.42, N_DIST, 0, 1.1, color='grey', 
+ax[0].arrow(0.42, N_DIST * OVERLAP, 0, 0.8, color='grey', 
             width=0.001, head_length=0.05, head_width=0.01)
-ax[0].text(0.4,  N_DIST, ' $\propto$ probability', fontsize=5, 
+ax[0].text(0.4,  N_DIST * OVERLAP, ' $\propto$ probability', fontsize=5, 
           rotation='vertical', fontstyle='italic')
 
 # Add labels
@@ -70,7 +72,7 @@ for a in ax:
     a.set_facecolor('#FFFFFF') 
 
 # Add ytick labels
-_ = ax[0].set_yticks((np.arange(N_DIST) + 1))
+_ = ax[0].set_yticks((np.arange(N_DIST) + 1) * OVERLAP)
 ax[0].set_yticklabels(reversed(sorted(indices.keys())))
 axes = {'acetate':ax[0], 'glucose':ax[1]}
 for g, d in kde_df.groupby(['strain', 'growth_medium']):
@@ -81,12 +83,12 @@ for g, d in kde_df.groupby(['strain', 'growth_medium']):
         _color = 'grey'
     else:
         _color = palette[ind]
-    _ax.plot(d['growth_rate_hr'], d['kde_norm'] + ind,
+    _ax.plot(d['growth_rate_hr'], d['kde_norm'] + OVERLAP *ind,
             zorder=np.abs(ind - N_DIST) +1, color=_color)
-    _ax.plot(d['growth_rate_hr'],  ind * np.ones(len(d)),
+    _ax.plot(d['growth_rate_hr'],  OVERLAP * ind * np.ones(len(d)),
             zorder=np.abs(ind - N_DIST) +1, color=_color)
-    _ax.fill_between(d['growth_rate_hr'], ind, d['kde_norm'] + ind, alpha=0.5,
-        zorder=np.abs(ind - N_DIST) + 2, color=_color)
+    _ax.fill_between(d['growth_rate_hr'], OVERLAP * ind, d['kde_norm'] + OVERLAP *ind, 
+            alpha=0.5,  zorder=np.abs(ind - N_DIST) + 2, color=_color)
 plt.tight_layout()
 plt.savefig('../../figures/growth_rates/singleKO_hyperparameter_ridgeline.pdf', bbox_inches='tight')
 # %%
