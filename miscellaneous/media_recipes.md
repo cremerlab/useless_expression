@@ -54,4 +54,4 @@ base as described above.
 | acetate | N-C- + 10 mM NH<sub>4</sub>Cl + 30 mM acetate  + micronutrients| 
 | proline | N-C- + 10 mM NH<sub>4</sub>Cl + 12 mM L-proline + micronutrients | 
 | ga_preshift | N-C- + 10 mM NH<sub>4</sub>Cl + 10 mM glucose + 30 mM acetate + micronutrients|
-| ga_shift | N-C- + 10 mM NH<sub>4</sub>Cl + 0.6 mM glucose + 30 mM acetate |
+| ga_shift | N-C- + 10 mM NH<sub>4</sub>Cl + 0.6 mM glucose + 30 mM acetate + micronutrients |
