@@ -71,3 +71,9 @@ experiment,status,description
 "
 2021-08-31_r2_WT_acetate_water_comparison,Rejected,"Experiment was to identify a potential contamination in the water source and is not a final experimental measurement. 
 "
+2021-09-01_r1_SingleKO_proline,Accepted,"Data looks ok and should be kept. I was unable to measure a growth rate for  ∆pot and ∆rbs as they did not reach optical densities within the linear  regime of the spectrophotometer. 
+"
+2021-09-01_r2_SingleKO_proline,Rejected,"There were various problems with the data with only one sample reaching  growth in the exponential phase. All data was therefore rejected and  will need to be repeated.
+"
+2021-09-02_r1_SingleKO_proline,Accepted,"Accepted with some revisions. The sample for ∆nmp was dropped as the  variation in the technical replicats was large. Sample of ∆glt was  manually truncated by time to appropriately identify the exponential regime. Sample of ∆pot did not grow.
+"
