@@ -8,7 +8,7 @@ description : >
     Sample of ∆pot did not grow.
 ---
 
-# 2021-09-02 (Run 1) Double KO L-Proline Growth Rate Determination
+# 2021-09-02 (Run 1) Single KO L-Proline Growth Rate Determination
 
 ## Purpose
 This is an experiment measuring the rate of growth of the single KOs of  "useless" proteins in minimal medium supplemented with L-proline.
@@ -18,7 +18,7 @@ This is an experiment measuring the rate of growth of the single KOs of  "useles
 ### Growth Media
 | **Label** | **Buffer Base** | **Carbon Source & Concentration** |
 |:--:|:--:|:--:|
-| acetate | N-C- + micronutrients | 12 mM proline |
+| proline | N-C- + micronutrients | 12 mM proline |
 
 ### Strains 
 | **Label** | **Parent Strain**|  **Genotype** | **Location(s)**|

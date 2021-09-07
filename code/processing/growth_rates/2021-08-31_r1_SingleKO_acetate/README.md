@@ -5,7 +5,7 @@ description : >
     Growth rates look good and in line with previous experiments. 
 ---
 
-# 2021-08-31 (Run 1) Double KO Acetate Growth Rate Determination
+# 2021-08-31 (Run 1) Single KO Acetate Growth Rate Determination
 
 ## Purpose
 This is an experiment measuring the rate of growth of the single KOs of  "useless" proteins in minimal medium supplemented with acetate.
