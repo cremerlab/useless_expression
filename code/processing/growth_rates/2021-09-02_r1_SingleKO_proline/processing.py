@@ -1,3 +1,11 @@
+"""
+Note:
+* This script drops the replicate for ∆nmp, which shows very wide variation 
+in growth between technicla replicates.
+
+* This script truncates the sample for ∆glt to only those points measured after
+8 hours.
+"""
 #%%
 import numpy as np 
 import pandas as pd 
@@ -8,13 +16,13 @@ import altair_saver
 colors, palette = futileprot.viz.altair_style()
 
 # Define experiment parameters
-DATE = '2021-08-31'
+DATE = '2021-09-02'
 STRAINS = 'SingleKO'
-MEDIUM = 'acetate'
+MEDIUM = 'proline'
 RUN_NO = 1
 ROOT = '../../../..'
 SKIPROWS = 36 
-OD_BOUNDS = [0.03, 0.15]
+OD_BOUNDS = [0.012, 0.15]
 
 # Add the well identifiers
 MAP = {'GC032': ['C3', 'D3', 'E3'],
@@ -23,6 +31,7 @@ MAP = {'GC032': ['C3', 'D3', 'E3'],
        'GC047': ['C6', 'D6', 'E6'],
        'GC050': ['C7', 'D7', 'E7'],
        'GC048': ['C8', 'D8', 'E8'],
+       'GC053': ['C9', 'D9', 'E9'],
        'GC055': ['C10', 'D10' ,'E10'],
        'GC030': ['F3', 'F4', 'F5'],
        'GC029': ['F6', 'F7', 'F8'],
@@ -99,6 +108,18 @@ trunc = trunc[['strain', 'elapsed_time_hr',
              'date', 'run_number', 'identifier', 'class']]
 trunc.rename(columns={'od_600nm_subtracted':'od_600nm',
                       'replicate':'technical_replicate'}, inplace=True)
+
+dfs = []
+for g, d in trunc.groupby(['strain']):
+    if g == '∆nmp':
+        continue
+    else:
+        if g=='∆glt':
+            d = d[d['elapsed_time_hr'] >= 8]
+            d['elapsed_time_hr'] -= d['elapsed_time_hr'].min() 
+        dfs.append(d)
+trunc = pd.concat(dfs, sort=False)
+
 
 trunc.to_csv(f'./output/{DATE}_r{RUN_NO}_{STRAINS}_{MEDIUM}_exponential_phase.csv', index=False)
 
