@@ -84,7 +84,7 @@ difference in the lag time from the wild type, except for the ∆opp sample.
 
 ### Plots
 
-![](output/2021-09-07_r1_SingleKO_glucose-acetate_shift_plot.png)
+![](output/2021-09-08_r1_SingleKO_glucose-acetate_shift_plot.png)
 
 ## Protocol 
 1. Precultures were prepared by inoculating 3 mL of N-C- minimal medium (10 mM glucose) + 3 µL of LB with a single colony from a fresh (< 2 week old) plate.
