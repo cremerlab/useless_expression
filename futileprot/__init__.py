@@ -3,6 +3,7 @@ from . import viz
 from . import io
 from . import fitderiv
 from . import gaussianprocess
+from . import fitderiv
 from . import bayes 
 from . import growth
 

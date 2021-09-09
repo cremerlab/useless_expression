@@ -2,10 +2,10 @@
 status: >
     Accepted
 description : >
-    Experiment looks good without any hiccups or abberations.
+    Everything looks good and no reason to reject the experiment. 
 ---
 
-# 2021-09-07 (Run 1) Single KO Glucose-Acetate Diauxic Shift
+# 2021-09-08 (Run 1) Single KO Glucose-Acetate Diauxic Shift
 
 ## Purpose
 This is an experiment measuring the lag-time for the single KOs of  "useless" proteins 
@@ -62,23 +62,24 @@ during the glucose-acetate diauxic shfit in minimal medium.
 
 
 ## Notes & Results
-Data looks good with no obvious problems.
+Data looks good with no obvious problems. For this run, there was no significant 
+difference in the lag time from the wild type, except for the ∆opp sample.
 
 ### Lag Time Inference
 
 | **Strain** | **Glucose growth rate, µ [hr]** | **Acetate growth rate, µ [per hr]** | **Lag Time, δ [hr]** | 
 |:--: |:--:| :--: | :--: |
-|∆mal | 0.69 ± 0.03 | 0.60 ± 0.02| 2.23 ± 0.06 |
-|∆pot | 0.64 ± 0.08 | 0.532 ± 0.005 | 2.83 ± 0.01 |
-|∆nmp | 0.67 ± 0.07 | 0.58 ± 0.01 | 2.34 ± 0.07 |
-|∆his | 0.65 ± 0.09 | 0.53 ± 0.02 | 2.49 ± 0.05 |
-|∆rbs | 0.87 ± 0.05 | 0.400 ± 0.006 | 2.44 ± 0.04 |
-|∆dpp | 0.77 ± 0.02 | 0.503 ± 0.005 | 2.269 ± 0.009 |
-|∆opp | 0.67 ± 0.05| 0.38 ± 0.02 | 1.8 ± 0.1 |
-|∆mgl | 0.68 ± 0.02| 0.44 ± 0.01 | 2.55 ± 0.03 |    
-|∆glt | 0.68 ± 0.03| 0.56 ± 0.04 | 2.08 ± 0.06 |
-|∆flh | 0.82 ± 0.04| 0.42 ± 0.02 | 2.4 ± 0.1 |
-|WT   | 0.67 ± 0.07| 0.48 ± 0.01 | 2.73 + 0.08 |
+|∆mal | 0.65 ± 0.01 | 0.58 ± 0.02 | 2.30 ± 0.01|
+|∆pot | 0.65 ± 0.05 | 0.53 ± 0.04 | 2.65 ± 0.07|
+|∆nmp | 0.77 ± 0.03 | 0.54 ± 0.01 | 2.2 ± 0.1  |
+|∆his | 0.77 ± 0.03 | 0.48 ± 0.01  | 2.4 ± 0.2 |
+|∆rbs | 0.81 ± 0.06 | 0.379 ± 0.009| 2.29 ± 0.06|
+|∆dpp | 0.784 ± 0.008| 0.493 ± 0.005| 2.25 ± 0.02|
+|∆opp | 0.74 ± 0.01| 0.379 ± 0.001| 1.72 ± 0.03|
+|∆mgl | 0.72 ± 0.02| 0.475 ± 0.008| 2.3 ± 0.1|    
+|∆glt | 0.62 ± 0.03 | 0.48 ± 0.03| 2.2 ± 0.2|
+|∆flh | 0.89 ± 0.06| 0.41 ± 0.02 | 2.38 ± 0.01|
+|WT   | 0.70 ± 0.06| 0.47 ± 0.01| 2.31 ± 0.09|
 
 
 ### Plots
