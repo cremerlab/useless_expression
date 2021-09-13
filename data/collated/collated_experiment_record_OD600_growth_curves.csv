@@ -1,79 +1,87 @@
-experiment,status,description
-2021-07-19_r1_WT_glucose,Rejected,"Experiment was an instrument test and not a formal experiment. 
+experiment,experiment_type,status,description
+2021-07-19_r1_WT_glucose,growth curve measurement,Rejected,"Experiment was an instrument test and not a formal experiment. 
 "
-2021-07-20_r1_SingleKO_glucose,Accepted,"Experiment appears to have been successful. It looks like the wild-type  strain is growing slightly faster than usual, though. 
+2021-07-20_r1_SingleKO_glucose,growth curve measurement,Accepted,"Experiment appears to have been successful. It looks like the wild-type  strain is growing slightly faster than usual, though. 
 "
-2021-07-21_r1_SingleKO_glucose,Accepted,"Experiment appears to have been successful with no aberrant results. 
+2021-07-21_r1_SingleKO_glucose,growth curve measurement,Accepted,"Experiment appears to have been successful with no aberrant results. 
 "
-2021-07-22_r1_SingleKO_glucose,Accepted,"Experiment looks good, save for the growth rate of ∆flh, which is notably slower than in other experimental runs in the same conditions. The saturating  optical density is also lower for this mutant than in all other runs.
+2021-07-22_r1_SingleKO_glucose,growth curve measurement,Accepted,"Experiment looks good, save for the growth rate of ∆flh, which is notably slower than in other experimental runs in the same conditions. The saturating  optical density is also lower for this mutant than in all other runs.
 "
-2021-07-23_r1_SingleKO_glucose,Accepted,"All data looks good. One replicate (r1 of ∆glt) was dropped and  due to contamination and another few points of ∆mgl r3 were dropped as obvious instrument error. 
+2021-07-23_r1_SingleKO_glucose,growth curve measurement,Accepted,"All data looks good. One replicate (r1 of ∆glt) was dropped and  due to contamination and another few points of ∆mgl r3 were dropped as obvious instrument error. 
 "
-2021-07-25_r1_SingleKO_glucose,Accepted,"All data looks good with no reason to reject
+2021-07-25_r1_SingleKO_glucose,growth curve measurement,Accepted,"All data looks good with no reason to reject
 "
-2021-07-26_r1_SingleKO_acetate,Accepted,"Data looks okay with no obvious pathology. The steady-state phase seems  to be ""wiggly"", albeit to a small degree. I will accept this with  some consideration. REplicate 3 of the ∆dpp sample had to be dropped  due to instrument error.
+2021-07-26_r1_SingleKO_acetate,growth curve measurement,Accepted,"Data looks okay with no obvious pathology. The steady-state phase seems  to be ""wiggly"", albeit to a small degree. I will accept this with  some consideration. REplicate 3 of the ∆dpp sample had to be dropped  due to instrument error.
 "
-2021-07-26_r2_SingleKO_acetate,Accepted,"Data looks good. The growth of ∆opp was very noticeably reduced ocmpared to  all other replicates, so it was dropped from this data set. 
+2021-07-26_r2_SingleKO_acetate,growth curve measurement,Accepted,"Data looks good. The growth of ∆opp was very noticeably reduced ocmpared to  all other replicates, so it was dropped from this data set. 
 "
-2021-07-27_r1_SingleKO_acetate,Accepted,"Data looks good. Replicate 3 of the ∆pot strain was dropped due to a higher  initial OD and a long lag phase, making isolation of the exponential phase  more difficult
+2021-07-27_r1_SingleKO_acetate,growth curve measurement,Accepted,"Data looks good. Replicate 3 of the ∆pot strain was dropped due to a higher  initial OD and a long lag phase, making isolation of the exponential phase  more difficult
 "
-2021-07-27_r2_SingleKO_acetate,Accepted,"Data looks good. Replicate 1 of ∆rbs was dropped due to an obvious instrument  error where there was a sudden largee drop in the OD, but growth  continued as normal.
+2021-07-27_r2_SingleKO_acetate,growth curve measurement,Accepted,"Data looks good. Replicate 1 of ∆rbs was dropped due to an obvious instrument  error where there was a sudden largee drop in the OD, but growth  continued as normal.
 "
-2021-07-28_r1_SingleKO_acetate,Accepted,"Data looks good and there is nothing of note in this experiment. 
+2021-07-28_r1_SingleKO_acetate,growth curve measurement,Accepted,"Data looks good and there is nothing of note in this experiment. 
 "
-2021-08-06_r1_WT_water_comparison_acetate,Rejected,"Experiment was to identify a potential contamination in the water source and is not a final experimental measurement. 
+2021-08-06_r1_WT_water_comparison_acetate,growth curve measurement,Rejected,"Experiment was to identify a potential contamination in the water source and is not a final experimental measurement. 
 "
-2021-08-11_r1_WT_proline,Rejected,"Experiment was exploratory in nature and should not be used for further analysis
+2021-08-11_r1_WT_proline,growth curve measurement,Rejected,"Experiment was exploratory in nature and should not be used for further analysis
 "
-2021-08-12_r1_DoubleKO_acetate,Accepted,"No reason to doubt the data and the experiment proceeded without issue.  
+2021-08-12_r1_DoubleKO_acetate,growth curve measurement,Accepted,"No reason to doubt the data and the experiment proceeded without issue.  
 "
-2021-08-12_r2_DoubleKO_acetate,Accepted,"Data looks good and nothing is suspect 
+2021-08-12_r2_DoubleKO_acetate,growth curve measurement,Accepted,"Data looks good and nothing is suspect 
 "
-2021-08-13_r1_DoubleKO_acetate,Accepted,"Experiment went without any problems and the data looks good. 
+2021-08-13_r1_DoubleKO_acetate,growth curve measurement,Accepted,"Experiment went without any problems and the data looks good. 
 "
-2021-08-13_r2_DoubleKO_acetate,Accepted,"Data looks good. There is some jitter in points for ∆flh ∆rbs, but not enough  to do anything about.  
+2021-08-13_r2_DoubleKO_acetate,growth curve measurement,Accepted,"Data looks good. There is some jitter in points for ∆flh ∆rbs, but not enough  to do anything about.  
 "
-2021-08-14_r1_DoubleKO_acetate,Accepted,"The experiment looks fine. There may be a problem with one of the replicates of the ∆his ∆glt run, but it's not severe enough to discount the run altogether as  the growthr ates are mostly comparable with previous runs.   
+2021-08-14_r1_DoubleKO_acetate,growth curve measurement,Accepted,"The experiment looks fine. There may be a problem with one of the replicates of the ∆his ∆glt run, but it's not severe enough to discount the run altogether as  the growthr ates are mostly comparable with previous runs.   
 "
-2021-08-16_r1_DoubleKO_acetate,Accepted,"Data looks good, save for replicate 1 of ∆opp ∆rbs which had an obvious  instrument error. This replicate was dropped from the analysis
+2021-08-16_r1_DoubleKO_acetate,growth curve measurement,Accepted,"Data looks good, save for replicate 1 of ∆opp ∆rbs which had an obvious  instrument error. This replicate was dropped from the analysis
 "
-2021-08-17_r1_DoubleKO_acetate,Accepted,"Experiment looks good without any hiccups that matter for the growth rate inference. 
+2021-08-17_r1_DoubleKO_acetate,growth curve measurement,Accepted,"Experiment looks good without any hiccups that matter for the growth rate inference. 
 "
-2021-08-17_r2_DoubleKO_acetate,Accepted,"Data looks good and there's no reason not to accept the data.
+2021-08-17_r2_DoubleKO_acetate,growth curve measurement,Accepted,"Data looks good and there's no reason not to accept the data.
 "
-2021-08-18_r1_DoubleKO_acetate,Accepted,"Experiment went as normal and data looks good.
+2021-08-18_r1_DoubleKO_acetate,growth curve measurement,Accepted,"Experiment went as normal and data looks good.
 "
-2021-08-18_r2_DoubleKO_acetate,Accepted,"Experiment looks good and proceeded as expected.
+2021-08-18_r2_DoubleKO_acetate,growth curve measurement,Accepted,"Experiment looks good and proceeded as expected.
 "
-2021-08-19_r1_DoubleKO_acetate,Accepted,"Data for measured samples looks good. Need to remeasure 4 of cultures.
+2021-08-19_r1_DoubleKO_acetate,growth curve measurement,Accepted,"Data for measured samples looks good. Need to remeasure 4 of cultures.
 "
-2021-08-19_r2_DoubleKO_acetate,Accepted,"Data looks good. Growth rate for ∆his ∆dpp is very, very slow, indicating some  serious growth deficiency.
+2021-08-19_r2_DoubleKO_acetate,growth curve measurement,Accepted,"Data looks good. Growth rate for ∆his ∆dpp is very, very slow, indicating some  serious growth deficiency.
 "
-2021-08-20_r1_DoubleKO_acetate,Accepted,"Data looks good. I noticed that the ∆his ∆dpp sample has a strange effect  where the saturation OD is different than the rest, meaning I couldn't just filter on OD to restrict to the exponential regime.
+2021-08-20_r1_DoubleKO_acetate,growth curve measurement,Accepted,"Data looks good. I noticed that the ∆his ∆dpp sample has a strange effect  where the saturation OD is different than the rest, meaning I couldn't just filter on OD to restrict to the exponential regime.
 "
-2021-08-20_r2_DoubleKO_acetate,Accepted,"Data looks okay and should be kept. Sample of ∆his ∆dpp has a different  saturation point and again a very slow growth rate. 
+2021-08-20_r2_DoubleKO_acetate,growth curve measurement,Accepted,"Data looks okay and should be kept. Sample of ∆his ∆dpp has a different  saturation point and again a very slow growth rate. 
 "
-2021-08-21_r1_DoubleKO_acetate,Accepted,"Data looks good and was very similar runs for these mutants (2021-08-20, for example).
+2021-08-21_r1_DoubleKO_acetate,growth curve measurement,Accepted,"Data looks good and was very similar runs for these mutants (2021-08-20, for example).
 "
-2021-08-26_r1_DoubleKO_acetate,Accepted,"Data looks good with no hiccups and should be accepted. 
+2021-08-26_r1_DoubleKO_acetate,growth curve measurement,Accepted,"Data looks good with no hiccups and should be accepted. 
 "
-2021-08-27_r1_DoubleKO_acetate,Accepted,"Experiment went without a hitch. 
+2021-08-27_r1_DoubleKO_acetate,growth curve measurement,Accepted,"Experiment went without a hitch. 
 "
-2021-08-27_r2_DoubleKO_acetate,Accepted,"Data looks good and there's no reason to not accept the results. The sample of  ∆mal ∆opp has one suspicious replicate, but not so bad it should be removed from the analysis.
+2021-08-27_r2_DoubleKO_acetate,growth curve measurement,Accepted,"Data looks good and there's no reason to not accept the results. The sample of  ∆mal ∆opp has one suspicious replicate, but not so bad it should be removed from the analysis.
 "
-2021-08-28_r1_DoubleKO_acetate,Accepted,"Data looks okay. Sample of ∆mal ∆his has a suspicious technical replicate, but not enough as to remove it from analysis.
+2021-08-28_r1_DoubleKO_acetate,growth curve measurement,Accepted,"Data looks okay. Sample of ∆mal ∆his has a suspicious technical replicate, but not enough as to remove it from analysis.
 "
-2021-08-28_r2_DoubleKO_acetate,Accepted,"No problems with experiment or data. 
+2021-08-28_r2_DoubleKO_acetate,growth curve measurement,Accepted,"No problems with experiment or data. 
 "
-2021-08-30_r1_SingleKO_acetate,Accepted,"Growth rates look good and in line with previous experiments. 
+2021-08-30_r1_SingleKO_acetate,growth curve measurement,Accepted,"Growth rates look good and in line with previous experiments. 
 "
-2021-08-31_r1_SingleKO_acetate,Accepted,"Growth rates look good and in line with previous experiments. 
+2021-08-31_r1_SingleKO_acetate,growth curve measurement,Accepted,"Growth rates look good and in line with previous experiments. 
 "
-2021-08-31_r2_WT_acetate_water_comparison,Rejected,"Experiment was to identify a potential contamination in the water source and is not a final experimental measurement. 
+2021-08-31_r2_WT_acetate_water_comparison,growth curve measurement,Rejected,"Experiment was to identify a potential contamination in the water source and is not a final experimental measurement. 
 "
-2021-09-01_r1_SingleKO_proline,Accepted,"Data looks ok and should be kept. I was unable to measure a growth rate for  ∆pot and ∆rbs as they did not reach optical densities within the linear  regime of the spectrophotometer. 
+2021-09-01_r1_SingleKO_proline,growth curve measurement,Rejected,"Data looks ok but is should not be kept as protocol for reaching steady  state with the precultures is still not optimized. I was unable to measure a growth rate for ∆pot and ∆rbs as they did not reach optical densities within the linear regime of the spectrophotometer. 
 "
-2021-09-01_r2_SingleKO_proline,Rejected,"There were various problems with the data with only one sample reaching  growth in the exponential phase. All data was therefore rejected and  will need to be repeated.
+2021-09-01_r2_SingleKO_proline,growth curve measurement,Rejected,"There were various problems with the data with only one sample reaching  growth in the exponential phase. All data was therefore rejected and  will need to be repeated.
 "
-2021-09-02_r1_SingleKO_proline,Accepted,"Accepted with some revisions. The sample for ∆nmp was dropped as the  variation in the technical replicats was large. Sample of ∆glt was  manually truncated by time to appropriately identify the exponential regime. Sample of ∆pot did not grow.
+2021-09-02_r1_SingleKO_proline,growth curve measurement,Rejected,"Data looks ok but is should not be kept as protocol for reaching steady  state with the precultures is still not optimized. The sample for ∆nmp was dropped as the  variation in the technical replicats was large. Sample of ∆glt was  manually truncated by time to appropriately identify the exponential regime. Sample of ∆pot did not grow.
+"
+2021-09-07_r1_SingleKO_glucose-acetate,diauxic shift measurement,Accepted,"Experiment looks good without any hiccups or abberations.
+"
+2021-09-08_r1_SingleKO_glucose-acetate,diauxic shift measurement,Accepted,"Everything looks good and no reason to reject the experiment. 
+"
+2021-09-09_r1_SingleKO_glucose-acetate,diauxic shift measurement,Accepted,"Data looks good, but two technical replicates (r3 for WT and r1 for ∆mgl) had to be dropped due to obvious instrument error.
+"
+2021-09-10_r1_SingleKO_glucose-acetate,diauxic shift measurement,Accepted,"Everything looks good with no problems. 
 "

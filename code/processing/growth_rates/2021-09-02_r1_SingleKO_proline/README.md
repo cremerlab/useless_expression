@@ -1,8 +1,9 @@
 ---
 status: >
-    Accepted 
+    Rejected
 description : >
-    Accepted with some revisions. The sample for ∆nmp was dropped as the 
+    Data looks ok but is should not be kept as protocol for reaching steady 
+    state with the precultures is still not optimized. The sample for ∆nmp was dropped as the 
     variation in the technical replicats was large. Sample of ∆glt was 
     manually truncated by time to appropriately identify the exponential regime.
     Sample of ∆pot did not grow.

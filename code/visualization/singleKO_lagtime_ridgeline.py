@@ -10,24 +10,24 @@ colors,_  = futileprot.viz.matplotlib_style()
 
 #%%
 # Load the hyperparameter data
-data = pd.read_csv('../../data/mcmc/growth_rate_inference_hyperparameter_samples.csv')
-
+data = pd.read_csv('../../data/mcmc/lag_time_inference_hyperparameter_samples.csv')
+data['strain'] = [s.replace('∆', 'Δ') for s in data['strain'].values]
 #%%
-data = data[(data['class']=='WT' ) | (data['class']=='Single KO')]
+# data = data[(data['class']=='WT' ) | (data['class']=='Single KO')]
 # %%
 # For each collection of samples, compute the kernel density estimate over a wide range
-mu_range = np.linspace(0.1, 1.5, 1000)
+delta_range = np.linspace(0.9, 3.1, 500)
 kde_dfs = []
 for g, d in tqdm.tqdm(data.groupby(['strain', 'growth_medium'])):
     logprob = sklearn.neighbors.KernelDensity(
                                      kernel='gaussian',
                                      bandwidth=0.01,
                                      ).fit(
-                                         d['mu'].values[:, None]
+                                         d['delta'].values[:, None]
                                      ).score_samples(
-                                         mu_range[:, None])
+                                         delta_range[:, None])
     _df = pd.DataFrame([])
-    _df['growth_rate_hr'] = mu_range
+    _df['lag_time_hr'] = delta_range 
     _df['kde'] = np.exp(logprob)
     _df['strain'] = g[0]
     _df['growth_medium'] = g[1]
@@ -50,43 +50,38 @@ for g, d in kde_df[kde_df['strain']!='WT'].groupby(['strain']):
     indices[g] = counter
 
 # Instantiate the figure
-fig, ax = plt.subplots(1, 3, figsize=(6, 6), sharey=True)
+fig, ax = plt.subplots(1, 1, figsize=(3, 6))
 
 # Add a label of what the height means
-ax[0].arrow(0.34, (N_DIST - 1) * OVERLAP, 0, 0.8, color='grey', 
-            width=0.001, head_length=0.05, head_width=0.01)
-ax[0].text(0.34,  (N_DIST  - 1)* OVERLAP, r' $\propto$ probability', fontsize=5, 
+ax.arrow(1.1, (N_DIST - 1) * OVERLAP, 0, 0.8, color='grey', 
+           width=0.001, head_length=0.05, head_width=0.01)
+ax.text(1.1,  (N_DIST  - 1)* OVERLAP, r' $\propto$ probability', fontsize=5, 
           rotation='vertical', fontstyle='italic')
-ax[0].text(0.475, (N_DIST - 1) * OVERLAP + 0.7, 'WT', fontsize=5)
-# Add labels
-ax[0].set_title('30 mM acetate', loc='left', y=0.97)
-ax[1].set_title('0.6 mM glucose + 30 mM acetate', loc='left', y=0.97)
-ax[2].set_title('10 mM glucose', loc='left', y=0.97, fontfamily='Stone Sans',
-                fontstyle='italic')
+ax.text(2.5, (N_DIST - 1) * OVERLAP + 0.7, 'WT', fontsize=5)
 
 # Adjust the axis limits
-ax[0].set_xlim([0.3, 0.75])
-ax[1].set_xlim([0.4, 0.9])
-ax[2].set_xlim([0.8, 1.2])
+# ax.set_xlim([1, 3.5])
+# ax.set_xlim([0.4, 0.9])
+# ax.set_xlim([0.8, 1.2])
 
 
-for a in ax:
-    a.set_xlabel('growth rate [hr$^{-1}$]')
+for a in [ax]:
+    a.set_xlabel('lag time [hr$^{-1}$]')
     a.set_facecolor('#FFFFFF') 
 
 # Add ytick labels
-_ = ax[0].set_yticks((np.arange(1, N_DIST)) * OVERLAP)
+_ = ax.set_yticks((np.arange(1, N_DIST)) * OVERLAP)
 
-ax[0].set_yticklabels(reversed(sorted(indices.keys())))
-axes = {'acetate':ax[0], 'ga_preshift': ax[1], 'glucose':ax[2]}
+ax.set_yticklabels(reversed(sorted(indices.keys())))
+# axes = {'acetate':ax[0], 'ga_preshift': ax[1], 'glucose':ax[2]}
 for g, d in kde_df.groupby(['strain', 'growth_medium']):
-    _ax = axes[g[1]]
+    # _ax = axes[g[1]]
 
     if g[0] == 'WT':
         _color = 'grey'
         for i in indices.values():
             if i < (N_DIST ):
-                _ax.plot(d['growth_rate_hr'], d['kde_norm'] + OVERLAP *i,
+                ax.plot(d['lag_time_hr'], d['kde_norm'] + OVERLAP *i,
                 '--', zorder=np.abs(i - N_DIST) +1, color=_color)
  
     else:
@@ -94,14 +89,16 @@ for g, d in kde_df.groupby(['strain', 'growth_medium']):
 
         _color = palette[ind]
     if g[0] != 'WT':
-        _ax.plot(d['growth_rate_hr'], d['kde_norm'] + OVERLAP *ind,
+        ax.plot(d['lag_time_hr'], d['kde_norm'] + OVERLAP *ind,
             zorder=np.abs(ind - N_DIST) +1, color=_color)
-        _ax.plot(d['growth_rate_hr'],  OVERLAP * ind * np.ones(len(d)),
-            zorder=np.abs(ind - N_DIST) +1, color=_color)
-        _ax.fill_between(d['growth_rate_hr'], OVERLAP * ind, d['kde_norm'] + OVERLAP *ind, 
+        ax.plot(d['lag_time_hr'],  OVERLAP * ind * np.ones(len(d)),
+           zorder=np.abs(ind - N_DIST) +1, color=_color)
+        ax.fill_between(d['lag_time_hr'], OVERLAP * ind, d['kde_norm'] + OVERLAP *ind, 
             alpha=0.5,  zorder=np.abs(ind - N_DIST) + 2, color=_color)
 plt.tight_layout()
-plt.savefig('../../figures/growth_rates/singleKO_hyperparameter_ridgeline.pdf', bbox_inches='tight')
+plt.savefig('../../figures/growth_rates/singleKO_lagtime_ridgeline.pdf', bbox_inches='tight')
+# %%
+
 # %%
 
 # %%

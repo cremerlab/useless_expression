@@ -1,24 +1,23 @@
 ---
 status: >
-    Rejected
+    Accepted
 description : >
-    Data looks ok but is should not be kept as protocol for reaching steady 
-    state with the precultures is still not optimized. I was unable to measure a
-    growth rate for ∆pot and ∆rbs as they did not reach optical densities within
-    the linear regime of the spectrophotometer. 
+    Everything looks good with no problems. 
+
 ---
 
-# 2021-09-01 (Run 1) Single KO L-Proline Growth Rate Determination
+# 2021-09-10 (Run 1) Single KO Glucose-Acetate Diauxic Shift
 
 ## Purpose
-This is an experiment measuring the rate of growth of the single KOs of  "useless" proteins in minimal medium supplemented with L-proline.
+This is an experiment measuring the lag-time for the single KOs of  "useless" proteins 
+during the glucose-acetate diauxic shfit in minimal medium.
 
 ## Materials
 
 ### Growth Media
 | **Label** | **Buffer Base** | **Carbon Source & Concentration** |
 |:--:|:--:|:--:|
-| proline | N-C- + micronutrients | 12 mM proline |
+| ga_shift | N-C- + micronutrients | 0.6 mM glucose + 30 mM acetate|
 
 ### Strains 
 | **Label** | **Parent Strain**|  **Genotype** | **Location(s)**|
@@ -45,7 +44,7 @@ This is an experiment measuring the rate of growth of the single KOs of  "useles
 |Read Speed| Normal|
 | Read Time | 0m32s|
 | Total Interval | 7m32s |
-| Number of Measurements |90 | 
+| Number of Measurements |  96| 
 
 ### Plate Layout
 | **Wells** | **Label** | **Identifier** |
@@ -64,47 +63,39 @@ This is an experiment measuring the rate of growth of the single KOs of  "useles
 
 
 ## Notes & Results
+Nothing of note in this experiment. 
 
-Growth in proline is somewhat dificult, as it's hard to get the precultures 
-to reasonable ODs. It can also be difficult to get the 'correct' exponential phase
-for the cultures. The cultures of ∆pot and  ∆rbs  did not reach the linear regime 
-of the spectrophotometer. We were therefore unable to determine a growth rate 
-for these samples.
+### Lag Time Inference
 
-### Growth Rate Inference
-
-| **strain** | **growth rate, µ [per hr]** |
-|:--: |:--:|
-|∆mal | 0.293 ± 0.004|
-|∆pot | Not Determined |
-|∆nmp | 0.365 ± 0.005| 
-|∆his | 0.257 ± 0.003|
-|∆rbs | Not Determined |
-|∆dpp | 0.396 ± 0.005|
-|∆opp | 0.323 ± 0.004|
-|∆mgl | 0.327 ± 0.002|   
-|∆glt | 0.082 ± 0.001|  
-|∆flh | 0.133 ± 0.010|
-|WT   | 0.287 ± 0.003|
+| **Strain** | **Glucose growth rate, µ [hr]** | **Acetate growth rate, µ [per hr]** | **Lag Time, δ [hr]** | 
+|:--: |:--:| :--: | :--: |
+|∆mal | 0.68 ± 0.04| 0.52 ± 0.02| 2.07 ± 0.01|
+|∆pot | 0.65 ± 0.07| 0.48 ± 0.03| 2.5 ± 0.1|
+|∆nmp | 0.75 ± 0.06| 0.52 ± 0.01| 1.93 ± 0.02 |
+|∆his | 0.77 ± 0.03| 0.52 ± 0.03| 2.16 ± 0.09|
+|∆rbs | 0.78 ± 0.04| 0.43 ± 0.01| 2.51 ± 0.04|
+|∆dpp | 0.771 ± 0.03| 0.49 ± 0.01| 2.74 ± 0.01|
+|∆opp | 0.60 ± 0.04| 0.41 ± 0.01| 1.37 ± 0.03| 
+|∆mgl | 0.65 ± 0.02| 0.47 ± 0.01| 2.40 ± 0.05 |    
+|∆glt | 0.71 ± 0.04|  0.50 ± 0.02| 2.00 ± 0.08| 
+|∆flh | 0.78 ± 0.04| 0.442 ± 0.009| 2.32 ± 0.08|
+|WT   | 0.79 ± 0.01| 0.429 ± 0.006| 2.74 ± 0.02|
 
 
 ### Plots
 
-**Fits**
-
-![](output/2021-09-01_r1_SingleKO_proline_fits.png)
-
-**Growth Curves**
-
-![](output/2021-09-01_r1_SingleKO_proline_raw_traces.png)
+![](output/2021-09-10_r1_SingleKO_glucose-acetate_shift_plot.png)
 
 ## Protocol 
-1.  Seed cultures were prepared by inoculating 3 mL of LB with a single colony from a fresh (< 2 week old) plate.
-2. The LB culture was allowed to grow for 4.5 hours to saturation. 
-3. A preculture was prepared by diluting the seed culture 1:1000 into 
-prewarmed acetate minimal medium and allowed to grow for 15 hours at 37° C
-to an OD_600nm_ of ≈ 0.5.
-4. Precultues were diluted  1:20 into fresh acetate minimal medium prewarmed to 37° C. 
+1. Precultures were prepared by inoculating 3 mL of N-C- minimal medium (10 mM glucose) + 3 µL of LB with a single colony from a fresh (< 2 week old) plate.
+2. Precultures were grown for 5 hours at 37° C with 250 rpm shaking until an OD 
+of ≈ 0.5 was reached.
+3. 1 mL of each preculture was transferred to a eppendorf tube and centrifuged 
+ at 13 xg for 60 seconds. Supernatant was removed.
+4. The cell pellet was resuspended with 1 mL of N-C- + 0.6 mM glucose + 30 mM acetate.
+This washing step was repeated once more. 
+5. THe cell pellet was resuspended in 1 mL of N-C- + 0.6 mM glucose + 30 mM acetate 
+and was further diluted 1:20 into fresh shift medium prewarmed to 37° C.
 4. A fresh 96 well plate was filled with water in blank wells. The remaining wells 
 were filled with 200 µL of diluted and mixed cultures as appropriate and described in 
 the section "Plate Layout".

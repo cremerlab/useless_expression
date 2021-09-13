@@ -102,22 +102,22 @@ def matplotlib_style(return_colors=True, return_palette=True, **kwargs):
         "grid.color": '#FFF',
 
         # Title formatting
-        "axes.titlesize": 6,
+        "axes.titlesize": 8,
         "axes.titleweight": 700,
         "axes.titlepad": 3,
-        "axes.titlelocation": "center",
+        "axes.titlelocation": "left",
 
         # Axes label formatting. 
         "axes.labelpad": 0,
         "axes.labelweight": 700,
         "xaxis.labellocation": "center",
         "yaxis.labellocation": "center",
-        "axes.labelsize": 6,
+        "axes.labelsize": 8,
         "axes.xmargin": 0.03,
         "axes.ymargin": 0.03,
 
         # Legend formatting
-        "legend.fontsize": 5,
+        "legend.fontsize": 8,
         "legend.labelspacing": 0.25,
         "legend.title_fontsize": 5,
         "legend.frameon": True,
@@ -126,8 +126,8 @@ def matplotlib_style(return_colors=True, return_palette=True, **kwargs):
         # Tick formatting
         "xtick.color": "#5b5b5b",
         "ytick.color": "#5b5b5b",
-        "xtick.labelsize": 5,
-        "ytick.labelsize": 5,
+        "xtick.labelsize": 6,
+        "ytick.labelsize": 6,
         "xtick.major.size": 0,
         "ytick.major.size": 0,
         "xtick.major.width": 0.25,
@@ -139,7 +139,7 @@ def matplotlib_style(return_colors=True, return_palette=True, **kwargs):
 
         # General Font styling
         "font.family": "sans-serif",
-        "font.family": "Arial",
+        "font.family": "Nunito",
         "font.weight": 400, # Weight of all fonts unless overriden.
         "font.style": "normal",
         "text.color": "#5b5b5b",
