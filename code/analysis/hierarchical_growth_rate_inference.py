@@ -44,7 +44,7 @@ for g, d in tqdm.tqdm(data.groupby(['growth_medium', 'strain', 'class']),
                  'tech_idx': d['tech_rep'].values.astype(int),
                  'elapsed_time':d['elapsed_time_hr'].values.astype(float),
                  'optical_density':d['od_600nm_subtracted'].values.astype(float)} 
-    samples = model.sample(data=data_dict, iter_warmup=1000, adapt_delta=0.99)
+    samples = model.sample(data=data_dict, iter_warmup=1000, iter_sampling=5000, adapt_delta=0.999)
     samples = arviz.from_cmdstanpy(samples)
     bebi103.stan.check_all_diagnostics(samples) 
     samples = samples.posterior['mu'].to_dataframe().reset_index()

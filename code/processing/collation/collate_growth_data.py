@@ -10,15 +10,17 @@ and `code/procssing/diauxic_shifts/` and collates all data from "accepted" exper
     which were used and why. This information is based on the "status" and 
     "description" fields on the README.md file associated with each experiment.
 
-`collated_OD600_growth_curves.csv
-    This is a long-form tidy CSV file with all growth curves taken across strains 
-    and conditions. Only experiments marked as "accepted" in the README.md 
-    frontmatter is included in this file.
-
 `collated_OD600_growth_curves_exponential_phase.csv`
     This is a long-form tidy CSV file with all growth measurements deemed to 
     be in the exponential phase of growth. Only experiments marked as "accepted" 
     in the README.md frontmatter is included in this file.
+
+`collated_diauxic_shifts_labeled.csv
+    This is a long-form tidy CSV file with all diauxic shift measurements for 
+    all strains  and conditions. Only experiments marked as "accepted" in the README.md 
+    frontmatter is included in this file.
+
+
 """
 #%%
 import numpy as np 

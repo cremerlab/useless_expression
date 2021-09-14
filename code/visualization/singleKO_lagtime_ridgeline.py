@@ -16,12 +16,12 @@ data['strain'] = [s.replace('∆', 'Δ') for s in data['strain'].values]
 # data = data[(data['class']=='WT' ) | (data['class']=='Single KO')]
 # %%
 # For each collection of samples, compute the kernel density estimate over a wide range
-delta_range = np.linspace(0.9, 3.1, 500)
+delta_range = np.linspace(0.5, 4, 1000)
 kde_dfs = []
 for g, d in tqdm.tqdm(data.groupby(['strain', 'growth_medium'])):
     logprob = sklearn.neighbors.KernelDensity(
                                      kernel='gaussian',
-                                     bandwidth=0.01,
+                                     bandwidth=0.1,
                                      ).fit(
                                          d['delta'].values[:, None]
                                      ).score_samples(
@@ -54,10 +54,10 @@ fig, ax = plt.subplots(1, 1, figsize=(3, 6))
 
 # Add a label of what the height means
 ax.arrow(1.1, (N_DIST - 1) * OVERLAP, 0, 0.8, color='grey', 
-           width=0.001, head_length=0.05, head_width=0.01)
-ax.text(1.1,  (N_DIST  - 1)* OVERLAP, r' $\propto$ probability', fontsize=5, 
+           width=0.001, head_length=0.1, head_width=0.1)
+ax.text(1,  (N_DIST  - 1)* OVERLAP, r' $\propto$ probability', fontsize=5, 
           rotation='vertical', fontstyle='italic')
-ax.text(2.5, (N_DIST - 1) * OVERLAP + 0.7, 'WT', fontsize=5)
+ax.text(2.8, (N_DIST - 1) * OVERLAP + 0.5, 'WT', fontsize=5)
 
 # Adjust the axis limits
 # ax.set_xlim([1, 3.5])
@@ -96,7 +96,8 @@ for g, d in kde_df.groupby(['strain', 'growth_medium']):
         ax.fill_between(d['lag_time_hr'], OVERLAP * ind, d['kde_norm'] + OVERLAP *ind, 
             alpha=0.5,  zorder=np.abs(ind - N_DIST) + 2, color=_color)
 plt.tight_layout()
-plt.savefig('../../figures/growth_rates/singleKO_lagtime_ridgeline.pdf', bbox_inches='tight')
+plt.savefig('../../figures/growth_rates/singleKO_lagtime_ridgeline.pdf', bbox_inches='tight',
+            transparent=True)
 # %%
 
 # %%

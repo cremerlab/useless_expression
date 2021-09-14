@@ -2,36 +2,34 @@ data {
     // Dimensional parameters
     int<lower=1> J; // Number of biological replicates
     int<lower=1> K; // Number of technical replicates 
-    int<lower=1> N_preshift; // Number of measurements
-    int<lower=1> N_postshift; // Number of measurements
+    int<lower=1> N; // Number of measurements
 
     // Identification vectors
     int<lower=1, upper=J> biol_idx[K];
-    int<lower=1, upper=K> tech_idx_preshift[N_preshift]; 
-    int<lower=1, upper=K> tech_idx_postshift[N_postshift]; 
+    int<lower=1, upper=K> tech_idx[N]; 
 
     // Observed parameters
-    vector<lower=0>[N_preshift] elapsed_time_preshift;
-    vector<lower=0>[N_postshift] elapsed_time_postshift;
-    vector<lower=0>[N_preshift] optical_density_preshift;
-    vector<lower=0>[N_postshift] optical_density_postshift;
+    vector<lower=0>[N] elapsed_time;
+    vector<lower=0>[N] optical_density;
 
     // Calculated parameters
     vector<lower=0>[K] shift_optical_density; // Stationary OD for each technical replicate
+    vector<lower=0>[K] shift_time_init;
 }
 
 transformed data {
     vector[K] log_shift_od = log(shift_optical_density);
-    vector[N_preshift] log_od_preshift_rescaled = log(optical_density_preshift) - log_shift_od[tech_idx_preshift];
-    vector[N_postshift] log_od_postshift_rescaled = log(optical_density_postshift) - log_shift_od[tech_idx_postshift];
+    vector[N] log_od_rescaled = log(optical_density) - log_shift_od[tech_idx];
+    vector[N] elapesd_time_rescaled = elapsed_time - shift_time_init;
+
 }
 
 parameters { 
     real<lower=0> mu_preshift; // Growth rate
     real<lower=0> mu_postshift; // Growth rate
     real<lower=0> mu_tau;  // Variance for growth rate.
-    real<upper=0> theta_preshift; // y-intercept
-    real<upper=0> theta_postshift; // y-intercept
+    real theta_preshift; // y-intercept
+    real theta_postshift; // y-intercept
     real<lower=0> theta_tau; // variance for y-intercept
 
     // Level 1
@@ -82,17 +80,17 @@ model {
     theta_postshift_1_tilde ~ std_normal();
     theta_preshift_2_tilde ~ std_normal();
     theta_postshift_2_tilde ~ std_normal();
-    theta_tau ~ normal(0, 0.01);
+    theta_tau ~ normal(0, 0.1);
 
     // Singular priors
     sigma ~ normal(0, 0.1);
 
     // Likelihood
     log_od_preshift_rescaled ~ normal(mu_preshift_2[tech_idx_preshift] .* elapsed_time_preshift + theta_preshift_2[tech_idx_preshift], sigma);
-    log_od_postshift_rescaled ~ normal(mu_postshift_2[tech_idx_postshift] .* elapsed_time_postshift  + theta_postshift_2[tech_idx_postshift], sigma);
+    log_od_postshift_rescaled ~ normal(mu_postshift_2[tech_idx_postshift] .* elapsed_time_postshift + theta_postshift_2[tech_idx_postshift], sigma);
 
 }
 
 generated quantities { 
-    real delta = -theta_postshift / mu_postshift -  (-theta_preshift / mu_preshift);
+    real delta = (-theta_postshift / mu_postshift) - (-theta_preshift / mu_preshift);
 }

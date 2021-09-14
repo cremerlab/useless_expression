@@ -85,3 +85,5 @@ experiment,experiment_type,status,description
 "
 2021-09-10_r1_SingleKO_glucose-acetate,diauxic shift measurement,Accepted,"Everything looks good with no problems. 
 "
+2021-09-12_r1_SingleKO_glucose-acetate,diauxic shift measurement,Accepted,"There was an obvious problem with the 1st technical replicate of WT and it  was therefore dropped from analysis.
+"
