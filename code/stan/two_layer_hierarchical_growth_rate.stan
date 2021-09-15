@@ -23,11 +23,11 @@ parameters {
     // Level 1
     vector[J] mu_1_tilde;
     vector<lower=0>[J] od_init;
-    real od_init_tau;
+    real<lower=0> od_init_tau;
 
     // Level 2
     vector[K] mu_2_tilde;
-    vector<lower=0>[K] od_init_tilde;
+    vector[K] od_init_tilde;
 
     // Singular
     real<lower=0> sigma;
@@ -36,7 +36,7 @@ parameters {
 transformed parameters { 
     vector[J] mu_1 = mu + mu_tau * mu_1_tilde;
     vector[K] mu_2 = mu_1[biol_idx] + mu_tau * mu_2_tilde;
-    vector[K] od_init_1 = od_init[biol_idx] + od_init_tau * od_init_tilde;
+    vector<lower=0>[K] od_init_1 = od_init[biol_idx] + od_init_tau * od_init_tilde;
     vector[K] log_od_init = log(od_init_1);
 }
 

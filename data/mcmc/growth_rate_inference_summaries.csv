@@ -1,391 +1,391 @@
 growth_medium,high,low,percentile,replicate,strain
-acetate,0.5304283,0.4870153,95.0,hyperparameter,WT
-acetate,0.521733125,0.496291125,75.0,hyperparameter,WT
-acetate,0.5159864999999999,0.50157375,50.0,hyperparameter,WT
-acetate,0.512227125,0.505339125,25.0,hyperparameter,WT
-acetate,0.5101279000000001,0.50747455,5.0,hyperparameter,WT
-acetate,0.57904215,0.5140034,95.0,hyperparameter,∆dpp
-acetate,0.5648545,0.528936875,75.0,hyperparameter,∆dpp
-acetate,0.557805,0.53720575,50.0,hyperparameter,∆dpp
-acetate,0.55250025,0.542515625,25.0,hyperparameter,∆dpp
-acetate,0.5495637,0.54547725,5.0,hyperparameter,∆dpp
-acetate,0.481781725,0.4481338,95.0,hyperparameter,∆dpp ∆flh
-acetate,0.473787375,0.456369375,75.0,hyperparameter,∆dpp ∆flh
-acetate,0.46972625,0.460172,50.0,hyperparameter,∆dpp ∆flh
-acetate,0.4670725,0.462829875,25.0,hyperparameter,∆dpp ∆flh
-acetate,0.46578425,0.4640871,5.0,hyperparameter,∆dpp ∆flh
-acetate,0.6160013,0.567634275,95.0,hyperparameter,∆dpp ∆glt
-acetate,0.605417125,0.57836925,75.0,hyperparameter,∆dpp ∆glt
-acetate,0.5995152499999999,0.58401075,50.0,hyperparameter,∆dpp ∆glt
-acetate,0.595209375,0.5879592499999999,25.0,hyperparameter,∆dpp ∆glt
-acetate,0.59313735,0.59024565,5.0,hyperparameter,∆dpp ∆glt
-acetate,0.480653775,0.433503125,95.0,hyperparameter,∆dpp ∆rbs
-acetate,0.470163,0.444546875,75.0,hyperparameter,∆dpp ∆rbs
-acetate,0.464874,0.45002775,50.0,hyperparameter,∆dpp ∆rbs
-acetate,0.46072275,0.453839875,25.0,hyperparameter,∆dpp ∆rbs
-acetate,0.45864384999999996,0.45584775,5.0,hyperparameter,∆dpp ∆rbs
-acetate,0.45796155,0.4300098,95.0,hyperparameter,∆flh
-acetate,0.452392,0.436773375,75.0,hyperparameter,∆flh
-acetate,0.44943725,0.4402665,50.0,hyperparameter,∆flh
-acetate,0.447078125,0.44260825,25.0,hyperparameter,∆flh
-acetate,0.445564,0.4439852,5.0,hyperparameter,∆flh
-acetate,0.4977004,0.461404575,95.0,hyperparameter,∆flh ∆glt
-acetate,0.49037000000000003,0.46963825,75.0,hyperparameter,∆flh ∆glt
-acetate,0.486035,0.474325,50.0,hyperparameter,∆flh ∆glt
-acetate,0.482904,0.47735099999999997,25.0,hyperparameter,∆flh ∆glt
-acetate,0.4812473,0.47901775,5.0,hyperparameter,∆flh ∆glt
-acetate,0.48199414999999995,0.424998475,95.0,hyperparameter,∆flh ∆rbs
-acetate,0.469602,0.438269,75.0,hyperparameter,∆flh ∆rbs
-acetate,0.46274325,0.44493499999999997,50.0,hyperparameter,∆flh ∆rbs
-acetate,0.457741375,0.44956050000000003,25.0,hyperparameter,∆flh ∆rbs
-acetate,0.45517125,0.45188815,5.0,hyperparameter,∆flh ∆rbs
-acetate,0.6053291,0.545326975,95.0,hyperparameter,∆glt
-acetate,0.592242625,0.557866375,75.0,hyperparameter,∆glt
-acetate,0.5845184999999999,0.565099,50.0,hyperparameter,∆glt
-acetate,0.579503875,0.5698415,25.0,hyperparameter,∆glt
-acetate,0.5766789,0.5727307,5.0,hyperparameter,∆glt
-acetate,0.544378175,0.5056978,95.0,hyperparameter,∆his
-acetate,0.536889,0.514399375,75.0,hyperparameter,∆his
-acetate,0.53225925,0.51928375,50.0,hyperparameter,∆his
-acetate,0.52867,0.52261125,25.0,hyperparameter,∆his
-acetate,0.52678245,0.524445,5.0,hyperparameter,∆his
-acetate,0.15281560000000002,0.1014204,95.0,hyperparameter,∆his ∆dpp
-acetate,0.142264625,0.11529112500000001,75.0,hyperparameter,∆his ∆dpp
-acetate,0.137125,0.12208625,50.0,hyperparameter,∆his ∆dpp
-acetate,0.133151875,0.12605850000000002,25.0,hyperparameter,∆his ∆dpp
-acetate,0.1311473,0.1282812,5.0,hyperparameter,∆his ∆dpp
-acetate,0.47160055,0.44744325,95.0,hyperparameter,∆his ∆flh
-acetate,0.466116125,0.452362875,75.0,hyperparameter,∆his ∆flh
-acetate,0.46305275,0.455162,50.0,hyperparameter,∆his ∆flh
-acetate,0.460868125,0.457254625,25.0,hyperparameter,∆his ∆flh
-acetate,0.4596918,0.45827855,5.0,hyperparameter,∆his ∆flh
-acetate,0.5510328250000001,0.5205455999999999,95.0,hyperparameter,∆his ∆glt
-acetate,0.5442224999999999,0.52785775,75.0,hyperparameter,∆his ∆glt
-acetate,0.5406172499999999,0.5313285,50.0,hyperparameter,∆his ∆glt
-acetate,0.5381589999999999,0.533744625,25.0,hyperparameter,∆his ∆glt
-acetate,0.53694145,0.53519365,5.0,hyperparameter,∆his ∆glt
-acetate,0.553103025,0.5049444,95.0,hyperparameter,∆his ∆mgl
-acetate,0.54198675,0.51536025,75.0,hyperparameter,∆his ∆mgl
-acetate,0.5363530000000001,0.5210275,50.0,hyperparameter,∆his ∆mgl
-acetate,0.532219875,0.524959,25.0,hyperparameter,∆his ∆mgl
-acetate,0.52997125,0.5272051,5.0,hyperparameter,∆his ∆mgl
-acetate,0.24606745000000002,0.23317374999999999,95.0,hyperparameter,∆his ∆nmp
-acetate,0.243272875,0.23631074999999999,75.0,hyperparameter,∆his ∆nmp
-acetate,0.2418515,0.23785325000000002,50.0,hyperparameter,∆his ∆nmp
-acetate,0.24081375,0.238968625,25.0,hyperparameter,∆his ∆nmp
-acetate,0.24024589999999998,0.23951920000000002,5.0,hyperparameter,∆his ∆nmp
-acetate,0.472695425,0.426964325,95.0,hyperparameter,∆his ∆opp
-acetate,0.462434375,0.437967875,75.0,hyperparameter,∆his ∆opp
-acetate,0.45737975,0.44328875,50.0,hyperparameter,∆his ∆opp
-acetate,0.453523875,0.44708512499999997,25.0,hyperparameter,∆his ∆opp
-acetate,0.45165435000000004,0.4492615,5.0,hyperparameter,∆his ∆opp
-acetate,0.48510985,0.451296775,95.0,hyperparameter,∆his ∆rbs
-acetate,0.47715625,0.4586,75.0,hyperparameter,∆his ∆rbs
-acetate,0.47280075,0.462371,50.0,hyperparameter,∆his ∆rbs
-acetate,0.469921875,0.46506,25.0,hyperparameter,∆his ∆rbs
-acetate,0.46845095,0.46647475,5.0,hyperparameter,∆his ∆rbs
-acetate,0.5719730749999999,0.5360645500000001,95.0,hyperparameter,∆mal
-acetate,0.564147375,0.544173625,75.0,hyperparameter,∆mal
-acetate,0.5598007500000001,0.54820975,50.0,hyperparameter,∆mal
-acetate,0.556661625,0.551129,25.0,hyperparameter,∆mal
-acetate,0.55491945,0.5529141999999999,5.0,hyperparameter,∆mal
-acetate,0.46773515,0.4591016,95.0,hyperparameter,∆mal ∆dpp
-acetate,0.465883375,0.46162375,75.0,hyperparameter,∆mal ∆dpp
-acetate,0.464962,0.462546,50.0,hyperparameter,∆mal ∆dpp
-acetate,0.464304125,0.46320425,25.0,hyperparameter,∆mal ∆dpp
-acetate,0.46397645,0.463542,5.0,hyperparameter,∆mal ∆dpp
-acetate,0.4797435,0.4247354,95.0,hyperparameter,∆mal ∆flh
-acetate,0.467338125,0.4356245,75.0,hyperparameter,∆mal ∆flh
-acetate,0.46061325,0.44180600000000003,50.0,hyperparameter,∆mal ∆flh
-acetate,0.455617125,0.446783125,25.0,hyperparameter,∆mal ∆flh
-acetate,0.4529731,0.44938164999999997,5.0,hyperparameter,∆mal ∆flh
-acetate,0.6188486750000001,0.5541208,95.0,hyperparameter,∆mal ∆glt
-acetate,0.603349875,0.567417875,75.0,hyperparameter,∆mal ∆glt
-acetate,0.5960785,0.5751967499999999,50.0,hyperparameter,∆mal ∆glt
-acetate,0.5903381249999999,0.58030125,25.0,hyperparameter,∆mal ∆glt
-acetate,0.5873338,0.58346885,5.0,hyperparameter,∆mal ∆glt
-acetate,0.5659424999999999,0.49200935,95.0,hyperparameter,∆mal ∆his
-acetate,0.54913575,0.5076373750000001,75.0,hyperparameter,∆mal ∆his
-acetate,0.540001,0.51690225,50.0,hyperparameter,∆mal ∆his
-acetate,0.533839375,0.5228517500000001,25.0,hyperparameter,∆mal ∆his
-acetate,0.5305725,0.5261868000000001,5.0,hyperparameter,∆mal ∆his
-acetate,0.516565775,0.486215975,95.0,hyperparameter,∆mal ∆mgl
-acetate,0.508915625,0.49357300000000004,75.0,hyperparameter,∆mal ∆mgl
-acetate,0.5055540000000001,0.49695075,50.0,hyperparameter,∆mal ∆mgl
-acetate,0.503315375,0.499413625,25.0,hyperparameter,∆mal ∆mgl
-acetate,0.502121,0.50057455,5.0,hyperparameter,∆mal ∆mgl
-acetate,0.5258674999999999,0.48803875,95.0,hyperparameter,∆mal ∆nmp
-acetate,0.518274125,0.4966785,75.0,hyperparameter,∆mal ∆nmp
-acetate,0.5135795,0.501224,50.0,hyperparameter,∆mal ∆nmp
-acetate,0.5103131249999999,0.504700375,25.0,hyperparameter,∆mal ∆nmp
-acetate,0.50844225,0.5063636499999999,5.0,hyperparameter,∆mal ∆nmp
-acetate,0.49156632499999997,0.41470765,95.0,hyperparameter,∆mal ∆opp
-acetate,0.473725375,0.432583,75.0,hyperparameter,∆mal ∆opp
-acetate,0.4650465,0.441025,50.0,hyperparameter,∆mal ∆opp
-acetate,0.45861475,0.447843,25.0,hyperparameter,∆mal ∆opp
-acetate,0.4553457,0.45083225,5.0,hyperparameter,∆mal ∆opp
-acetate,0.5519583499999999,0.49254495000000004,95.0,hyperparameter,∆mal ∆pot
-acetate,0.538389625,0.505754,75.0,hyperparameter,∆mal ∆pot
-acetate,0.5314555,0.5130045,50.0,hyperparameter,∆mal ∆pot
-acetate,0.52633775,0.51755025,25.0,hyperparameter,∆mal ∆pot
-acetate,0.5238032,0.52012265,5.0,hyperparameter,∆mal ∆pot
-acetate,0.48244175,0.45749897500000003,95.0,hyperparameter,∆mal ∆rbs
-acetate,0.47627424999999995,0.462949375,75.0,hyperparameter,∆mal ∆rbs
-acetate,0.47343124999999997,0.46561975,50.0,hyperparameter,∆mal ∆rbs
-acetate,0.471206,0.467712625,25.0,hyperparameter,∆mal ∆rbs
-acetate,0.47013345,0.46883805,5.0,hyperparameter,∆mal ∆rbs
-acetate,0.570835275,0.50205075,95.0,hyperparameter,∆mgl
-acetate,0.5573342499999999,0.51797275,75.0,hyperparameter,∆mgl
-acetate,0.5486895,0.5259585,50.0,hyperparameter,∆mgl
-acetate,0.542640125,0.531917125,25.0,hyperparameter,∆mgl
-acetate,0.539286,0.53521175,5.0,hyperparameter,∆mgl
-acetate,0.533384975,0.468273225,95.0,hyperparameter,∆mgl ∆dpp
-acetate,0.518536875,0.482003125,75.0,hyperparameter,∆mgl ∆dpp
-acetate,0.511433,0.489787,50.0,hyperparameter,∆mgl ∆dpp
-acetate,0.505413375,0.495432625,25.0,hyperparameter,∆mgl ∆dpp
-acetate,0.502441,0.498264,5.0,hyperparameter,∆mgl ∆dpp
-acetate,0.48147052500000004,0.45547895,95.0,hyperparameter,∆mgl ∆flh
-acetate,0.47522824999999996,0.460706,75.0,hyperparameter,∆mgl ∆flh
-acetate,0.47225799999999996,0.46369125,50.0,hyperparameter,∆mgl ∆flh
-acetate,0.47003475,0.465865,25.0,hyperparameter,∆mgl ∆flh
-acetate,0.46876245,0.46717,5.0,hyperparameter,∆mgl ∆flh
-acetate,0.57982795,0.534381275,95.0,hyperparameter,∆mgl ∆glt
-acetate,0.569289,0.54328175,75.0,hyperparameter,∆mgl ∆glt
-acetate,0.5638989999999999,0.5488005,50.0,hyperparameter,∆mgl ∆glt
-acetate,0.559709375,0.552923,25.0,hyperparameter,∆mgl ∆glt
-acetate,0.5574968,0.5549132999999999,5.0,hyperparameter,∆mgl ∆glt
-acetate,0.509224275,0.4328851,95.0,hyperparameter,∆mgl ∆opp
-acetate,0.490011875,0.4574185,75.0,hyperparameter,∆mgl ∆opp
-acetate,0.4822145,0.465248,50.0,hyperparameter,∆mgl ∆opp
-acetate,0.477823,0.46976125,25.0,hyperparameter,∆mgl ∆opp
-acetate,0.47553145,0.47237135,5.0,hyperparameter,∆mgl ∆opp
-acetate,0.496634825,0.45816235,95.0,hyperparameter,∆mgl ∆rbs
-acetate,0.48825075,0.46673275000000003,75.0,hyperparameter,∆mgl ∆rbs
-acetate,0.4838745,0.47174375,50.0,hyperparameter,∆mgl ∆rbs
-acetate,0.480486375,0.47477525,25.0,hyperparameter,∆mgl ∆rbs
-acetate,0.478933,0.4764981,5.0,hyperparameter,∆mgl ∆rbs
-acetate,0.5512006,0.5104442250000001,95.0,hyperparameter,∆nmp
-acetate,0.5424275,0.51925925,75.0,hyperparameter,∆nmp
-acetate,0.5374395,0.523829,50.0,hyperparameter,∆nmp
-acetate,0.53374325,0.5276075,25.0,hyperparameter,∆nmp
-acetate,0.53197,0.5295742,5.0,hyperparameter,∆nmp
-acetate,0.5484983750000001,0.52730225,95.0,hyperparameter,∆nmp ∆dpp
-acetate,0.543838875,0.53263575,75.0,hyperparameter,∆nmp ∆dpp
-acetate,0.54142375,0.5350695000000001,50.0,hyperparameter,∆nmp ∆dpp
-acetate,0.539781125,0.536844875,25.0,hyperparameter,∆nmp ∆dpp
-acetate,0.5388719000000001,0.53773875,5.0,hyperparameter,∆nmp ∆dpp
-acetate,0.5069706500000001,0.47080174999999996,95.0,hyperparameter,∆nmp ∆flh
-acetate,0.49890075,0.47897375,75.0,hyperparameter,∆nmp ∆flh
-acetate,0.49446599999999996,0.483238,50.0,hyperparameter,∆nmp ∆flh
-acetate,0.4915715,0.48636725000000003,25.0,hyperparameter,∆nmp ∆flh
-acetate,0.49000335,0.48794555,5.0,hyperparameter,∆nmp ∆flh
-acetate,0.567038475,0.5251526249999999,95.0,hyperparameter,∆nmp ∆glt
-acetate,0.557913125,0.5346936250000001,75.0,hyperparameter,∆nmp ∆glt
-acetate,0.55307125,0.5394125,50.0,hyperparameter,∆nmp ∆glt
-acetate,0.54926175,0.5428823749999999,25.0,hyperparameter,∆nmp ∆glt
-acetate,0.54736595,0.544786,5.0,hyperparameter,∆nmp ∆glt
-acetate,0.49862605,0.4765377,95.0,hyperparameter,∆nmp ∆mgl
-acetate,0.493427625,0.48185649999999997,75.0,hyperparameter,∆nmp ∆mgl
-acetate,0.490961,0.48452175000000003,50.0,hyperparameter,∆nmp ∆mgl
-acetate,0.489332,0.486218625,25.0,hyperparameter,∆nmp ∆mgl
-acetate,0.48832790000000004,0.48719565,5.0,hyperparameter,∆nmp ∆mgl
-acetate,0.480250175,0.46500255,95.0,hyperparameter,∆nmp ∆opp
-acetate,0.47654612500000004,0.468766625,75.0,hyperparameter,∆nmp ∆opp
-acetate,0.47479925,0.4705145,50.0,hyperparameter,∆nmp ∆opp
-acetate,0.473572125,0.471647625,25.0,hyperparameter,∆nmp ∆opp
-acetate,0.472941,0.47220154999999997,5.0,hyperparameter,∆nmp ∆opp
-acetate,0.505032425,0.46924635000000003,95.0,hyperparameter,∆nmp ∆rbs
-acetate,0.49757812500000004,0.47860525,75.0,hyperparameter,∆nmp ∆rbs
-acetate,0.4945585,0.48421675,50.0,hyperparameter,∆nmp ∆rbs
-acetate,0.492421125,0.48745725,25.0,hyperparameter,∆nmp ∆rbs
-acetate,0.491115,0.48918955,5.0,hyperparameter,∆nmp ∆rbs
-acetate,0.525673725,0.43095405,95.0,hyperparameter,∆opp
-acetate,0.506260375,0.450958375,75.0,hyperparameter,∆opp
-acetate,0.4949425,0.46265675,50.0,hyperparameter,∆opp
-acetate,0.486269375,0.4717405,25.0,hyperparameter,∆opp
-acetate,0.4813998,0.47594365,5.0,hyperparameter,∆opp
-acetate,0.552009925,0.519605825,95.0,hyperparameter,∆opp ∆dpp
-acetate,0.545069125,0.527042625,75.0,hyperparameter,∆opp ∆dpp
-acetate,0.5412205,0.530941,50.0,hyperparameter,∆opp ∆dpp
-acetate,0.5384355,0.5337203749999999,25.0,hyperparameter,∆opp ∆dpp
-acetate,0.5370694500000001,0.53515395,5.0,hyperparameter,∆opp ∆dpp
-acetate,0.4825106,0.4411429,95.0,hyperparameter,∆opp ∆flh
-acetate,0.47278125,0.45063712499999997,75.0,hyperparameter,∆opp ∆flh
-acetate,0.46798625,0.4554465,50.0,hyperparameter,∆opp ∆flh
-acetate,0.46459075,0.45881462500000003,25.0,hyperparameter,∆opp ∆flh
-acetate,0.46281825,0.46063855,5.0,hyperparameter,∆opp ∆flh
-acetate,0.5918274750000001,0.5428715500000001,95.0,hyperparameter,∆opp ∆glt
-acetate,0.579508875,0.553355375,75.0,hyperparameter,∆opp ∆glt
-acetate,0.57340725,0.558138,50.0,hyperparameter,∆opp ∆glt
-acetate,0.56898875,0.561958875,25.0,hyperparameter,∆opp ∆glt
-acetate,0.566721,0.5641795,5.0,hyperparameter,∆opp ∆glt
-acetate,0.49256792499999996,0.46735672500000003,95.0,hyperparameter,∆opp ∆rbs
-acetate,0.48626525,0.47233387499999996,75.0,hyperparameter,∆opp ∆rbs
-acetate,0.483022,0.4751935,50.0,hyperparameter,∆opp ∆rbs
-acetate,0.48081775,0.477143625,25.0,hyperparameter,∆opp ∆rbs
-acetate,0.4797289,0.47828054999999997,5.0,hyperparameter,∆opp ∆rbs
-acetate,0.5352335,0.5031599250000001,95.0,hyperparameter,∆pot
-acetate,0.528016375,0.50926275,75.0,hyperparameter,∆pot
-acetate,0.52421425,0.5132877499999999,50.0,hyperparameter,∆pot
-acetate,0.5211751250000001,0.515984,25.0,hyperparameter,∆pot
-acetate,0.519575,0.5175625,5.0,hyperparameter,∆pot
-acetate,0.525666175,0.5112295499999999,95.0,hyperparameter,∆pot ∆dpp
-acetate,0.522339375,0.515017875,75.0,hyperparameter,∆pot ∆dpp
-acetate,0.52076525,0.51666475,50.0,hyperparameter,∆pot ∆dpp
-acetate,0.5196833750000001,0.517775125,25.0,hyperparameter,∆pot ∆dpp
-acetate,0.51910845,0.51833355,5.0,hyperparameter,∆pot ∆dpp
-acetate,0.48199502499999997,0.4497385,95.0,hyperparameter,∆pot ∆flh
-acetate,0.47482025,0.456868875,75.0,hyperparameter,∆pot ∆flh
-acetate,0.471156,0.46070525,50.0,hyperparameter,∆pot ∆flh
-acetate,0.468469,0.463537,25.0,hyperparameter,∆pot ∆flh
-acetate,0.4668818,0.46496909999999997,5.0,hyperparameter,∆pot ∆flh
-acetate,0.56272325,0.516450775,95.0,hyperparameter,∆pot ∆glt
-acetate,0.5517231250000001,0.5272899999999999,75.0,hyperparameter,∆pot ∆glt
-acetate,0.54627525,0.5324015,50.0,hyperparameter,∆pot ∆glt
-acetate,0.542773375,0.5361373749999999,25.0,hyperparameter,∆pot ∆glt
-acetate,0.54090435,0.53836965,5.0,hyperparameter,∆pot ∆glt
-acetate,0.5264017,0.5010126500000001,95.0,hyperparameter,∆pot ∆his
-acetate,0.520260875,0.506675875,75.0,hyperparameter,∆pot ∆his
-acetate,0.5172522500000001,0.509464,50.0,hyperparameter,∆pot ∆his
-acetate,0.5151546250000001,0.511467625,25.0,hyperparameter,∆pot ∆his
-acetate,0.514053,0.51262265,5.0,hyperparameter,∆pot ∆his
-acetate,0.512283175,0.48215192500000004,95.0,hyperparameter,∆pot ∆mgl
-acetate,0.504770625,0.48910987499999997,75.0,hyperparameter,∆pot ∆mgl
-acetate,0.5010975,0.49249375,50.0,hyperparameter,∆pot ∆mgl
-acetate,0.498812875,0.4947095,25.0,hyperparameter,∆pot ∆mgl
-acetate,0.497656,0.4960481,5.0,hyperparameter,∆pot ∆mgl
-acetate,0.50961635,0.48680845,95.0,hyperparameter,∆pot ∆nmp
-acetate,0.503982625,0.491799,75.0,hyperparameter,∆pot ∆nmp
-acetate,0.501498,0.49440675,50.0,hyperparameter,∆pot ∆nmp
-acetate,0.49966849999999996,0.496208625,25.0,hyperparameter,∆pot ∆nmp
-acetate,0.49850145,0.497142,5.0,hyperparameter,∆pot ∆nmp
-acetate,0.491418025,0.461113975,95.0,hyperparameter,∆pot ∆opp
-acetate,0.48440325,0.467605625,75.0,hyperparameter,∆pot ∆opp
-acetate,0.4807035,0.47089549999999997,50.0,hyperparameter,∆pot ∆opp
-acetate,0.47821549999999996,0.473567625,25.0,hyperparameter,∆pot ∆opp
-acetate,0.47689815,0.47496055,5.0,hyperparameter,∆pot ∆opp
-acetate,0.48182985,0.44784592500000003,95.0,hyperparameter,∆pot ∆rbs
-acetate,0.47364875,0.45609500000000003,75.0,hyperparameter,∆pot ∆rbs
-acetate,0.469625,0.45992275,50.0,hyperparameter,∆pot ∆rbs
-acetate,0.46694225,0.4624335,25.0,hyperparameter,∆pot ∆rbs
-acetate,0.4655556,0.46373074999999997,5.0,hyperparameter,∆pot ∆rbs
-acetate,0.45984277500000004,0.42604595,95.0,hyperparameter,∆rbs
-acetate,0.45368424999999996,0.434313625,75.0,hyperparameter,∆rbs
-acetate,0.450059,0.43865375,50.0,hyperparameter,∆rbs
-acetate,0.447187625,0.44169949999999997,25.0,hyperparameter,∆rbs
-acetate,0.4456014,0.44339855,5.0,hyperparameter,∆rbs
-acetate,0.487705775,0.41358252500000003,95.0,hyperparameter,∆rbs ∆glt
-acetate,0.473006875,0.431923,75.0,hyperparameter,∆rbs ∆glt
-acetate,0.46397225000000003,0.440682,50.0,hyperparameter,∆rbs ∆glt
-acetate,0.4577155,0.44658512499999997,25.0,hyperparameter,∆rbs ∆glt
-acetate,0.45445195,0.4500738,5.0,hyperparameter,∆rbs ∆glt
-ga_preshift,0.744816375,0.59347435,95.0,hyperparameter,WT
-ga_preshift,0.7044440000000001,0.6325491249999999,75.0,hyperparameter,WT
-ga_preshift,0.688857,0.6481975,50.0,hyperparameter,WT
-ga_preshift,0.676953125,0.6587729999999999,25.0,hyperparameter,WT
-ga_preshift,0.67150725,0.6640607,5.0,hyperparameter,WT
-ga_preshift,0.8349462500000001,0.7163528,95.0,hyperparameter,∆dpp
-ga_preshift,0.8045265,0.7512000000000001,75.0,hyperparameter,∆dpp
-ga_preshift,0.7933635,0.7656215000000001,50.0,hyperparameter,∆dpp
-ga_preshift,0.7863383749999999,0.77442475,25.0,hyperparameter,∆dpp
-ga_preshift,0.7828383,0.7782460999999999,5.0,hyperparameter,∆dpp
-ga_preshift,0.9006974999999999,0.776166775,95.0,hyperparameter,∆flh
-ga_preshift,0.871069125,0.803690625,75.0,hyperparameter,∆flh
-ga_preshift,0.855842,0.8175715,50.0,hyperparameter,∆flh
-ga_preshift,0.845907875,0.82828375,25.0,hyperparameter,∆flh
-ga_preshift,0.84050995,0.83391275,5.0,hyperparameter,∆flh
-ga_preshift,0.7383146500000001,0.523747725,95.0,hyperparameter,∆glt
-ga_preshift,0.6787185,0.6067778749999999,75.0,hyperparameter,∆glt
-ga_preshift,0.6615845,0.62767825,50.0,hyperparameter,∆glt
-ga_preshift,0.6522045,0.637256375,25.0,hyperparameter,∆glt
-ga_preshift,0.64763025,0.6421519,5.0,hyperparameter,∆glt
-ga_preshift,0.8237772250000001,0.535160725,95.0,hyperparameter,∆his
-ga_preshift,0.752830625,0.614691125,75.0,hyperparameter,∆his
-ga_preshift,0.7223904999999999,0.64483625,50.0,hyperparameter,∆his
-ga_preshift,0.700189625,0.66419275,25.0,hyperparameter,∆his
-ga_preshift,0.6887718,0.6745381,5.0,hyperparameter,∆his
-ga_preshift,0.771846425,0.632494275,95.0,hyperparameter,∆mal
-ga_preshift,0.7403115,0.667553,75.0,hyperparameter,∆mal
-ga_preshift,0.72437575,0.6842302499999999,50.0,hyperparameter,∆mal
-ga_preshift,0.713176625,0.694579375,25.0,hyperparameter,∆mal
-ga_preshift,0.7075021499999999,0.70001875,5.0,hyperparameter,∆mal
-ga_preshift,0.719418675,0.65637285,95.0,hyperparameter,∆mgl
-ga_preshift,0.703664125,0.673405875,75.0,hyperparameter,∆mgl
-ga_preshift,0.69729675,0.679979,50.0,hyperparameter,∆mgl
-ga_preshift,0.692723375,0.684783625,25.0,hyperparameter,∆mgl
-ga_preshift,0.69025845,0.6872241,5.0,hyperparameter,∆mgl
-ga_preshift,0.8036324,0.63271295,95.0,hyperparameter,∆nmp
-ga_preshift,0.7641035,0.67167425,75.0,hyperparameter,∆nmp
-ga_preshift,0.7436235,0.69330425,50.0,hyperparameter,∆nmp
-ga_preshift,0.730665125,0.707237,25.0,hyperparameter,∆nmp
-ga_preshift,0.72311315,0.71410755,5.0,hyperparameter,∆nmp
-ga_preshift,0.7749073000000001,0.6195809250000001,95.0,hyperparameter,∆opp
-ga_preshift,0.732772125,0.659541375,75.0,hyperparameter,∆opp
-ga_preshift,0.71524175,0.6763115000000001,50.0,hyperparameter,∆opp
-ga_preshift,0.7041505,0.686556625,25.0,hyperparameter,∆opp
-ga_preshift,0.6986868,0.6919254,5.0,hyperparameter,∆opp
-ga_preshift,0.7418106999999999,0.5978744500000001,95.0,hyperparameter,∆pot
-ga_preshift,0.705697375,0.62555375,75.0,hyperparameter,∆pot
-ga_preshift,0.68825725,0.643136,50.0,hyperparameter,∆pot
-ga_preshift,0.675931125,0.6543463749999999,25.0,hyperparameter,∆pot
-ga_preshift,0.66923235,0.66056335,5.0,hyperparameter,∆pot
-ga_preshift,0.9256623749999999,0.77697705,95.0,hyperparameter,∆rbs
-ga_preshift,0.888344,0.81169925,75.0,hyperparameter,∆rbs
-ga_preshift,0.87157425,0.82836975,50.0,hyperparameter,∆rbs
-ga_preshift,0.860213625,0.84015,25.0,hyperparameter,∆rbs
-ga_preshift,0.8538182,0.84579465,5.0,hyperparameter,∆rbs
-glucose,1.074146,1.0256695,95.0,hyperparameter,WT
-glucose,1.06221125,1.03701625,75.0,hyperparameter,WT
-glucose,1.055985,1.042175,50.0,hyperparameter,WT
-glucose,1.05215125,1.0457524999999999,25.0,hyperparameter,WT
-glucose,1.05014,1.04768,5.0,hyperparameter,WT
-glucose,1.1323345,1.03513925,95.0,hyperparameter,∆dpp
-glucose,1.1077024999999998,1.0550887500000001,75.0,hyperparameter,∆dpp
-glucose,1.096015,1.0661575,50.0,hyperparameter,∆dpp
-glucose,1.0879750000000001,1.07434625,25.0,hyperparameter,∆dpp
-glucose,1.083909,1.0785609999999999,5.0,hyperparameter,∆dpp
-glucose,1.13583975,0.982673325,95.0,hyperparameter,∆flh
-glucose,1.1006512499999999,1.02175875,75.0,hyperparameter,∆flh
-glucose,1.08403,1.0400274999999999,50.0,hyperparameter,∆flh
-glucose,1.07227,1.05237625,25.0,hyperparameter,∆flh
-glucose,1.06577,1.05832,5.0,hyperparameter,∆flh
-glucose,1.0794024999999998,0.999462975,95.0,hyperparameter,∆glt
-glucose,1.0595337500000002,1.01694375,75.0,hyperparameter,∆glt
-glucose,1.049105,1.02551,50.0,hyperparameter,∆glt
-glucose,1.04316375,1.03171,25.0,hyperparameter,∆glt
-glucose,1.0394545,1.0352955000000001,5.0,hyperparameter,∆glt
-glucose,1.1143965,1.0221455,95.0,hyperparameter,∆his
-glucose,1.09104625,1.04296,75.0,hyperparameter,∆his
-glucose,1.0800375,1.0535475,50.0,hyperparameter,∆his
-glucose,1.07305375,1.06071,25.0,hyperparameter,∆his
-glucose,1.069239,1.06449,5.0,hyperparameter,∆his
-glucose,1.0966500000000001,0.94411585,95.0,hyperparameter,∆mal
-glucose,1.06183125,0.981225375,75.0,hyperparameter,∆mal
-glucose,1.0439224999999999,0.99862575,50.0,hyperparameter,∆mal
-glucose,1.03146875,1.0101737499999999,25.0,hyperparameter,∆mal
-glucose,1.02483,1.0166055,5.0,hyperparameter,∆mal
-glucose,1.0644407500000002,0.9897846,95.0,hyperparameter,∆mgl
-glucose,1.0460824999999998,1.00577875,75.0,hyperparameter,∆mgl
-glucose,1.03685,1.0141375,50.0,hyperparameter,∆mgl
-glucose,1.03012,1.01972875,25.0,hyperparameter,∆mgl
-glucose,1.02692,1.0228155,5.0,hyperparameter,∆mgl
-glucose,1.04942025,1.0036185,95.0,hyperparameter,∆nmp
-glucose,1.03813375,1.014155,75.0,hyperparameter,∆nmp
-glucose,1.0329,1.01917,50.0,hyperparameter,∆nmp
-glucose,1.02924,1.02275625,25.0,hyperparameter,∆nmp
-glucose,1.0271445,1.02463,5.0,hyperparameter,∆nmp
-glucose,0.9558315749999999,0.8999596,95.0,hyperparameter,∆opp
-glucose,0.943912,0.914221,75.0,hyperparameter,∆opp
-glucose,0.9377552499999999,0.92075275,50.0,hyperparameter,∆opp
-glucose,0.93327175,0.92545425,25.0,hyperparameter,∆opp
-glucose,0.9307889,0.9278133,5.0,hyperparameter,∆opp
-glucose,1.08055,1.02823775,95.0,hyperparameter,∆pot
-glucose,1.06964,1.04004875,75.0,hyperparameter,∆pot
-glucose,1.0629925,1.0458175,50.0,hyperparameter,∆pot
-glucose,1.0584275,1.05062,25.0,hyperparameter,∆pot
-glucose,1.0559844999999999,1.0529555,5.0,hyperparameter,∆pot
-glucose,1.0959622500000001,1.00598575,95.0,hyperparameter,∆rbs
-glucose,1.07565125,1.0258425,75.0,hyperparameter,∆rbs
-glucose,1.0648624999999998,1.0357425,50.0,hyperparameter,∆rbs
-glucose,1.05738,1.0437,25.0,hyperparameter,∆rbs
-glucose,1.053217,1.04768,5.0,hyperparameter,∆rbs
+acetate,0.5586595,0.507577125,95.0,hyperparameter,WT
+acetate,0.5472242500000001,0.51844325,75.0,hyperparameter,WT
+acetate,0.5411965,0.524782,50.0,hyperparameter,WT
+acetate,0.536723,0.5291528750000001,25.0,hyperparameter,WT
+acetate,0.53452645,0.53131305,5.0,hyperparameter,WT
+acetate,0.603973625,0.54124945,95.0,hyperparameter,∆dpp
+acetate,0.590980125,0.55600825,75.0,hyperparameter,∆dpp
+acetate,0.5832655,0.5638505,50.0,hyperparameter,∆dpp
+acetate,0.57812725,0.5689205,25.0,hyperparameter,∆dpp
+acetate,0.57513985,0.57182855,5.0,hyperparameter,∆dpp
+acetate,0.480410075,0.44801989999999997,95.0,hyperparameter,∆dpp ∆flh
+acetate,0.47313675,0.456128,75.0,hyperparameter,∆dpp ∆flh
+acetate,0.4694815,0.45985975,50.0,hyperparameter,∆dpp ∆flh
+acetate,0.4669665,0.462559125,25.0,hyperparameter,∆dpp ∆flh
+acetate,0.46556145,0.46386065,5.0,hyperparameter,∆dpp ∆flh
+acetate,0.617145575,0.5678836749999999,95.0,hyperparameter,∆dpp ∆glt
+acetate,0.6050485,0.5782476249999999,75.0,hyperparameter,∆dpp ∆glt
+acetate,0.5988795,0.584413,50.0,hyperparameter,∆dpp ∆glt
+acetate,0.595047875,0.588364875,25.0,hyperparameter,∆dpp ∆glt
+acetate,0.5930211,0.59032955,5.0,hyperparameter,∆dpp ∆glt
+acetate,0.48001015,0.43455545,95.0,hyperparameter,∆dpp ∆rbs
+acetate,0.46967575,0.4446735,75.0,hyperparameter,∆dpp ∆rbs
+acetate,0.46428875000000003,0.4501455,50.0,hyperparameter,∆dpp ∆rbs
+acetate,0.46036225,0.45381925,25.0,hyperparameter,∆dpp ∆rbs
+acetate,0.45820735,0.4557891,5.0,hyperparameter,∆dpp ∆rbs
+acetate,0.4692325,0.4546097,95.0,hyperparameter,∆flh
+acetate,0.46568712500000004,0.45765249999999996,75.0,hyperparameter,∆flh
+acetate,0.4640015,0.45928175,50.0,hyperparameter,∆flh
+acetate,0.462688375,0.460512,25.0,hyperparameter,∆flh
+acetate,0.4620268,0.4611652,5.0,hyperparameter,∆flh
+acetate,0.498008675,0.461357875,95.0,hyperparameter,∆flh ∆glt
+acetate,0.490298625,0.46935375,75.0,hyperparameter,∆flh ∆glt
+acetate,0.48620675,0.47420375000000003,50.0,hyperparameter,∆flh ∆glt
+acetate,0.483190875,0.477492625,25.0,hyperparameter,∆flh ∆glt
+acetate,0.48146145,0.47922695,5.0,hyperparameter,∆flh ∆glt
+acetate,0.4830119,0.4258111,95.0,hyperparameter,∆flh ∆rbs
+acetate,0.46970412500000003,0.438563375,75.0,hyperparameter,∆flh ∆rbs
+acetate,0.463189,0.44512399999999996,50.0,hyperparameter,∆flh ∆rbs
+acetate,0.457980375,0.44945887500000004,25.0,hyperparameter,∆flh ∆rbs
+acetate,0.455211,0.45195409999999997,5.0,hyperparameter,∆flh ∆rbs
+acetate,0.630199775,0.561642,95.0,hyperparameter,∆glt
+acetate,0.61541275,0.575589875,75.0,hyperparameter,∆glt
+acetate,0.6068525,0.58419175,50.0,hyperparameter,∆glt
+acetate,0.600732375,0.590328,25.0,hyperparameter,∆glt
+acetate,0.597526,0.59356675,5.0,hyperparameter,∆glt
+acetate,0.5581031,0.52752975,95.0,hyperparameter,∆his
+acetate,0.550648875,0.53377875,75.0,hyperparameter,∆his
+acetate,0.54703475,0.537407,50.0,hyperparameter,∆his
+acetate,0.54437875,0.5400795,25.0,hyperparameter,∆his
+acetate,0.54305935,0.54128465,5.0,hyperparameter,∆his
+acetate,0.15280725,0.10157695000000001,95.0,hyperparameter,∆his ∆dpp
+acetate,0.14287525,0.11515299999999999,75.0,hyperparameter,∆his ∆dpp
+acetate,0.13726325,0.12188375000000001,50.0,hyperparameter,∆his ∆dpp
+acetate,0.1333095,0.12619825,25.0,hyperparameter,∆his ∆dpp
+acetate,0.13134735,0.12826254999999998,5.0,hyperparameter,∆his ∆dpp
+acetate,0.471682275,0.44781740000000003,95.0,hyperparameter,∆his ∆flh
+acetate,0.466104375,0.4527385,75.0,hyperparameter,∆his ∆flh
+acetate,0.4633955,0.4556685,50.0,hyperparameter,∆his ∆flh
+acetate,0.461298375,0.457708875,25.0,hyperparameter,∆his ∆flh
+acetate,0.46021845,0.4587574,5.0,hyperparameter,∆his ∆flh
+acetate,0.550218125,0.521044225,95.0,hyperparameter,∆his ∆glt
+acetate,0.5434370000000001,0.5280275,75.0,hyperparameter,∆his ∆glt
+acetate,0.540208,0.53152625,50.0,hyperparameter,∆his ∆glt
+acetate,0.53791775,0.53384225,25.0,hyperparameter,∆his ∆glt
+acetate,0.5365909,0.5350060999999999,5.0,hyperparameter,∆his ∆glt
+acetate,0.55169715,0.5054479000000001,95.0,hyperparameter,∆his ∆mgl
+acetate,0.54185525,0.51562325,75.0,hyperparameter,∆his ∆mgl
+acetate,0.53630175,0.52134675,50.0,hyperparameter,∆his ∆mgl
+acetate,0.532313875,0.525259,25.0,hyperparameter,∆his ∆mgl
+acetate,0.53024415,0.5274914,5.0,hyperparameter,∆his ∆mgl
+acetate,0.24612955,0.2333221,95.0,hyperparameter,∆his ∆nmp
+acetate,0.243286,0.236312625,75.0,hyperparameter,∆his ∆nmp
+acetate,0.24191325,0.23782175,50.0,hyperparameter,∆his ∆nmp
+acetate,0.240838375,0.238871375,25.0,hyperparameter,∆his ∆nmp
+acetate,0.24027935,0.2395032,5.0,hyperparameter,∆his ∆nmp
+acetate,0.47187875,0.428823425,95.0,hyperparameter,∆his ∆opp
+acetate,0.462114,0.43867075,75.0,hyperparameter,∆his ∆opp
+acetate,0.45735175,0.4437365,50.0,hyperparameter,∆his ∆opp
+acetate,0.45377175,0.447326875,25.0,hyperparameter,∆his ∆opp
+acetate,0.45187125,0.4492363,5.0,hyperparameter,∆his ∆opp
+acetate,0.48511975,0.44979995,95.0,hyperparameter,∆his ∆rbs
+acetate,0.47684662499999997,0.458119875,75.0,hyperparameter,∆his ∆rbs
+acetate,0.47298425,0.46222625,50.0,hyperparameter,∆his ∆rbs
+acetate,0.4703365,0.46516925,25.0,hyperparameter,∆his ∆rbs
+acetate,0.46866905,0.4666917,5.0,hyperparameter,∆his ∆rbs
+acetate,0.573549125,0.53223685,95.0,hyperparameter,∆mal
+acetate,0.56490925,0.541309125,75.0,hyperparameter,∆mal
+acetate,0.5595285,0.54602325,50.0,hyperparameter,∆mal
+acetate,0.555822375,0.5496705000000001,25.0,hyperparameter,∆mal
+acetate,0.5538739,0.55140165,5.0,hyperparameter,∆mal
+acetate,0.46858315,0.45981487499999996,95.0,hyperparameter,∆mal ∆dpp
+acetate,0.466113,0.46175612499999996,75.0,hyperparameter,∆mal ∆dpp
+acetate,0.46512825,0.4626965,50.0,hyperparameter,∆mal ∆dpp
+acetate,0.464446125,0.463348625,25.0,hyperparameter,∆mal ∆dpp
+acetate,0.464131,0.4636702,5.0,hyperparameter,∆mal ∆dpp
+acetate,0.48090715,0.42353055,95.0,hyperparameter,∆mal ∆flh
+acetate,0.46809575,0.43588025,75.0,hyperparameter,∆mal ∆flh
+acetate,0.4610555,0.44252674999999997,50.0,hyperparameter,∆mal ∆flh
+acetate,0.455845375,0.447563,25.0,hyperparameter,∆mal ∆flh
+acetate,0.4534827,0.4501594,5.0,hyperparameter,∆mal ∆flh
+acetate,0.6182340500000001,0.55026215,95.0,hyperparameter,∆mal ∆glt
+acetate,0.6038186249999999,0.5660195,75.0,hyperparameter,∆mal ∆glt
+acetate,0.5963545,0.5741515,50.0,hyperparameter,∆mal ∆glt
+acetate,0.590356125,0.579951,25.0,hyperparameter,∆mal ∆glt
+acetate,0.5871734000000001,0.58306685,5.0,hyperparameter,∆mal ∆glt
+acetate,0.56638775,0.49198857500000004,95.0,hyperparameter,∆mal ∆his
+acetate,0.54999975,0.50781375,75.0,hyperparameter,∆mal ∆his
+acetate,0.54117975,0.5168595,50.0,hyperparameter,∆mal ∆his
+acetate,0.5344273749999999,0.523225,25.0,hyperparameter,∆mal ∆his
+acetate,0.5308967499999999,0.52658995,5.0,hyperparameter,∆mal ∆his
+acetate,0.515559225,0.48709395000000005,95.0,hyperparameter,∆mal ∆mgl
+acetate,0.5087575,0.493895375,75.0,hyperparameter,∆mal ∆mgl
+acetate,0.5055839999999999,0.4971685,50.0,hyperparameter,∆mal ∆mgl
+acetate,0.50316075,0.49936899999999995,25.0,hyperparameter,∆mal ∆mgl
+acetate,0.5020286,0.50055755,5.0,hyperparameter,∆mal ∆mgl
+acetate,0.52618275,0.48846435,95.0,hyperparameter,∆mal ∆nmp
+acetate,0.517729375,0.49676187499999996,75.0,hyperparameter,∆mal ∆nmp
+acetate,0.5132115,0.50137875,50.0,hyperparameter,∆mal ∆nmp
+acetate,0.51009375,0.504724,25.0,hyperparameter,∆mal ∆nmp
+acetate,0.50846625,0.50636885,5.0,hyperparameter,∆mal ∆nmp
+acetate,0.49252385000000004,0.41702547500000003,95.0,hyperparameter,∆mal ∆opp
+acetate,0.47458462500000004,0.433864375,75.0,hyperparameter,∆mal ∆opp
+acetate,0.46526175,0.44263425,50.0,hyperparameter,∆mal ∆opp
+acetate,0.45927724999999997,0.448322375,25.0,hyperparameter,∆mal ∆opp
+acetate,0.45578415,0.4514346,5.0,hyperparameter,∆mal ∆opp
+acetate,0.552138675,0.491793925,95.0,hyperparameter,∆mal ∆pot
+acetate,0.537534,0.505629875,75.0,hyperparameter,∆mal ∆pot
+acetate,0.53058075,0.51228575,50.0,hyperparameter,∆mal ∆pot
+acetate,0.525824125,0.5175166250000001,25.0,hyperparameter,∆mal ∆pot
+acetate,0.5234858,0.5203093,5.0,hyperparameter,∆mal ∆pot
+acetate,0.482316025,0.4575186,95.0,hyperparameter,∆mal ∆rbs
+acetate,0.47618312500000004,0.46336574999999997,75.0,hyperparameter,∆mal ∆rbs
+acetate,0.47345225,0.4661405,50.0,hyperparameter,∆mal ∆rbs
+acetate,0.47136212499999997,0.4679745,25.0,hyperparameter,∆mal ∆rbs
+acetate,0.4703048,0.4690451,5.0,hyperparameter,∆mal ∆rbs
+acetate,0.6160804999999999,0.5512455500000001,95.0,hyperparameter,∆mgl
+acetate,0.6019125,0.5641918749999999,75.0,hyperparameter,∆mgl
+acetate,0.59340525,0.572114,50.0,hyperparameter,∆mgl
+acetate,0.5874029999999999,0.5774905,25.0,hyperparameter,∆mgl
+acetate,0.5842016,0.5804881,5.0,hyperparameter,∆mgl
+acetate,0.5341414,0.465846675,95.0,hyperparameter,∆mgl ∆dpp
+acetate,0.518937875,0.4825815,75.0,hyperparameter,∆mgl ∆dpp
+acetate,0.51088075,0.48991999999999997,50.0,hyperparameter,∆mgl ∆dpp
+acetate,0.5051924999999999,0.49516725,25.0,hyperparameter,∆mgl ∆dpp
+acetate,0.50220015,0.49835765,5.0,hyperparameter,∆mgl ∆dpp
+acetate,0.4820954,0.454599825,95.0,hyperparameter,∆mgl ∆flh
+acetate,0.47545725,0.46084187499999996,75.0,hyperparameter,∆mgl ∆flh
+acetate,0.472365,0.46406425,50.0,hyperparameter,∆mgl ∆flh
+acetate,0.470116125,0.46630725,25.0,hyperparameter,∆mgl ∆flh
+acetate,0.4689509,0.46746695,5.0,hyperparameter,∆mgl ∆flh
+acetate,0.5816703999999999,0.5321047000000001,95.0,hyperparameter,∆mgl ∆glt
+acetate,0.5701858750000001,0.5428285,75.0,hyperparameter,∆mgl ∆glt
+acetate,0.564063,0.54863225,50.0,hyperparameter,∆mgl ∆glt
+acetate,0.559935375,0.552635,25.0,hyperparameter,∆mgl ∆glt
+acetate,0.55752815,0.5548728,5.0,hyperparameter,∆mgl ∆glt
+acetate,0.53566225,0.41190175,95.0,hyperparameter,∆mgl ∆opp
+acetate,0.49349775,0.4576455,75.0,hyperparameter,∆mgl ∆opp
+acetate,0.48488275,0.46696425,50.0,hyperparameter,∆mgl ∆opp
+acetate,0.4792365,0.471582,25.0,hyperparameter,∆mgl ∆opp
+acetate,0.47683559999999997,0.47394875,5.0,hyperparameter,∆mgl ∆opp
+acetate,0.497088075,0.4559143,95.0,hyperparameter,∆mgl ∆rbs
+acetate,0.4878445,0.466651375,75.0,hyperparameter,∆mgl ∆rbs
+acetate,0.4834325,0.471481,50.0,hyperparameter,∆mgl ∆rbs
+acetate,0.480446125,0.474456625,25.0,hyperparameter,∆mgl ∆rbs
+acetate,0.47864105,0.4762424,5.0,hyperparameter,∆mgl ∆rbs
+acetate,0.5579292,0.513362525,95.0,hyperparameter,∆nmp
+acetate,0.548207625,0.5228986250000001,75.0,hyperparameter,∆nmp
+acetate,0.5427285000000001,0.528548,50.0,hyperparameter,∆nmp
+acetate,0.539111125,0.5323175,25.0,hyperparameter,∆nmp
+acetate,0.53693735,0.5343504,5.0,hyperparameter,∆nmp
+acetate,0.5481032,0.528204475,95.0,hyperparameter,∆nmp ∆dpp
+acetate,0.5436761250000001,0.532671,75.0,hyperparameter,∆nmp ∆dpp
+acetate,0.54132675,0.5353555000000001,50.0,hyperparameter,∆nmp ∆dpp
+acetate,0.539722375,0.536971625,25.0,hyperparameter,∆nmp ∆dpp
+acetate,0.53887035,0.53778355,5.0,hyperparameter,∆nmp ∆dpp
+acetate,0.5073265250000001,0.47134245,95.0,hyperparameter,∆nmp ∆flh
+acetate,0.49897437499999997,0.478823875,75.0,hyperparameter,∆nmp ∆flh
+acetate,0.49485250000000003,0.48304074999999996,50.0,hyperparameter,∆nmp ∆flh
+acetate,0.491769125,0.48620125,25.0,hyperparameter,∆nmp ∆flh
+acetate,0.49007245,0.48796065,5.0,hyperparameter,∆nmp ∆flh
+acetate,0.567091625,0.5263367250000001,95.0,hyperparameter,∆nmp ∆glt
+acetate,0.5579155,0.5351477499999999,75.0,hyperparameter,∆nmp ∆glt
+acetate,0.5531582500000001,0.539582,50.0,hyperparameter,∆nmp ∆glt
+acetate,0.549674125,0.543195,25.0,hyperparameter,∆nmp ∆glt
+acetate,0.54782,0.54527985,5.0,hyperparameter,∆nmp ∆glt
+acetate,0.498608125,0.47746697499999996,95.0,hyperparameter,∆nmp ∆mgl
+acetate,0.493841125,0.482343125,75.0,hyperparameter,∆nmp ∆mgl
+acetate,0.491169,0.4847575,50.0,hyperparameter,∆nmp ∆mgl
+acetate,0.4894505,0.48640425,25.0,hyperparameter,∆nmp ∆mgl
+acetate,0.4885568,0.48735409999999996,5.0,hyperparameter,∆nmp ∆mgl
+acetate,0.4789975,0.121061925,95.0,hyperparameter,∆nmp ∆opp
+acetate,0.475724625,0.161687,75.0,hyperparameter,∆nmp ∆opp
+acetate,0.473888,0.4061165,50.0,hyperparameter,∆nmp ∆opp
+acetate,0.472584,0.469281375,25.0,hyperparameter,∆nmp ∆opp
+acetate,0.47175245,0.47043955,5.0,hyperparameter,∆nmp ∆opp
+acetate,0.504022075,0.14628,95.0,hyperparameter,∆nmp ∆rbs
+acetate,0.49653549999999996,0.146296,75.0,hyperparameter,∆nmp ∆rbs
+acetate,0.493249,0.36013225,50.0,hyperparameter,∆nmp ∆rbs
+acetate,0.49028225,0.48120287500000003,25.0,hyperparameter,∆nmp ∆rbs
+acetate,0.48836095,0.48506055,5.0,hyperparameter,∆nmp ∆rbs
+acetate,0.575815825,0.51755485,95.0,hyperparameter,∆opp
+acetate,0.5630515,0.530874,75.0,hyperparameter,∆opp
+acetate,0.5555077500000001,0.5377697499999999,50.0,hyperparameter,∆opp
+acetate,0.550658125,0.5421698749999999,25.0,hyperparameter,∆opp
+acetate,0.5479792,0.5447119500000001,5.0,hyperparameter,∆opp
+acetate,0.5518922500000001,0.5205457,95.0,hyperparameter,∆opp ∆dpp
+acetate,0.5445485,0.5273559999999999,75.0,hyperparameter,∆opp ∆dpp
+acetate,0.54106275,0.530976,50.0,hyperparameter,∆opp ∆dpp
+acetate,0.538515,0.5336875000000001,25.0,hyperparameter,∆opp ∆dpp
+acetate,0.5371416,0.53526585,5.0,hyperparameter,∆opp ∆dpp
+acetate,0.481791175,0.440570175,95.0,hyperparameter,∆opp ∆flh
+acetate,0.472673875,0.4502565,75.0,hyperparameter,∆opp ∆flh
+acetate,0.467953,0.45530424999999997,50.0,hyperparameter,∆opp ∆flh
+acetate,0.464875,0.4588215,25.0,hyperparameter,∆opp ∆flh
+acetate,0.4629028,0.460539,5.0,hyperparameter,∆opp ∆flh
+acetate,0.592348275,0.543840675,95.0,hyperparameter,∆opp ∆glt
+acetate,0.579654,0.5536765,75.0,hyperparameter,∆opp ∆glt
+acetate,0.5738725,0.5587375,50.0,hyperparameter,∆opp ∆glt
+acetate,0.5697295,0.56239625,25.0,hyperparameter,∆opp ∆glt
+acetate,0.5675785,0.5644642,5.0,hyperparameter,∆opp ∆glt
+acetate,0.492181325,0.467582825,95.0,hyperparameter,∆opp ∆rbs
+acetate,0.486275625,0.472737625,75.0,hyperparameter,∆opp ∆rbs
+acetate,0.483105,0.475433,50.0,hyperparameter,∆opp ∆rbs
+acetate,0.48086012499999997,0.47737625,25.0,hyperparameter,∆opp ∆rbs
+acetate,0.47992735000000003,0.47845,5.0,hyperparameter,∆opp ∆rbs
+acetate,0.54334125,0.5061547750000001,95.0,hyperparameter,∆pot
+acetate,0.535377,0.5140701249999999,75.0,hyperparameter,∆pot
+acetate,0.5310112499999999,0.5185175,50.0,hyperparameter,∆pot
+acetate,0.52755325,0.521876625,25.0,hyperparameter,∆pot
+acetate,0.5257825,0.5234561,5.0,hyperparameter,∆pot
+acetate,0.5256497,0.5117809750000001,95.0,hyperparameter,∆pot ∆dpp
+acetate,0.5224445,0.51527825,75.0,hyperparameter,∆pot ∆dpp
+acetate,0.5207962500000001,0.516859,50.0,hyperparameter,∆pot ∆dpp
+acetate,0.519786,0.517926875,25.0,hyperparameter,∆pot ∆dpp
+acetate,0.5192638,0.51847055,5.0,hyperparameter,∆pot ∆dpp
+acetate,0.4826611,0.449088575,95.0,hyperparameter,∆pot ∆flh
+acetate,0.475160625,0.45654275,75.0,hyperparameter,∆pot ∆flh
+acetate,0.47116025,0.460551,50.0,hyperparameter,∆pot ∆flh
+acetate,0.468243375,0.463378875,25.0,hyperparameter,∆pot ∆flh
+acetate,0.46672345000000004,0.4650122,5.0,hyperparameter,∆pot ∆flh
+acetate,0.5625940500000001,0.51599595,95.0,hyperparameter,∆pot ∆glt
+acetate,0.552624875,0.5271495,75.0,hyperparameter,∆pot ∆glt
+acetate,0.5469772500000001,0.5326215000000001,50.0,hyperparameter,∆pot ∆glt
+acetate,0.542995125,0.536334,25.0,hyperparameter,∆pot ∆glt
+acetate,0.5408819500000001,0.5382298,5.0,hyperparameter,∆pot ∆glt
+acetate,0.5264691,0.500425775,95.0,hyperparameter,∆pot ∆his
+acetate,0.5204705,0.5063888750000001,75.0,hyperparameter,∆pot ∆his
+acetate,0.5173245,0.509374,50.0,hyperparameter,∆pot ∆his
+acetate,0.51509575,0.5114678749999999,25.0,hyperparameter,∆pot ∆his
+acetate,0.5139819,0.51255815,5.0,hyperparameter,∆pot ∆his
+acetate,0.510994375,0.482927525,95.0,hyperparameter,∆pot ∆mgl
+acetate,0.5047302499999999,0.48964212500000004,75.0,hyperparameter,∆pot ∆mgl
+acetate,0.50132475,0.49298875,50.0,hyperparameter,∆pot ∆mgl
+acetate,0.498917375,0.49506525,25.0,hyperparameter,∆pot ∆mgl
+acetate,0.4977069,0.49627709999999997,5.0,hyperparameter,∆pot ∆mgl
+acetate,0.508546225,0.486509025,95.0,hyperparameter,∆pot ∆nmp
+acetate,0.503936375,0.491763375,75.0,hyperparameter,∆pot ∆nmp
+acetate,0.5012682500000001,0.49434900000000004,50.0,hyperparameter,∆pot ∆nmp
+acetate,0.499462375,0.496116875,25.0,hyperparameter,∆pot ∆nmp
+acetate,0.49853545,0.497239,5.0,hyperparameter,∆pot ∆nmp
+acetate,0.491162025,0.461316275,95.0,hyperparameter,∆pot ∆opp
+acetate,0.48440337499999997,0.46739200000000003,75.0,hyperparameter,∆pot ∆opp
+acetate,0.48067925,0.47090525,50.0,hyperparameter,∆pot ∆opp
+acetate,0.478183375,0.473597625,25.0,hyperparameter,∆pot ∆opp
+acetate,0.47680079999999997,0.4749412,5.0,hyperparameter,∆pot ∆opp
+acetate,0.482351775,0.44806412500000004,95.0,hyperparameter,∆pot ∆rbs
+acetate,0.473602375,0.455668125,75.0,hyperparameter,∆pot ∆rbs
+acetate,0.46963475,0.4598145,50.0,hyperparameter,∆pot ∆rbs
+acetate,0.4669335,0.46236575,25.0,hyperparameter,∆pot ∆rbs
+acetate,0.46545440000000005,0.46365775,5.0,hyperparameter,∆pot ∆rbs
+acetate,0.470656625,0.45436472499999997,95.0,hyperparameter,∆rbs
+acetate,0.466871625,0.45864425000000003,75.0,hyperparameter,∆rbs
+acetate,0.46524350000000003,0.4606305,50.0,hyperparameter,∆rbs
+acetate,0.464065625,0.46191925,25.0,hyperparameter,∆rbs
+acetate,0.4634198,0.46263255,5.0,hyperparameter,∆rbs
+acetate,3.58191,0.418387275,95.0,hyperparameter,∆rbs ∆glt
+acetate,3.5819,0.435775375,75.0,hyperparameter,∆rbs ∆glt
+acetate,1.2926682500000002,0.44509075,50.0,hyperparameter,∆rbs ∆glt
+acetate,0.4692095,0.452251875,25.0,hyperparameter,∆rbs ∆glt
+acetate,0.46318105000000004,0.45690745,5.0,hyperparameter,∆rbs ∆glt
+ga_preshift,0.691416475,0.606301125,95.0,hyperparameter,WT
+ga_preshift,0.67304425,0.625236625,75.0,hyperparameter,WT
+ga_preshift,0.66215125,0.6347337500000001,50.0,hyperparameter,WT
+ga_preshift,0.654524875,0.64187275,25.0,hyperparameter,WT
+ga_preshift,0.65046855,0.6455953,5.0,hyperparameter,WT
+ga_preshift,1.65148,0.7061108500000001,95.0,hyperparameter,∆dpp
+ga_preshift,1.64432,0.7243445000000001,75.0,hyperparameter,∆dpp
+ga_preshift,1.0488410000000001,0.73498675,50.0,hyperparameter,∆dpp
+ga_preshift,0.76165375,0.7430565,25.0,hyperparameter,∆dpp
+ga_preshift,0.75484325,0.7473621,5.0,hyperparameter,∆dpp
+ga_preshift,0.8615263750000001,0.771644075,95.0,hyperparameter,∆flh
+ga_preshift,0.841433125,0.791296,75.0,hyperparameter,∆flh
+ga_preshift,0.83016475,0.8021315,50.0,hyperparameter,∆flh
+ga_preshift,0.8226568750000001,0.80926,25.0,hyperparameter,∆flh
+ga_preshift,0.81862905,0.8131442999999999,5.0,hyperparameter,∆flh
+ga_preshift,0.6889266500000001,0.622575525,95.0,hyperparameter,∆glt
+ga_preshift,0.669048125,0.636831625,75.0,hyperparameter,∆glt
+ga_preshift,0.6615442500000001,0.64372025,50.0,hyperparameter,∆glt
+ga_preshift,0.656719,0.6487665,25.0,hyperparameter,∆glt
+ga_preshift,0.65408525,0.65101275,5.0,hyperparameter,∆glt
+ga_preshift,0.7845022500000001,0.6487568,95.0,hyperparameter,∆his
+ga_preshift,0.753332875,0.677397875,75.0,hyperparameter,∆his
+ga_preshift,0.7366765000000001,0.69324725,50.0,hyperparameter,∆his
+ga_preshift,0.72410275,0.7050430000000001,25.0,hyperparameter,∆his
+ga_preshift,0.71828805,0.7110175999999999,5.0,hyperparameter,∆his
+ga_preshift,0.7370341,0.6470055250000001,95.0,hyperparameter,∆mal
+ga_preshift,0.715716,0.668396625,75.0,hyperparameter,∆mal
+ga_preshift,0.70561025,0.6782889999999999,50.0,hyperparameter,∆mal
+ga_preshift,0.69850975,0.685609,25.0,hyperparameter,∆mal
+ga_preshift,0.6946148,0.68964115,5.0,hyperparameter,∆mal
+ga_preshift,0.689549175,0.63075695,95.0,hyperparameter,∆mgl
+ga_preshift,0.677175375,0.643972875,75.0,hyperparameter,∆mgl
+ga_preshift,0.67040875,0.65087975,50.0,hyperparameter,∆mgl
+ga_preshift,0.665338625,0.65610875,25.0,hyperparameter,∆mgl
+ga_preshift,0.6627243,0.6589794,5.0,hyperparameter,∆mgl
+ga_preshift,2.9704105000000003,0.672108225,95.0,hyperparameter,∆nmp
+ga_preshift,2.9569437499999998,0.70013625,75.0,hyperparameter,∆nmp
+ga_preshift,1.375096,0.7147135,50.0,hyperparameter,∆nmp
+ga_preshift,0.751603125,0.7255072499999999,25.0,hyperparameter,∆nmp
+ga_preshift,0.74136295,0.7322137,5.0,hyperparameter,∆nmp
+ga_preshift,0.6990620750000001,0.573473325,95.0,hyperparameter,∆opp
+ga_preshift,0.668356125,0.59917575,75.0,hyperparameter,∆opp
+ga_preshift,0.65298375,0.613474,50.0,hyperparameter,∆opp
+ga_preshift,0.642346375,0.6236207500000001,25.0,hyperparameter,∆opp
+ga_preshift,0.63673615,0.6295392,5.0,hyperparameter,∆opp
+ga_preshift,0.705878225,0.60343795,95.0,hyperparameter,∆pot
+ga_preshift,0.68359125,0.6274632499999999,75.0,hyperparameter,∆pot
+ga_preshift,0.67165975,0.6388180000000001,50.0,hyperparameter,∆pot
+ga_preshift,0.662882375,0.647568625,25.0,hyperparameter,∆pot
+ga_preshift,0.6585369,0.6523561999999999,5.0,hyperparameter,∆pot
+ga_preshift,0.86431685,0.762561325,95.0,hyperparameter,∆rbs
+ga_preshift,0.843502875,0.787078875,75.0,hyperparameter,∆rbs
+ga_preshift,0.8320175,0.79849275,50.0,hyperparameter,∆rbs
+ga_preshift,0.822906625,0.8075528750000001,25.0,hyperparameter,∆rbs
+ga_preshift,0.8180825,0.81218475,5.0,hyperparameter,∆rbs
+glucose,1.07293225,1.0254785,95.0,hyperparameter,WT
+glucose,1.0609237500000002,1.0365962499999999,75.0,hyperparameter,WT
+glucose,1.0555350000000001,1.042035,50.0,hyperparameter,WT
+glucose,1.05204375,1.04564,25.0,hyperparameter,WT
+glucose,1.0501,1.0475855,5.0,hyperparameter,WT
+glucose,1.1331805000000001,1.0332694999999998,95.0,hyperparameter,∆dpp
+glucose,1.1095650000000001,1.05408,75.0,hyperparameter,∆dpp
+glucose,1.09735,1.066395,50.0,hyperparameter,∆dpp
+glucose,1.08873375,1.07460625,25.0,hyperparameter,∆dpp
+glucose,1.0843445,1.07911,5.0,hyperparameter,∆dpp
+glucose,1.1372565000000001,0.98434945,95.0,hyperparameter,∆flh
+glucose,1.1008912499999999,1.0217312500000002,75.0,hyperparameter,∆flh
+glucose,1.0843575,1.03947,50.0,hyperparameter,∆flh
+glucose,1.07183,1.05118,25.0,hyperparameter,∆flh
+glucose,1.06511,1.0575165000000002,5.0,hyperparameter,∆flh
+glucose,1.0795709999999998,0.996305225,95.0,hyperparameter,∆glt
+glucose,1.0613625,1.01616625,75.0,hyperparameter,∆glt
+glucose,1.05146,1.0253925000000002,50.0,hyperparameter,∆glt
+glucose,1.04422375,1.0325962499999999,25.0,hyperparameter,∆glt
+glucose,1.0407945,1.0359255,5.0,hyperparameter,∆glt
+glucose,1.11183275,1.0197,95.0,hyperparameter,∆his
+glucose,1.09002,1.0434287500000001,75.0,hyperparameter,∆his
+glucose,1.0797724999999998,1.0538275000000001,50.0,hyperparameter,∆his
+glucose,1.07352125,1.0607025,25.0,hyperparameter,∆his
+glucose,1.06953,1.0645,5.0,hyperparameter,∆his
+glucose,1.09386675,0.946539925,95.0,hyperparameter,∆mal
+glucose,1.0592937500000001,0.9818225,75.0,hyperparameter,∆mal
+glucose,1.0440025,0.999634,50.0,hyperparameter,∆mal
+glucose,1.0315450000000002,1.0114425,25.0,hyperparameter,∆mal
+glucose,1.0251834999999998,1.017301,5.0,hyperparameter,∆mal
+glucose,1.06400325,0.985694775,95.0,hyperparameter,∆mgl
+glucose,1.04532125,1.0042975,75.0,hyperparameter,∆mgl
+glucose,1.0366275,1.013395,50.0,hyperparameter,∆mgl
+glucose,1.03017,1.01922,25.0,hyperparameter,∆mgl
+glucose,1.0268745,1.0223855,5.0,hyperparameter,∆mgl
+glucose,1.048792,1.00227775,95.0,hyperparameter,∆nmp
+glucose,1.03841125,1.0134275000000001,75.0,hyperparameter,∆nmp
+glucose,1.0331424999999999,1.0187,50.0,hyperparameter,∆nmp
+glucose,1.02927,1.0225225,25.0,hyperparameter,∆nmp
+glucose,1.0272345,1.0246055,5.0,hyperparameter,∆nmp
+glucose,0.9574691750000001,0.901287275,95.0,hyperparameter,∆opp
+glucose,0.944477875,0.91360275,75.0,hyperparameter,∆opp
+glucose,0.93779975,0.9205555,50.0,hyperparameter,∆opp
+glucose,0.933265875,0.9250615,25.0,hyperparameter,∆opp
+glucose,0.93078005,0.9275537500000001,5.0,hyperparameter,∆opp
+glucose,1.08071125,1.02854975,95.0,hyperparameter,∆pot
+glucose,1.06938375,1.04021875,75.0,hyperparameter,∆pot
+glucose,1.06272,1.04619,50.0,hyperparameter,∆pot
+glucose,1.05846375,1.05061625,25.0,hyperparameter,∆pot
+glucose,1.0562945,1.0530655,5.0,hyperparameter,∆pot
+glucose,1.0925705000000001,1.00616675,95.0,hyperparameter,∆rbs
+glucose,1.0739112499999999,1.0254112499999999,75.0,hyperparameter,∆rbs
+glucose,1.0634375,1.0359075,50.0,hyperparameter,∆rbs
+glucose,1.05632375,1.04333625,25.0,hyperparameter,∆rbs
+glucose,1.052268,1.047361,5.0,hyperparameter,∆rbs

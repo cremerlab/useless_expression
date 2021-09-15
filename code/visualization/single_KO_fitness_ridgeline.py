@@ -11,7 +11,7 @@ colors, _  = futileprot.viz.matplotlib_style()
 #%%
 # Load the hyperparameter data
 data = pd.read_csv('../../data/mcmc/growth_rate_inference_hyperparameter_samples.csv')
-
+data['strain'] = [s.replace('∆', 'Δ') for s in data['strain'].values]
 # Separate the wt and the singles
 wt_data = data[data['strain']=='WT']
 singles = data[data['class']=='Single KO']
@@ -114,9 +114,9 @@ fig, ax = plt.subplots(1, 3, figsize=(6, 6), sharey=True)
 ax[0].text(0.7, (N_DIST - 1) * OVERLAP + 0.18, '          error\ndistribution', fontsize=5)
 
 # Add labels
-ax[0].set_title('30 mM acetate', loc='left', y=0.97)
-ax[1].set_title('0.6 mM glucose + 30 mM acetate', loc='left', y=0.97)
-ax[2].set_title('10 mM glucose', loc='left', y=0.97)
+ax[0].set_title('acetate', loc='left', y=0.97)
+ax[1].set_title('glucose + acetate', loc='left', y=0.97)
+ax[2].set_title('glucose', loc='left', y=0.97)
 
 # Adjust the axis limits
 for a in ax:
@@ -154,5 +154,6 @@ for g, d in err_kde_df.groupby(['growth_medium']):
             _ax.plot(d['fitness'], d['kde_norm'] + OVERLAP * i,
             '--', zorder=np.abs(i - N_DIST) +1, color=_color) 
 plt.tight_layout()
-plt.savefig('../../figures/SingleKO_fitness_ridgeline.pdf')
+plt.savefig('../../figures/SingleKO_fitness_ridgeline.pdf', 
+            transparent=True)
 # %%

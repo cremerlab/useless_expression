@@ -14,6 +14,7 @@ data = pd.read_csv('../../data/mcmc/growth_rate_inference_hyperparameter_samples
 
 #%%
 data = data[(data['class']=='WT' ) | (data['class']=='Single KO')]
+data['strain'] = [s.replace('∆','Δ') for s in data['strain'].values]
 # %%
 # For each collection of samples, compute the kernel density estimate over a wide range
 mu_range = np.linspace(0.1, 1.5, 1000)
@@ -59,10 +60,10 @@ ax[0].text(0.34,  (N_DIST  - 1)* OVERLAP, r' $\propto$ probability', fontsize=5,
           rotation='vertical', fontstyle='italic')
 ax[0].text(0.475, (N_DIST - 1) * OVERLAP + 0.7, 'WT', fontsize=5)
 # Add labels
-ax[0].set_title('30 mM acetate', loc='left', y=0.97)
-ax[1].set_title('0.6 mM glucose + 30 mM acetate', loc='left', y=0.97)
-ax[2].set_title('10 mM glucose', loc='left', y=0.97, fontfamily='Stone Sans',
-                fontstyle='italic')
+ax[0].set_title('acetate', loc='left', y=0.97)
+ax[1].set_title('glucose + acetate', loc='left', y=0.97)
+ax[2].set_title('glucose', loc='left', y=0.97)
+
 
 # Adjust the axis limits
 ax[0].set_xlim([0.3, 0.75])
@@ -101,7 +102,8 @@ for g, d in kde_df.groupby(['strain', 'growth_medium']):
         _ax.fill_between(d['growth_rate_hr'], OVERLAP * ind, d['kde_norm'] + OVERLAP *ind, 
             alpha=0.5,  zorder=np.abs(ind - N_DIST) + 2, color=_color)
 plt.tight_layout()
-plt.savefig('../../figures/growth_rates/singleKO_hyperparameter_ridgeline.pdf', bbox_inches='tight')
+plt.savefig('../../figures/growth_rates/singleKO_hyperparameter_ridgeline.pdf', 
+            bbox_inches='tight', transparent=True)
 # %%
 
 # %%

@@ -11,6 +11,7 @@ colors,_  = futileprot.viz.matplotlib_style()
 #%%
 # Load the hyperparameter data
 data = pd.read_csv('../../data/mcmc/growth_rate_inference_hyperparameter_samples.csv')
+data['strain'] = [s.replace('∆', 'Δ') for s in data['strain'].values]
 
 # %%
 # For each collection of samples, compute the kernel density estimate over a wide range
@@ -103,5 +104,6 @@ for g, d in kde_df[kde_df['class']=='Double KO'].groupby(['strain', 'growth_medi
             zorder=np.abs(ind - N_DIST) +1, color='grey', linestyle=ls[i])
 
 
-plt.savefig('../../figures/growth_rates/DoubleKO_hyperparameter_ridgeline.pdf', bbox_inches='tight')
+plt.savefig('../../figures/growth_rates/DoubleKO_hyperparameter_ridgeline.pdf', bbox_inches='tight',
+            transparent=True)
 # %%

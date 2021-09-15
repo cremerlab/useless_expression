@@ -67,10 +67,17 @@ for i, cat in enumerate(valid_paths):
         elif i == 1:
             exp_phase = pd.read_csv(f"{path}/output/{path.split('/')[-1]}_labeled_regions.csv")
             shift_curves.append(exp_phase)
-            exp_phase = exp_phase[exp_phase['phase'].str.contains('exponential')]
             exp_phase.loc[exp_phase['phase']=='exponential_glucose', 'growth_medium'] = 'ga_preshift'
-            exp_phase.loc[exp_phase['phase']=='exponential_acetate', 'growth_medium'] = 'acetate'
-            exp_phase['experiment_type'] = exp_type[i]
+            exp_phase.loc[exp_phase['phase']=='exponential_acetate', 'growth_medium'] = 'acetate'            # exp_phase.loc[exp_phase['phase']=='exponential_acetate', 'od_600nm_subtracted'] -= exp_phase.loc[exp_phase['phase']=='exponential_acetate', 'od_600nm_subtracted'] -= shift
+            dfs = []
+            for g, d in exp_phase.groupby(['date', 'run_number', 'strain', 'replicate']):
+                shift = d[d['phase']=='shift']['od_600nm_subtracted'].median()
+                for _g, _d in d.groupby(['phase']):
+                    if _g != 'exponential_acetate':
+                        # _d['od_600nm_subtracted'] -= shift
+                        dfs.append(_d)
+            exp_phase = pd.concat(dfs, sort=False)
+            exp_phase = exp_phase[exp_phase['phase'].str.contains('exponential')]
             _exp_phase.append(exp_phase) 
             
 shift_curves = pd.concat(shift_curves, sort=False)
@@ -78,9 +85,11 @@ shift_curves = shift_curves[['date', 'run_number', 'class', 'identifier',
                              'strain', 'replicate', 'growth_medium', 'phase',
                              'elapsed_time_hr', 'od_600nm_subtracted']]
 exp_phase = pd.concat(_exp_phase, sort=False)
-exp_phase = exp_phase[['date', 'run_number', 'class', 'identifier', 'strain', 
+exp_phase = exp_phase[[ 'date', 'run_number', 'class', 'identifier', 'strain', 
                        'replicate', 'growth_medium', 'elapsed_time_hr', 
                        'od_600nm_subtracted']]
+
+
 #%%
 shift_curves.to_csv('../../../data/collated/collated_diauxic_shifts_labeled.csv', index=False)
 exp_phase.to_csv('../../../data/collated/collated_OD600_growth_curves_exponential_phase.csv', index=False)
