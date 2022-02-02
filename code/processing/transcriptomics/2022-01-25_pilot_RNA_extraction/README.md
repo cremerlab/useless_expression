@@ -7,7 +7,7 @@ description:
 ---
 
 
-# 2021-01-24 RNA Isolation Pilot Experiment
+# 2022-01-25 RNA Isolation Pilot Experiment
 
 ## Purpose
 The purpose of this experiment was to validate the RNA isolate protocol for 
@@ -16,12 +16,19 @@ for further analysis.
 
 
 ## Notes 
-In contrast to previous runs (not documented in this repository), I was particularly
+* In contrast to previous runs (not documented in this repository), I was particularly
 careful to use fresh tubes and tips that are (putatively) RNAase-free. 
+
+* The bad results still indicate that something has gone awry. After discussing 
+with Jonas, it's possible that the 10 minute spin at the beginning is too long,
+even if held at 4 °C. I will try to repeat this limiting the timing of this step. 
 
 
 ## Results
-To be added when QC results are returned.
+The QC results were pretty not great. The RNA Integrity Number (RIN) was ≈ 2.6,
+indicating pretty severe degradation of the RNA. 
+
+![](output/2022-01-25_RIN.png)
 
 ## Protocol
 
