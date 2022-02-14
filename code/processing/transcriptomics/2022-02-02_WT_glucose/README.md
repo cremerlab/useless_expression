@@ -9,15 +9,15 @@ description:
 # 2021-02-02 RNA Isolation and Sequencing of WT
 
 ## Purpose
-The purpose of this experiment was to validate is to further test the RNA 
-extraction protocol.  
-
+The purpose of this experiment was to isolate and sequence the transcriptome of 
+wild-type *E. coli* strain NCM3722 grown on glucose minimal medium. 
+ 
 ## Materials
 
 ### Growth Media
 | **Label** | **Buffer Base** | **Carbon Source & Concentration** |
 |:--:|:--:|:--:|
-| acetate | N-C- + micronutrients | 30 mM acetate |
+| acetate | N-C- + micronutrients | 10 mM glucose |
 
 ### Strains 
 | **Label** | **Parent Strain**|  **Genotype** | **Location(s)**|
@@ -46,11 +46,11 @@ until the culture reached an OD_600nm_ of **XXX**.
 
 ### RNA Extraction
 #### Day 1
-1. The 2 mL of extracted culture was pelleted for 30 seconds at 16000 x g.
+1. The 2 mL of extracted culture was pelleted for 30 seconds at 15000 x g.
 2. The supernatant was rapidly removed and the pellet was suspended in 500 µL of 
 a 50:50 water-Trizol mix by vortexing for 30 - 60 seconds. The solution was 
 allowed to rest at room temperature for 5 min.
-3. The mixture was then rapidly frozen on dry ice and then transferred to the -20 °C overnight. I didn't finish the experiment in time to send the material to the PAN for quality control, so I did that the next day. 
+3. The mixture was then rapidly frozen on dry ice and then transferred to the -80 °C. 
 
 #### Day 2
 1. An aliquot of 25 µL of chloroform was then added to the Trizol mix and vigorously 
