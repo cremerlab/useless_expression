@@ -2,21 +2,21 @@
 status: >
     Rejected
 description : >
-    Experiment not yet complete
+    Experiment not yet complete 
 ---
 
-# 2022-01-25 (Run 1) Single KO Acetate Minus Growth Rate Determination
+# 2022-02-17 (Run 1) Single KO Aspartate Growth Rate Determination
 
 ## Purpose
-This is an experiment measuring the rate of growth of the single KOs of  
-"useless" proteins in acetate-minus minimal medium (i.e. **no** micronutrients).
+This is an experiment measuring the rate of growth of the single KOs of  "useless" proteins in minimal medium 
+supplemented with aspartate but with no micronutrients.
 
 ## Materials
 
 ### Growth Media
 | **Label** | **Buffer Base** | **Carbon Source & Concentration** |
 |:--:|:--:|:--:|
-| acetate | N-C- | 30 mM acetate|
+| proline | N-C- | 20 mM proline |
 
 ### Strains 
 | **Label** | **Parent Strain**|  **Genotype** | **Location(s)**|
@@ -48,55 +48,56 @@ This is an experiment measuring the rate of growth of the single KOs of
 ### Plate Layout
 | **Wells** | **Label** | **Identifier** |
 |:--: | :--:  | :--: |
-|C3, D3, E3 | ∆mal | `GC032` | 
-|C4, D4, E4 | ∆pot | `GC049` |
+|C3, D3, E3 | WT| `GC001` | 
+|C4, D4, E4 | ∆glt | `GC030` |
 |C5, D5, E5 | ∆nmp | `GC052` |
-|C6, D6, E6 | ∆his | `GC047` |
-|C7, D7, E7 | ∆rbs | `GC050` |
-|C8, D8, E8 | ∆dpp | `GC048`| 
+|C6, D6, E6 | ∆mgl | `GC055` |
+|C7, D7, E7 | ∆pot | `GC049` |
+|C8, D8, E8 | ∆mal | `GC032`| 
 |C9, D9, E9 | ∆opp | `GC053` |
-|C10, D10, E10 | ∆mgl| `GC055` |
-|F3, F4, F5 | ∆glt | `GC030` |
+|C10, D10, E10 | ∆dpp| `GC048` |
+|F3, F4, F5 | ∆rbs | `GC050` |
 |F6, F7, F8 | ∆flh | `GC029` |
-|F9, F10, F11 | WT | `GC001` |
+|F9, F10, F11 | ∆his | `GC047` |
 
 
 ## Notes & Results
+
 
 ### Growth Rate Inference
 
 | **strain** | **growth rate, µ [per hr]** |
 |:--: |:--:|
-|∆mal | |
-|∆pot | |
-|∆nmp | | 
-|∆his | |
-|∆rbs | |
+| WT  | |
 |∆dpp | |
-|∆opp | |
-|∆mgl | | 
-|∆glt | |  
-|∆flh | |
-|WT   | |
+|∆flh | | 
+|∆his | |
+|∆mal | |
+|∆mgl | |
+|∆nmp | |
+|∆opp | |   
+|∆pot | |  
+|∆rbs | |
+|∆glt | |
 
 
 ### Plots
 
 **Fits**
 
-![](output/)
+![](output/2022-02-17_r1_SingleKO_aspartate-minus_fits.png)
 
 **Growth Curves**
 
-![](output/)
+![](output/2022-02-17_r1_SingleKO_aspartate-minus_raw_traces.png)
 
 ## Protocol 
-1.  Seed cultures were prepared by inoculating 2 mL of LB with a single colony from a fresh (< 2 week old) plate.
-2. The LB culture was allowed to grow for 3 hours to mid-exponential phase. 
+1.  Seed cultures were prepared by inoculating 3 mL of LB with a single colony from a fresh (< 2 week old) plate.
+2. The LB culture was allowed to grow for 4.5 hours to mid-exponential (OD ≈ 0.3 - 0.4)
 3. A preculture was prepared by diluting the seed culture 1:1000 into 
-prewarmed acetate minimal medium and allowed to grow for 24 hours at 37° C
-to an OD_600nm_ of ≈ 0.5.
-4. Precultues were diluted  1:20 into fresh acetate minimal medium prewarmed to 37° C. 
+prewarmed acetate minimal medium and allowed to grow for 26 hours at 37° C
+to an OD_600nm_ of ≈ 0.3.
+4. Precultues were diluted  1:10 into fresh acetate minimal medium prewarmed to 37° C. 
 4. A fresh 96 well plate was filled with water in blank wells. The remaining wells 
 were filled with 200 µL of diluted and mixed cultures as appropriate and described in 
 the section "Plate Layout".

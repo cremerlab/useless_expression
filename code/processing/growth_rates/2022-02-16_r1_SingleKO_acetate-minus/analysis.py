@@ -8,10 +8,10 @@ import scipy.stats
 colors, palette = futileprot.viz.altair_style()
 
 # Add metadata
-DATE = '2021-08-31'
+DATE = '2022-02-16'
 RUN_NO = 1
 STRAINS = 'SingleKO'
-MEDIUM = 'acetate'
+MEDIUM = 'acetate-minus'
 
 # Load the measurement data
 data = pd.read_csv(f'./output/{DATE}_r{RUN_NO}_{STRAINS}_{MEDIUM}_exponential_phase.csv')

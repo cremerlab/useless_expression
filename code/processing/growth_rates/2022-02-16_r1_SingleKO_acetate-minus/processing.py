@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 #%%
 import numpy as np 
 import pandas as pd 
@@ -8,25 +9,26 @@ import altair_saver
 colors, palette = futileprot.viz.altair_style()
 
 # Define experiment parameters
-DATE = '2021-08-31'
+DATE = '2022-02-16'
 STRAINS = 'SingleKO'
-MEDIUM = 'acetate'
+MEDIUM = 'acetate-minus'
 RUN_NO = 1
 ROOT = '../../../..'
 SKIPROWS = 36 
 OD_BOUNDS = [0.03, 0.15]
 
 # Add the well identifiers
-MAP = {'GC032': ['C3', 'D3', 'E3'],
-       'GC049': ['C4', 'D4', 'E4'],
+MAP = {'GC001': ['C3', 'D3', 'E3'],
+       'GC030': ['C4', 'D4', 'E4'],
        'GC052': ['C5', 'D5', 'E5'],
-       'GC047': ['C6', 'D6', 'E6'],
-       'GC050': ['C7', 'D7', 'E7'],
-       'GC048': ['C8', 'D8', 'E8'],
-       'GC055': ['C10', 'D10' ,'E10'],
-       'GC030': ['F3', 'F4', 'F5'],
+       'GC055': ['C6', 'D6', 'E6'],
+       'GC049': ['C7', 'D7', 'E7'],
+       'GC032': ['C8', 'D8', 'E8'],
+       'GC053': ['C9', 'D9', 'E9'],
+       'GC048': ['C10', 'D10' ,'E10'],
+       'GC050': ['F3', 'F4', 'F5'],
        'GC029': ['F6', 'F7', 'F8'],
-       'GC001': ['F9', 'F10', 'F11']} 
+       'GC047': ['F9', 'F10', 'F11']} 
 
 # Generate a list of all valid wells
 wells = [f'{letter}{number}' for letter in ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H'] for number in np.arange(1,13)]
@@ -92,14 +94,15 @@ for g, d in measurement.groupby(['strain', 'replicate']):
     d = d[(d['od_600nm_subtracted'] >= OD_BOUNDS[0]) & 
           (d['od_600nm_subtracted'] <= OD_BOUNDS[1])]
     d['elapsed_time_hr'] -= d['elapsed_time_hr'].min()
+    if g[0] == '∆glt':
     trunc.append(d)
 trunc = pd.concat(trunc, sort=False)
+
 trunc = trunc[['strain', 'elapsed_time_hr', 
              'od_600nm_subtracted', 'replicate', 'growth_medium', 
              'date', 'run_number', 'identifier', 'class']]
 trunc.rename(columns={'od_600nm_subtracted':'od_600nm',
                       'replicate':'technical_replicate'}, inplace=True)
-
 trunc.to_csv(f'./output/{DATE}_r{RUN_NO}_{STRAINS}_{MEDIUM}_exponential_phase.csv', index=False)
 
 # %%
