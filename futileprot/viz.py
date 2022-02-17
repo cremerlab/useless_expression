@@ -2,6 +2,8 @@ import matplotlib.pyplot
 import matplotlib
 import altair as alt
 import seaborn as sns
+import bokeh.io
+import bokeh.themes
 
 def get_colors(all_palettes=False):
     """
@@ -274,3 +276,48 @@ def altair_style(return_colors=True, return_palette=True, **kwargs):
         return out[0]
     else:
         return out
+
+
+def bokeh_style(return_colors=True, return_palette=True):
+    theme_json = {
+        "attrs": {
+            "Figure": {"background_fill_color": "#f0f3f7",},
+            "Axis": {
+                "axis_line_color": None,
+                "major_tick_line_color": None,
+                "minor_tick_line_color": None,
+            },
+            "Legend": {
+                "border_line_color": "slategray",
+                "background_fill_color": "#f0f3f7",
+                "border_line_width": 0.75,
+                "background_fill_alpha": 0.75,
+            },
+            "Grid": {"grid_line_color": "#FFFFFF", "grid_line_width": 0.75,},
+            "Text": {
+                "text_font_style": "regular",
+                "text_font_size": "12pt",
+                "text_font": "Nunito"
+            },
+            "Title": {
+                "background_fill_color": "#FFFFFF",
+                "text_color": "#3c3c3c",
+                "align": "left",
+                'text_font_style': 'normal',
+                'text_font_size': "10pt",
+                "offset": 5 
+            },
+        }
+    }
+
+    colors, palette = get_colors()
+    theme = bokeh.themes.Theme(json=theme_json)
+    bokeh.io.curdoc().theme = theme
+    out = []
+    if return_colors:
+        out.append(colors)  
+    if return_palette:  
+       out.append(palette) 
+    if return_colors | return_palette:
+        return out
+
