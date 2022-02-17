@@ -14,3 +14,4 @@
 *.hpp
 *.pyc
 data/mcmc/*samples*.csv
+*vegafusion*
