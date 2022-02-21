@@ -5,7 +5,7 @@ description : >
     Nothing is awry and there is no reason to reject the experiment. 
 ---
 
-# 2022-02-17 (Run 1) Single KO Aspartate Growth Rate Determination
+# 2022-02-18 (Run 1) Single KO Aspartate Growth Rate Determination
 
 ## Purpose
 This is an experiment measuring the rate of growth of the single KOs of  "useless" proteins in minimal medium 
@@ -61,24 +61,21 @@ supplemented with aspartate but with no micronutrients.
 |F9, F10, F11 | ∆his | `GC047` |
 
 
-## Notes & Results
-
-
 ### Growth Rate Inference
 
 | **strain** | **growth rate, µ [per hr]** |
 |:--: |:--:|
-| WT  | 0.172 ± 0.000|
-|∆dpp | 0.177 ± 0.001|
-|∆flh | 0.177 ± 0.002| 
-|∆his | 0.174 ± 0.001|
-|∆mal | 0.172 ± 0.001|
+| WT  | 0.177 ± 0.001|
+|∆dpp | 0.179 ± 0.001|
+|∆flh | 0.179 ± 0.002| 
+|∆his | 0.170 ± 0.001|
+|∆mal | 0.174 ± 0.001|
 |∆mgl | 0.176 ± 0.001|
-|∆nmp | 0.211 ± 0.002|
-|∆opp | 0.199 ± 0.001|   
-|∆pot | 0.169 ± 0.001|  
-|∆rbs | 0.168 ± 0.001|
-|∆glt | 0.119 ± 0.005|
+|∆nmp | 0.218 ± 0.001|
+|∆opp | 0.212 ± 0.002|   
+|∆pot | 0.170 ± 0.000|  
+|∆rbs | 0.162 ± 0.001|
+|∆glt | 0.122 ± 0.003|
 
 
 ### Plots
@@ -95,7 +92,7 @@ supplemented with aspartate but with no micronutrients.
 1.  Seed cultures were prepared by inoculating 3 mL of LB with a single colony from a fresh (< 2 week old) plate.
 2. The LB culture was allowed to grow for 4.5 hours to mid-exponential (OD ≈ 0.3 - 0.4)
 3. A preculture was prepared by diluting the seed culture 1:1000 into 
-prewarmed acetate minimal medium and allowed to grow for 23 hours at 37° C
+prewarmed acetate minimal medium and allowed to grow for 20 hours at 37° C
 to an OD_600nm_ of ≈ 0.3.
 4. Precultues were diluted  1:10 into fresh acetate minimal medium prewarmed to 37° C. 
 4. A fresh 96 well plate was filled with water in blank wells. The remaining wells 

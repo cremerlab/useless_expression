@@ -9,7 +9,7 @@ import altair_saver
 colors, palette = futileprot.viz.altair_style()
 
 # Define experiment parameters
-DATE = '2022-02-17'
+DATE = '2022-02-18'
 STRAINS = 'SingleKO'
 MEDIUM = 'aspartate-minus'
 RUN_NO = 1

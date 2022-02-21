@@ -87,3 +87,15 @@ experiment,experiment_type,status,description
 "
 2021-09-12_r1_SingleKO_glucose-acetate,diauxic shift measurement,Accepted,"There was an obvious problem with the 1st technical replicate of WT and it  was therefore dropped from analysis.
 "
+2021-09-13_r1_DoubleKO_glucose-acetate,diauxic shift measurement,Rejected,"Analysis was not properly recorded! I need to go back through and troubleshoot.
+"
+2021-09-14_r1_DoubleKO_glucose-acetate,diauxic shift measurement,Accepted,"Data looks good, but there were some issues with technical replicates. See  notes section of README for more info. 
+"
+2022-02-16_r1_SingleKO_acetate-minus,growth curve measurement,Rejected,"This run was rejected because the observed growth rate for the WT is absurdly fast and does not match our internal standards. This will be rerun with a fresh batch of media to ensure something untoward hasn't happened. 
+"
+2022-02-16_r1_SingleKO_aspartate-minus,growth curve measurement,Accepted,"Data looks good without much difference between samples. Strain ∆glt was  not able to be measured as the OD was too low for reliable measurement. 
+"
+2022-02-17_r1_SingleKO_aspartate-minus,growth curve measurement,Accepted,"Nothing is awry and there is no reason to reject the experiment. 
+"
+2022-02-18_r1_SingleKO_aspartate-minus,growth curve measurement,Accepted,"Nothing is awry and there is no reason to reject the experiment. 
+"

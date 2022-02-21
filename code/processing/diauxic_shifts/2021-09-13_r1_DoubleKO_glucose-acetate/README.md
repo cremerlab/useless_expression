@@ -1,16 +1,14 @@
 ---
 status: >
-    Accepted
+    Rejected
 description : >
-    Data looks good, but there were some issues with technical replicates. See 
-    notes section of README for more info. 
-
+    Analysis was not properly recorded! I need to go back through and troubleshoot.
 ---
 
-# 2021-09-12 (Run 1) Single KO Glucose-Acetate Diauxic Shift
+# 2021-09-13 (Run 1) Double KO Glucose-Acetate Diauxic Shift
 
 ## Purpose
-This is an experiment measuring the lag-time for the single KOs of  "useless" proteins 
+This is an experiment measuring the lag-time for the double KOs of  "useless" proteins 
 during the glucose-acetate diauxic shfit in minimal medium.
 
 ## Materials
